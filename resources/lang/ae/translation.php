@@ -1,5 +1,6 @@
 <?php
 return [
+    "homepage" => "الصفحة الرئيسية",
     "menu" => "قائمة الطعام",
     "dashboards" => "لوحات القيادة",
     "analytics" => "تحليلات",
@@ -211,4 +212,3 @@ return [
     "range-area" => "نطاق المنطقة",
     "funnel" => "قمع",
 ];
-?>

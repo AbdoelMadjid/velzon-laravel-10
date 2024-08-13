@@ -1,5 +1,6 @@
 <?php
 return [
+    "homepage" => "Halaman Awal",
     "menu" => "Menu",
     "dashboards" => "Dasbor",
     "analytics" => "Analitik",
