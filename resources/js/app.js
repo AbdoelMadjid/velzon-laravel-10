@@ -33,6 +33,8 @@ File: Main Js File
 		if (document.getElementById("header-lang-img")) {
 			if (lang == "en") {
 				document.getElementById("header-lang-img").src = "build/images/flags/us.svg";
+            } else if (lang == "id") {
+				document.getElementById("header-lang-img").src = "build/images/flags/id.svg";
 			} else if (lang == "sp") {
 				document.getElementById("header-lang-img").src = "build/images/flags/spain.svg";
 			} else if (lang == "gr") {
@@ -770,7 +772,7 @@ File: Main Js File
 				document.body.classList.remove("vertical-sidebar-enable");
 				document.documentElement.getAttribute("data-sidebar-size") == "sm" ?
 					document.documentElement.setAttribute("data-sidebar-size", "") :
-					document.documentElement.setAttribute("data-sidebar-size", "sm");				
+					document.documentElement.setAttribute("data-sidebar-size", "sm");
 			} else if (windowSize > 1025) {
 				document.body.classList.remove("vertical-sidebar-enable");
 				document.documentElement.getAttribute("data-sidebar-size") == "lg" ?
@@ -1675,7 +1677,7 @@ File: Main Js File
 							document.documentElement.setAttribute("data-body-image", "img-1");
 
 							if (document.getElementById("theme-settings-offcanvas")) {
-								if (document.getElementById("sidebar-img")) { 
+								if (document.getElementById("sidebar-img")) {
 									document.getElementById("sidebar-img").style.display = "none";
 									document.documentElement.removeAttribute("data-sidebar-image");
 								}
