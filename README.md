@@ -69,7 +69,8 @@ php artisan db:seed
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap Project
-### 13.08.2024 -> Tambah Language
+### 13.08.2024 -> Tambah Language Indonesian
+### 14.08.2024 -> Tambah Homepage
 
 
 
