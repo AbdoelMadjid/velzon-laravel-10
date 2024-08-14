@@ -1,5 +1,7 @@
 ## Hi there 👋
+
 <a id="readme-top"></a>
+
 <div align="center">
   
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=abdoelmadjid&data=followers,repositories,stars,commits&theme=viridescent)](https://github.com/abdoelmadjid)
@@ -11,7 +13,6 @@
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://facebook.com/abdulmadjid.mpd)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://x.com/AbdoelMadjid)
 [![Instagram](https://img.shields.io/badge/Instagram-%405DE6.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://x.com/AbdoelMadjid)
-
 
 </div>
 
@@ -27,6 +28,7 @@
 </p>
 
 <!-- INSTALLATION -->
+
 ## Installation
 
 ```console
@@ -50,12 +52,8 @@ php artisan key:generate
 ```
 
 ```html
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=??
-DB_USERNAME=root
-DB_PASSWORD=
+DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=??
+DB_USERNAME=root DB_PASSWORD=
 ```
 
 ```console
@@ -69,10 +67,12 @@ php artisan db:seed
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap Project
-### 13.08.2024 -> Tambah Language Indonesian
-### 14.08.2024 -> Tambah Homepage
 
+### 13.08.2024 -> Add Language Indonesian
 
+### 14.08.2024 -> Add Homepage
+
+### 14.08.2024 -> Add Date Time (with Hijriah)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

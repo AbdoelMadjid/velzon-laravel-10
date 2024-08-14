@@ -4,6 +4,7 @@
 <script src="<?php echo e(URL::asset('build/libs/feather-icons/feather.min.js')); ?>"></script>
 <script src="<?php echo e(URL::asset('build/js/pages/plugins/lord-icon-2.1.0.js')); ?>"></script>
 <script src="<?php echo e(URL::asset('build/js/plugins.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/displaydate.js')); ?>"></script>
 <?php echo $__env->yieldContent('script'); ?>
 <?php echo $__env->yieldContent('script-bottom'); ?>
 <?php /**PATH D:\laragon\www3\velzon-default-10\resources\views/layouts/vendor-scripts.blade.php ENDPATH**/ ?>
