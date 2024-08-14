@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.input-masks') @endsection
+@section('title')
+    @lang('translation.input-masks')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Forms @endslot
-        @slot('title') Input Mask @endslot
+        @slot('li_1')
+            Forms
+        @endslot
+        @slot('title')
+            Input Mask
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -21,7 +27,8 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="cleave-date" class="form-label">Date</label>
-                                        <input type="text" class="form-control" placeholder="DD-MM-YYYY" id="cleave-date">
+                                        <input type="text" class="form-control" placeholder="DD-MM-YYYY"
+                                            id="cleave-date">
                                     </div>
 
                                 </div><!-- end col -->
@@ -29,7 +36,8 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="cleave-date-format" class="form-label">Date Formatting</label>
-                                        <input type="text" class="form-control" placeholder="MM/YY" id="cleave-date-format">
+                                        <input type="text" class="form-control" placeholder="MM/YY"
+                                            id="cleave-date-format">
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->
@@ -51,7 +59,8 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="cleave-time-format" class="form-label">Time Formatting</label>
-                                        <input type="text" class="form-control" placeholder="hh:mm" id="cleave-time-format">
+                                        <input type="text" class="form-control" placeholder="hh:mm"
+                                            id="cleave-time-format">
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->
@@ -65,7 +74,8 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="cleave-ccard" class="form-label">Credit Card</label>
-                                        <input type="text" class="form-control" id="cleave-ccard" placeholder="xxxx xxxx xxxx xxxx">
+                                        <input type="text" class="form-control" id="cleave-ccard"
+                                            placeholder="xxxx xxxx xxxx xxxx">
                                     </div>
 
                                 </div><!-- end col -->
@@ -73,7 +83,8 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="cleave-delimiter" class="form-label">Delimiter</label>
-                                        <input type="text" class="form-control" id="cleave-delimiter" placeholder="xxx·xxx·xxx">
+                                        <input type="text" class="form-control" id="cleave-delimiter"
+                                            placeholder="xxx·xxx·xxx">
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->
@@ -82,7 +93,8 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="cleave-delimiters" class="form-label">Delimiters</label>
-                                        <input type="text" class="form-control" id="cleave-delimiters" placeholder="xxx.xxx.xxx-xx">
+                                        <input type="text" class="form-control" id="cleave-delimiters"
+                                            placeholder="xxx.xxx.xxx-xx">
                                     </div>
                                 </div><!-- end col -->
 
@@ -98,14 +110,16 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3 mb-xl-0">
                                         <label for="cleave-phone" class="form-label">Phone</label>
-                                        <input type="text" class="form-control" id="cleave-phone" placeholder="(xxx)xxx-xxxx">
+                                        <input type="text" class="form-control" id="cleave-phone"
+                                            placeholder="(xxx)xxx-xxxx">
                                     </div>
                                 </div><!-- end col -->
 
                                 <div class="col-xl-6">
                                     <div class="mb-0">
                                         <label for="cleave-numeral" class="form-label">Numeral Formatting</label>
-                                        <input type="text" class="form-control" placeholder="Enter numeral" id="cleave-numeral">
+                                        <input type="text" class="form-control" placeholder="Enter numeral"
+                                            id="cleave-numeral">
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->

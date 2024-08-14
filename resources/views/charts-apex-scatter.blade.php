@@ -1,10 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.Apex_Scatter_Chart') @endsection
+@section('title')
+    @lang('translation.Apex_Scatter_Chart')
+@endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Apexcharts @endslot
-        @slot('title') Apex Scatter Charts @endslot
+        @slot('li_1')
+            Apexcharts
+        @endslot
+        @slot('title')
+            Apex Scatter Charts
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xl-6">
@@ -14,7 +19,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="basic_scatter" data-colors='["--vz-primary", "--vz-success", "--vz-warning"]' class="apex-charts" dir="ltr"></div>
+                    <div id="basic_scatter" data-colors='["--vz-primary", "--vz-success", "--vz-warning"]' class="apex-charts"
+                        dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>
@@ -27,7 +33,9 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="datetime_scatter" data-colors='["--vz-primary", "--vz-success", "--vz-warning", "--vz-warning", "--vz-info"]' class="apex-charts" dir="ltr"></div>
+                    <div id="datetime_scatter"
+                        data-colors='["--vz-primary", "--vz-success", "--vz-warning", "--vz-warning", "--vz-info"]'
+                        class="apex-charts" dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>
@@ -43,7 +51,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="images_scatter" data-colors='["--vz-primary", "--vz-danger"]' class="apex-charts" dir="ltr"></div>
+                    <div id="images_scatter" data-colors='["--vz-primary", "--vz-danger"]' class="apex-charts"
+                        dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>

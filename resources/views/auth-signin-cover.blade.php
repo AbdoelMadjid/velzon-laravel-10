@@ -3,7 +3,6 @@
     @lang('translation.signin')
 @endsection
 @section('content')
-
     <!-- auth-page wrapper -->
     <div class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">
         <div class="bg-overlay"></div>
@@ -20,7 +19,8 @@
                                         <div class="position-relative h-100 d-flex flex-column">
                                             <div class="mb-4">
                                                 <a href="index" class="d-block">
-                                                    <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="" height="18">
+                                                    <img src="{{ URL::asset('build/images/logo-light.png') }}"
+                                                        alt="" height="18">
                                                 </a>
                                             </div>
                                             <div class="mt-auto">
@@ -129,8 +129,7 @@
                                         </div>
 
                                         <div class="mt-5 text-center">
-                                            <p class="mb-0">Don't have an account ? <a
-                                                    href="auth-signup-cover"
+                                            <p class="mb-0">Don't have an account ? <a href="auth-signup-cover"
                                                     class="fw-semibold text-primary text-decoration-underline"> Signup</a>
                                             </p>
                                         </div>
@@ -159,8 +158,8 @@
                         <div class="text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> Velzon. Crafted with <i
-                                    class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                            </script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                            Themesbrand</p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +168,6 @@
         <!-- end Footer -->
     </div>
     <!-- end auth-page-wrapper -->
-
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/js/pages/password-addon.init.js') }}"></script>

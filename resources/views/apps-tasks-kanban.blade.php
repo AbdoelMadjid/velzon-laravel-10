@@ -1,60 +1,60 @@
 @extends('layouts.master')
-@section('title') @lang('translation.kanbanboard') @endsection
+@section('title')
+    @lang('translation.kanbanboard')
+@endsection
 @section('css')
     <link href="{{ URL::asset('build/libs/dragula/dragula.min.css') }}" rel="stylesheet">
-
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Tasks @endslot
-        @slot('title')Kanban Board @endslot
+        @slot('li_1')
+            Tasks
+        @endslot
+        @slot('title')
+            Kanban Board
+        @endslot
     @endcomponent
     <div class="card">
         <div class="card-body">
             <div class="row g-2">
                 <div class="col-lg-auto">
                     <div class="hstack gap-2">
-                        <button class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#createboardModal"><i
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createboardModal"><i
                                 class="ri-add-line align-bottom me-1"></i> Create Board</button>
                     </div>
                 </div>
                 <!--end col-->
                 <div class="col-lg-3 col-auto">
                     <div class="search-box">
-                        <input type="text" class="form-control search" id="search-task-options" placeholder="Search for project, tasks...">
+                        <input type="text" class="form-control search" id="search-task-options"
+                            placeholder="Search for project, tasks...">
                         <i class="ri-search-line search-icon"></i>
                     </div>
                 </div>
                 <div class="col-auto ms-sm-auto">
                     <div class="avatar-group" id="newMembar">
-                        <a href="javascript: void(0);" class="avatar-group-item"
-                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
-                            title="Nancy">
+                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                            data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
                             <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
                                 class="rounded-circle avatar-xs">
                         </a>
-                        <a href="javascript: void(0);" class="avatar-group-item"
-                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
-                            title="Frank">
+                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                            data-bs-trigger="hover" data-bs-placement="top" title="Frank">
                             <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
                                 class="rounded-circle avatar-xs">
                         </a>
-                        <a href="javascript: void(0);" class="avatar-group-item"
-                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
-                            title="Tonya">
+                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                            data-bs-trigger="hover" data-bs-placement="top" title="Tonya">
                             <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt=""
                                 class="rounded-circle avatar-xs">
                         </a>
-                        <a href="javascript: void(0);" class="avatar-group-item"
-                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
-                            title="Thomas">
+                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                            data-bs-trigger="hover" data-bs-placement="top" title="Thomas">
                             <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
                                 class="rounded-circle avatar-xs">
                         </a>
-                        <a href="javascript: void(0);" class="avatar-group-item"
-                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
-                            title="Herbert">
+                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                            data-bs-trigger="hover" data-bs-placement="top" title="Herbert">
                             <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
                                 class="rounded-circle avatar-xs">
                         </a>
@@ -84,8 +84,8 @@
                 </div>
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
-                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <span class="fw-medium text-muted fs-12">Priority<i
                                     class="mdi mdi-chevron-down ms-1"></i></span>
                         </a>
@@ -101,11 +101,11 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <h6 class="fs-15 mb-0 flex-grow-1 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Profile Page Structure</a></h6>
+                                <h6 class="fs-15 mb-0 flex-grow-1 text-truncate task-title"><a href="apps-tasks-details"
+                                        class="d-block">Profile Page Structure</a></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink1" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -113,8 +113,7 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
@@ -125,17 +124,15 @@
                             <div class="mb-3">
                                 <div class="d-flex mb-1">
                                     <div class="flex-grow-1">
-                                        <h6 class="text-muted mb-0"><span
-                                                class="text-secondary">15%</span> of 100%</h6>
+                                        <h6 class="text-muted mb-0"><span class="text-secondary">15%</span> of 100%</h6>
                                     </div>
                                     <div class="flex-shrink-0">
                                         <span class="text-muted">03 Jan, 2022</span>
                                     </div>
                                 </div>
                                 <div class="progress rounded-3 progress-sm">
-                                    <div class="progress-bar bg-danger" role="progressbar"
-                                        style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"
+                                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center">
@@ -144,15 +141,13 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Alexis">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Alexis">
                                             <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Nancy">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
                                             <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -191,13 +186,13 @@
                         <div class="card-body">
                             <div class="d-flex mb-2">
                                 <div class="flex-grow-1">
-                                            <h6 class="fs-15 mb-0 text-truncate task-title">
-                                                <a href="apps-tasks-details" class="d-block">Velzon - Admin Layout Design</a></h6>
+                                    <h6 class="fs-15 mb-0 text-truncate task-title">
+                                        <a href="apps-tasks-details" class="d-block">Velzon - Admin Layout Design</a>
+                                    </h6>
                                 </div>
                                 <div class="flex-shrink-0">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink12" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink12"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink12">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -205,8 +200,7 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
@@ -222,21 +216,18 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Michael">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Michael">
                                             <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Alexis">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Alexis">
                                             <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Anna">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Anna">
                                             <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -276,21 +267,21 @@
                 <!--end tasks-->
             </div>
             <div class="my-3">
-                <button class="btn btn-soft-info w-100" data-bs-toggle="modal"
-                    data-bs-target="#creatertaskModal">Add More</button>
+                <button class="btn btn-soft-info w-100" data-bs-toggle="modal" data-bs-target="#creatertaskModal">Add
+                    More</button>
             </div>
         </div>
         <!--end tasks-list-->
         <div class="tasks-list">
             <div class="d-flex mb-3">
                 <div class="flex-grow-1">
-                            <h6 class="fs-14 text-uppercase fw-semibold mb-0">To Do <small
-                                class="badge bg-secondary align-bottom ms-1 totaltask-badge">2</small></h6>
+                    <h6 class="fs-14 text-uppercase fw-semibold mb-0">To Do <small
+                            class="badge bg-secondary align-bottom ms-1 totaltask-badge">2</small></h6>
                 </div>
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
-                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <span class="fw-medium text-muted fs-12">Priority<i
                                     class="mdi mdi-chevron-down ms-1"></i></span>
                         </a>
@@ -307,14 +298,13 @@
                         <div class="card-body">
                             <div class="d-flex mb-2">
                                 <div class="flex-grow-1">
-                                            <h6 class="fs-15 mb-0 text-truncate task-title">
-                                                <a href="apps-tasks-details" class="d-block">Admin Layout Design</a>
-                                            </h6>
+                                    <h6 class="fs-15 mb-0 text-truncate task-title">
+                                        <a href="apps-tasks-details" class="d-block">Admin Layout Design</a>
+                                    </h6>
                                 </div>
                                 <div class="flex-shrink-0">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink3" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink3"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -322,8 +312,7 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
@@ -338,21 +327,18 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Tonya">
-                                            <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt=""
-                                                class="rounded-circle avatar-xxs">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Tonya">
+                                            <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}"
+                                                alt="" class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Frank">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Frank">
                                             <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Herbert">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Herbert">
                                             <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -392,13 +378,12 @@
                         <div class="card-body">
                             <div class="d-flex mb-2">
                                 <div class="flex-grow-1">
-                                    <h6 class="fs-15 mb-0 text-truncate task-title"><a
-                                            href="apps-tasks-details" class="d-block">Marketing & Sales</a></h6>
+                                    <h6 class="fs-15 mb-0 text-truncate task-title"><a href="apps-tasks-details"
+                                            class="d-block">Marketing & Sales</a></h6>
                                 </div>
                                 <div class="flex-shrink-0">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink4" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink4"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -406,8 +391,7 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
@@ -422,15 +406,13 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Donald">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Donald">
                                             <img src="{{ URL::asset('build/images/users/avatar-9.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Thomas">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Thomas">
                                             <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -469,8 +451,8 @@
                 </div>
             </div>
             <div class="my-3">
-                <button class="btn btn-soft-info w-100" data-bs-toggle="modal"
-                    data-bs-target="#creatertaskModal">Add More</button>
+                <button class="btn btn-soft-info w-100" data-bs-toggle="modal" data-bs-target="#creatertaskModal">Add
+                    More</button>
             </div>
         </div>
         <!--end tasks-list-->
@@ -478,12 +460,12 @@
             <div class="d-flex mb-3">
                 <div class="flex-grow-1">
                     <h6 class="fs-14 text-uppercase fw-semibold mb-0">Inprogress <small
-                        class="badge bg-warning align-bottom ms-1 totaltask-badge">2</small></h6>
+                            class="badge bg-warning align-bottom ms-1 totaltask-badge">2</small></h6>
                 </div>
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
-                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <span class="fw-medium text-muted fs-12">Priority<i
                                     class="mdi mdi-chevron-down ms-1"></i></span>
                         </a>
@@ -499,12 +481,10 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <a href="javascript:void(0)"
-                                    class="text-muted fw-medium fs-14 flex-grow-1">#VL2457</a>
+                                <a href="javascript:void(0)" class="text-muted fw-medium fs-14 flex-grow-1">#VL2457</a>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink5" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink5"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -512,14 +492,14 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Brand Logo
+                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Brand
+                                    Logo
                                     Design</a></h6>
                             <p class="text-muted">BrandCrowd's brand logo maker allows you to generate
                                 and customize stand-out brand logos in minutes.</p>
@@ -531,21 +511,18 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Nancy">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
                                             <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Michael">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Michael">
                                             <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Alexis">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Alexis">
                                             <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -588,12 +565,10 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <a href="javascript:void(0)"
-                                    class="text-muted fw-medium fs-14 flex-grow-1">#VL2743</a>
+                                <a href="javascript:void(0)" class="text-muted fw-medium fs-14 flex-grow-1">#VL2743</a>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink6" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink6"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -601,14 +576,14 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Change Old
+                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details"
+                                    class="d-block">Change Old
                                     App Icon</a></h6>
                             <p class="text-muted">Change app icons on Android: How do you change the
                                 look of your apps.</p>
@@ -619,21 +594,18 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Tonya">
-                                            <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt=""
-                                                class="rounded-circle avatar-xxs">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Tonya">
+                                            <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}"
+                                                alt="" class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Donald">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Donald">
                                             <img src="{{ URL::asset('build/images/users/avatar-9.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Nancy">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
                                             <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -668,16 +640,16 @@
                         </div>
                         <!--end card-body-->
                         <div class="progress progress-sm">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%"
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <!--end card-->
                 </div>
             </div>
             <div class="my-3">
-                <button class="btn btn-soft-info w-100" data-bs-toggle="modal"
-                    data-bs-target="#creatertaskModal">Add More</button>
+                <button class="btn btn-soft-info w-100" data-bs-toggle="modal" data-bs-target="#creatertaskModal">Add
+                    More</button>
             </div>
         </div>
         <!--end tasks-list-->
@@ -689,8 +661,8 @@
                 </div>
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
-                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <span class="fw-medium text-muted fs-12">Priority<i
                                     class="mdi mdi-chevron-down ms-1"></i></span>
                         </a>
@@ -706,12 +678,10 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <a href="javascript:void(0)"
-                                    class="text-muted fw-medium fs-14 flex-grow-1">#VL2453</a>
+                                <a href="javascript:void(0)" class="text-muted fw-medium fs-14 flex-grow-1">#VL2453</a>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink7" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink7"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -719,26 +689,25 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Create
+                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details"
+                                    class="d-block">Create
                                     Product Animations</a></h6>
-                            <div class="tasks-img rounded"
-                                style="background-image: url('build/images/small/img-7.jpg');"></div>
+                            <div class="tasks-img rounded" style="background-image: url('build/images/small/img-7.jpg');">
+                            </div>
                             <div class="d-flex align-items-center">
                                 <div class="flex-grow-1">
                                     <span class="badge bg-primary-subtle text-primary">Ecommerce</span>
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Anna">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Anna">
                                             <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -781,12 +750,10 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <a href="javascript:void(0)"
-                                    class="text-muted fw-medium fs-14 flex-grow-1">#VL2340</a>
+                                <a href="javascript:void(0)" class="text-muted fw-medium fs-14 flex-grow-1">#VL2340</a>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink8" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink8"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -794,14 +761,14 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Product
+                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details"
+                                    class="d-block">Product
                                     Features Analysis</a></h6>
                             <p class="text-muted">An essential part of strategic planning is running a
                                 product feature analysis.</p>
@@ -812,15 +779,13 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Nancy">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
                                             <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Alexis">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Alexis">
                                             <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -864,12 +829,10 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <a href="javascript:void(0)"
-                                    class="text-muted fw-medium fs-14 flex-grow-1">#VL2462</a>
+                                <a href="javascript:void(0)" class="text-muted fw-medium fs-14 flex-grow-1">#VL2462</a>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink9" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink9"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -877,14 +840,14 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Create a
+                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details"
+                                    class="d-block">Create a
                                     Graph of Sketch</a></h6>
                             <p class="text-muted">To make a pie chart with equal slices create a perfect
                                 circle by selecting an Oval Tool.</p>
@@ -896,27 +859,23 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Alexis">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Alexis">
                                             <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Thomas">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Thomas">
                                             <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Herbert">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Herbert">
                                             <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Anna">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Anna">
                                             <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -951,16 +910,16 @@
                         </div>
                         <!--end card-body-->
                         <div class="progress progress-sm">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%"
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <!--end card-->
                 </div>
             </div>
             <div class="my-3">
-                <button class="btn btn-soft-info w-100" data-bs-toggle="modal"
-                    data-bs-target="#creatertaskModal">Add More</button>
+                <button class="btn btn-soft-info w-100" data-bs-toggle="modal" data-bs-target="#creatertaskModal">Add
+                    More</button>
             </div>
         </div>
         <!--end tasks-list-->
@@ -972,8 +931,8 @@
                 </div>
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
-                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <span class="fw-medium text-muted fs-12">Priority<i
                                     class="mdi mdi-chevron-down ms-1"></i></span>
                         </a>
@@ -989,13 +948,12 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <h6 class="fs-15 mb-0 flex-grow-1 text-truncate task-title"><a
-                                        href="apps-tasks-details" class="d-block">Create a Blog Template UI</a>
+                                <h6 class="fs-15 mb-0 flex-grow-1 text-truncate task-title"><a href="apps-tasks-details"
+                                        class="d-block">Create a Blog Template UI</a>
                                 </h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink10" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink10"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -1003,8 +961,7 @@
                                         <li><a class="dropdown-item" href="#"><i
                                                     class="ri-edit-2-line align-bottom me-2 text-muted"></i>
                                                 Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                href="#deleteRecordModal"><i
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i
                                                     class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i>
                                                 Delete</a></li>
                                     </ul>
@@ -1023,9 +980,8 @@
                                     </div>
                                 </div>
                                 <div class="progress rounded-3 progress-sm">
-                                    <div class="progress-bar bg-danger" role="progressbar"
-                                        style="width: 35%" aria-valuenow="35" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 35%"
+                                        aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center">
@@ -1035,21 +991,18 @@
                                 </div>
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Nancy">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
                                             <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Frank">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Frank">
                                             <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Tonya">
+                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
+                                            data-bs-trigger="hover" data-bs-placement="top" title="Tonya">
                                             <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -1087,8 +1040,8 @@
                 </div>
             </div>
             <div class="my-3">
-                <button class="btn btn-soft-info w-100" data-bs-toggle="modal"
-                    data-bs-target="#creatertaskModal">Add More</button>
+                <button class="btn btn-soft-info w-100" data-bs-toggle="modal" data-bs-target="#creatertaskModal">Add
+                    More</button>
             </div>
         </div>
         <!--end tasks-list-->
@@ -1117,12 +1070,11 @@
                     <div class="card tasks-box">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <a href="javascript:void(0)"
-                                    class="text-muted fw-medium fs-14 flex-grow-1">#VL5287</a>
+                                <a href="javascript:void(0)" class="text-muted fw-medium fs-14 flex-grow-1">#VL5287</a>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted"
-                                        id="dropdownMenuLink2" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink2"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                            class="ri-more-fill"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
                                         <li><a class="dropdown-item" href="apps-tasks-details"><i
                                                     class="ri-eye-fill align-bottom me-2 text-muted"></i>
@@ -1137,7 +1089,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details" class="d-block">Banner
+                            <h6 class="fs-15 text-truncate task-title"><a href="apps-tasks-details"
+                                    class="d-block">Banner
                                     Design for FB & Twitter</a></h6>
                             <div class="tasks-img rounded"
                                 style="background-image: url('build/images/small/img-4.jpg');"></div>
@@ -1149,16 +1102,16 @@
                                 <div class="flex-shrink-0">
                                     <div class="avatar-group">
                                         <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Frank">
-                                            <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
-                                                class="rounded-circle avatar-xxs">
+                                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
+                                            title="Frank">
+                                            <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}"
+                                                alt="" class="rounded-circle avatar-xxs">
                                         </a>
                                         <a href="javascript: void(0);" class="avatar-group-item"
-                                            data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                            data-bs-placement="top" title="Herbert">
-                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
-                                                class="rounded-circle avatar-xxs">
+                                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top"
+                                            title="Herbert">
+                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                alt="" class="rounded-circle avatar-xxs">
                                         </a>
                                     </div>
                                 </div>
@@ -1199,8 +1152,8 @@
                 </div>
             </div>
             <div class="my-3">
-                <button class="btn btn-soft-info w-100" data-bs-toggle="modal"
-                    data-bs-target="#creatertaskModal">Add More</button>
+                <button class="btn btn-soft-info w-100" data-bs-toggle="modal" data-bs-target="#creatertaskModal">Add
+                    More</button>
             </div>
         </div>
         <!--end tasks-list-->
@@ -1213,8 +1166,8 @@
             <div class="modal-content border-0">
                 <div class="modal-header p-3 bg-warning-subtle">
                     <h5 class="modal-title" id="addmemberModalLabel">Add Member</h5>
-                    <button type="button" class="btn-close" id="btn-close-member"
-                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" id="btn-close-member" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -1250,8 +1203,7 @@
                             <!--end col-->
                             <div class="col-lg-12">
                                 <label for="titleInput" class="form-label">Title</label>
-                                <input type="text" class="form-control" id="titleInput"
-                                    placeholder="Title">
+                                <input type="text" class="form-control" id="titleInput" placeholder="Title">
                             </div>
                             <!--end col-->
                             <div class="col-lg-6">
@@ -1268,8 +1220,7 @@
                             <!--end col-->
                             <div class="col-lg-12">
                                 <label for="emailInput" class="form-label">Email ID</label>
-                                <input type="email" class="form-control" id="emailInput"
-                                    placeholder="Email">
+                                <input type="email" class="form-control" id="emailInput" placeholder="Email">
                             </div>
                             <!--end col-->
                         </div>
@@ -1325,8 +1276,7 @@
             <div class="modal-content border-0">
                 <div class="modal-header p-3 bg-info-subtle">
                     <h5 class="modal-title" id="creatertaskModalLabel">Create New Task</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="#">
@@ -1339,15 +1289,13 @@
                             <!--end col-->
                             <div class="col-lg-12">
                                 <label for="sub-tasks" class="form-label">Task Title</label>
-                                <input type="text" class="form-control" id="sub-tasks"
-                                    placeholder="Task title">
+                                <input type="text" class="form-control" id="sub-tasks" placeholder="Task title">
                             </div>
                             <!--end col-->
                             <div class="col-lg-12">
                                 <label for="task-description" class="form-label">Task
                                     Description</label>
-                                <textarea class="form-control" id="task-description" rows="3"
-                                    placeholder="Task description"></textarea>
+                                <textarea class="form-control" id="task-description" rows="3" placeholder="Task description"></textarea>
                             </div>
                             <!--end col-->
                             <div class="col-lg-12">
@@ -1361,10 +1309,9 @@
                                     <ul class="list-unstyled vstack gap-2 mb-0">
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="anna-adame">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="anna-adame">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="anna-adame">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}"
@@ -1378,10 +1325,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="frank-hook">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="frank-hook">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="frank-hook">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}"
@@ -1395,10 +1341,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="alexis-clarke">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="alexis-clarke">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="alexis-clarke">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}"
@@ -1412,10 +1357,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="herbert-stokes">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="herbert-stokes">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="herbert-stokes">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
@@ -1429,10 +1373,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="michael-morris">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="michael-morris">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="michael-morris">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}"
@@ -1446,10 +1389,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="nancy-martino">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="nancy-martino">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="nancy-martino">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}"
@@ -1463,10 +1405,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="thomas-taylor">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="thomas-taylor">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="thomas-taylor">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}"
@@ -1480,10 +1421,9 @@
                                         </li>
                                         <li>
                                             <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-3" type="checkbox"
-                                                    value="" id="tonya-noble">
-                                                <label
-                                                    class="form-check-label d-flex align-items-center"
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="tonya-noble">
+                                                <label class="form-check-label d-flex align-items-center"
                                                     for="tonya-noble">
                                                     <span class="flex-shrink-0">
                                                         <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}"
@@ -1501,20 +1441,19 @@
                             <!--end col-->
                             <div class="col-lg-4">
                                 <label for="due-date" class="form-label">Due Date</label>
-                                <input type="text" class="form-control" id="due-date"
-                                    data-provider="flatpickr" placeholder="Select date">
+                                <input type="text" class="form-control" id="due-date" data-provider="flatpickr"
+                                    placeholder="Select date">
                             </div>
                             <!--end col-->
                             <div class="col-lg-4">
                                 <label for="categories" class="form-label">Tags</label>
-                                <input type="text" class="form-control" id="categories"
-                                    placeholder="Enter tag">
+                                <input type="text" class="form-control" id="categories" placeholder="Enter tag">
                             </div>
                             <!--end col-->
                             <div class="col-lg-4">
                                 <label for="tasks-progress" class="form-label">Tasks Progress</label>
-                                <input type="text" class="form-control" maxlength="3"
-                                    id="tasks-progress" placeholder="Enter progress">
+                                <input type="text" class="form-control" maxlength="3" id="tasks-progress"
+                                    placeholder="Enter progress">
                             </div>
                             <!--end col-->
                             <div class="mt-4">
@@ -1553,8 +1492,7 @@
                         </div>
                     </div>
                     <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                        <button type="button" class="btn w-sm btn-light"
-                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn w-sm btn-danger" id="delete-record">Yes, Delete
                             It!</button>
                     </div>
@@ -1563,7 +1501,6 @@
         </div>
     </div>
     <!--end modal -->
-
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/libs/dragula/dragula.min.js') }}"></script>

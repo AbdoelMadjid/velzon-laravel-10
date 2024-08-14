@@ -1,11 +1,17 @@
 @extends('layouts.master')
-@section('title') @lang('translation.buy-sell') @endsection
+@section('title')
+    @lang('translation.buy-sell')
+@endsection
 @section('css')
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Crypto @endslot
-        @slot('title') Buy & Sell @endslot
+        @slot('li_1')
+            Crypto
+        @endslot
+        @slot('title')
+            Buy & Sell
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xl-3 col-sm-6">
@@ -14,8 +20,7 @@
                     <div class="d-flex">
                         <div class="flex-grow-1">
                             <h6 class="text-muted mb-3">Total Buy</h6>
-                            <h2 class="mb-0">$<span class="counter-value"
-                                    data-target="243"></span><small
+                            <h2 class="mb-0">$<span class="counter-value" data-target="243"></span><small
                                     class="text-muted fs-13">.10k</small></h2>
                         </div>
                         <div class="flex-shrink-0 avatar-sm">
@@ -35,8 +40,7 @@
                     <div class="d-flex">
                         <div class="flex-grow-1">
                             <h6 class="text-muted mb-3">Total Sell</h6>
-                            <h2 class="mb-0">$<span class="counter-value"
-                                    data-target="658"></span><small
+                            <h2 class="mb-0">$<span class="counter-value" data-target="658"></span><small
                                     class="text-muted fs-13">.00k</small></h2>
                         </div>
                         <div class="flex-shrink-0 avatar-sm">
@@ -56,8 +60,7 @@
                     <div class="d-flex">
                         <div class="flex-grow-1">
                             <h6 class="text-muted mb-3">Today's Buy</h6>
-                            <h2 class="mb-0">$<span class="counter-value"
-                                    data-target="104"></span><small
+                            <h2 class="mb-0">$<span class="counter-value" data-target="104"></span><small
                                     class="text-muted fs-13">.85k</small></h2>
                         </div>
                         <div class="flex-shrink-0 avatar-sm">
@@ -124,8 +127,7 @@
                             <div class="col-6">
                                 <div class="d-flex flex-wrap gap-4 align-items-center">
                                     <div>
-                                        <h3 class="fs-19">$46,959.<small
-                                                class="fs-14 text-muted">00</small></h3>
+                                        <h3 class="fs-19">$46,959.<small class="fs-14 text-muted">00</small></h3>
                                         <p class="text-muted text-uppercase fw-medium mb-0">Bitcoin
                                             (BTC) <small class="badge bg-success-subtle text-success"><i
                                                     class="ri-arrow-right-up-line align-bottom"></i>
@@ -135,8 +137,7 @@
                             </div><!-- end col -->
                             <div class="col-6">
                                 <div class="d-flex">
-                                    <div
-                                        class="d-flex justify-content-end text-end flex-wrap gap-4 ms-auto">
+                                    <div class="d-flex justify-content-end text-end flex-wrap gap-4 ms-auto">
                                         <div class="pe-3">
                                             <h6 class="mb-2 text-muted">High</h6>
                                             <h5 class="text-success mb-0">$28,722.76</h5>
@@ -156,8 +157,8 @@
                     </div>
                 </div><!-- end cardbody -->
                 <div class="card-body p-0 pb-3">
-                    <div id="Market_chart" data-colors='["--vz-success", "--vz-danger"]'
-                        class="apex-charts" dir="ltr"></div>
+                    <div id="Market_chart" data-colors='["--vz-success", "--vz-danger"]' class="apex-charts" dir="ltr">
+                    </div>
                 </div><!-- end cardbody -->
             </div><!-- end card -->
         </div>
@@ -168,8 +169,7 @@
                     <ul class="nav nav-tabs-custom rounded card-header-tabs nav-justified border-bottom-0 mx-n3"
                         role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#cryptoBuy"
-                                role="tab">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#cryptoBuy" role="tab">
                                 Buy
                             </a>
                         </li>
@@ -185,8 +185,8 @@
                         <div class="tab-pane active" id="cryptoBuy" role="tabpanel">
                             <div class="p-3 bg-warning-subtle">
                                 <div class="float-end ms-2">
-                                    <h6 class="text-warning mb-0">USD Balance : <span
-                                            class="text-body">$12,426.07</span></h6>
+                                    <h6 class="text-warning mb-0">USD Balance : <span class="text-body">$12,426.07</span>
+                                    </h6>
                                 </div>
                                 <h6 class="mb-0 text-danger">Buy Coin</h6>
                             </div>
@@ -269,8 +269,8 @@
                         <div class="tab-pane" id="cryptoSell" role="tabpanel">
                             <div class="p-3 bg-warning-subtle">
                                 <div class="float-end ms-2">
-                                    <h6 class="text-warning mb-0">USD Balance : <span
-                                            class="text-body">$12,426.07</span></h6>
+                                    <h6 class="text-warning mb-0">USD Balance : <span class="text-body">$12,426.07</span>
+                                    </h6>
                                 </div>
                                 <h6 class="mb-0 text-danger">Sell Coin</h6>
                             </div>
@@ -369,8 +369,8 @@
                 <!--end col-->
                 <div class="col-auto ms-auto">
                     <div class="d-flex gap-2">
-                        <button class="btn btn-success"><i
-                                class="ri-equalizer-line align-bottom me-1"></i> Filters</button>
+                        <button class="btn btn-success"><i class="ri-equalizer-line align-bottom me-1"></i>
+                            Filters</button>
                     </div>
                 </div>
                 <!--end col-->
@@ -380,8 +380,7 @@
         <!--end card-header-->
         <div class="card-body p-0 border-bottom border-bottom-dashed">
             <div class="search-box">
-                <input type="text" class="form-control search border-0 py-3"
-                    placeholder="Search to currency...">
+                <input type="text" class="form-control search border-0 py-3" placeholder="Search to currency...">
                 <i class="ri-search-line search-icon"></i>
             </div>
         </div>

@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.sitemap') @endsection
+@section('title')
+    @lang('translation.sitemap')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Pages @endslot
-        @slot('title') Sitemap @endslot
+        @slot('li_1')
+            Pages
+        @endslot
+        @slot('title')
+            Sitemap
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -18,27 +24,24 @@
                                 <li>
                                     <ul class="director">
                                         <li>
-                                            <a href="javascript:void(0);"
-                                                class="fw-semibold"><span>Velzon Admin</span></a>
+                                            <a href="javascript:void(0);" class="fw-semibold"><span>Velzon Admin</span></a>
                                             <ul class="subdirector">
-                                                <li><a href="javascript:void(0);"
-                                                        class="fw-semibold"><span>Contact Us</span></a>
+                                                <li><a href="javascript:void(0);" class="fw-semibold"><span>Contact
+                                                            Us</span></a>
                                                 </li>
                                             </ul>
                                             <ul class="departments">
-                                                <li><a href="javascript:void(0);"
-                                                        class="fw-semibold"><span>Main Pages</span></a>
+                                                <li><a href="javascript:void(0);" class="fw-semibold"><span>Main
+                                                            Pages</span></a>
                                                 </li>
 
                                                 <li class="department">
-                                                    <a href="javascript:void(0);"
-                                                        class="fw-semibold"><span>Account
+                                                    <a href="javascript:void(0);" class="fw-semibold"><span>Account
                                                             Management</span></a>
                                                     <ul>
                                                         <li><a href="javascript:void(0);"><span>Sign
                                                                     Up</span></a></li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Login</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Login</span></a>
                                                         </li>
                                                         <li><a href="javascript:void(0);"><span>Profile
                                                                     Settings</span></a></li>
@@ -51,27 +54,24 @@
                                                     </ul>
                                                 </li>
                                                 <li class="department">
-                                                    <a href="javascript:void(0);"
-                                                        class="fw-semibold"><span>About Us</span></a>
+                                                    <a href="javascript:void(0);" class="fw-semibold"><span>About
+                                                            Us</span></a>
                                                     <ul>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Overview</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Overview</span></a>
                                                         </li>
                                                         <li><a href="javascript:void(0);"><span>Connect
                                                                     Via Social Media</span></a></li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Careers</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Careers</span></a>
                                                         </li>
                                                         <li><a href="javascript:void(0);"><span>Team
                                                                     Members</span></a></li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Policies</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Policies</span></a>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li class="department">
-                                                    <a href="javascript:void(0);"
-                                                        class="fw-semibold"><span>Book a Trip</span></a>
+                                                    <a href="javascript:void(0);" class="fw-semibold"><span>Book a
+                                                            Trip</span></a>
                                                     <ul>
                                                         <li><a href="javascript:void(0);"><span>Travel
                                                                     Details</span></a></li>
@@ -79,8 +79,7 @@
                                                                     Process</span></a></li>
                                                         <li><a href="javascript:void(0);"><span>Payment
                                                                     Option</span></a></li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Comfirmation</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Comfirmation</span></a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -88,34 +87,27 @@
                                                     <a href="javascript:void(0);"
                                                         class="fw-semibold"><span>Destination</span></a>
                                                     <ul>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Architecture</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Architecture</span></a>
                                                         </li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Art</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Art</span></a>
                                                         </li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Entertainment</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Entertainment</span></a>
                                                         </li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>History</span></a>
+                                                        <li><a href="javascript:void(0);"><span>History</span></a>
                                                         </li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Science</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Science</span></a>
                                                         </li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Sports</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Sports</span></a>
                                                         </li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>Music</span></a>
+                                                        <li><a href="javascript:void(0);"><span>Music</span></a>
                                                         </li>
                                                         <li><a href="javascript:void(0);"><span>Tracking
                                                                     Camp</span></a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="department">
-                                                    <a href="javascript:void(0);"
-                                                        class="fw-semibold"><span>Travel Tips</span></a>
+                                                    <a href="javascript:void(0);" class="fw-semibold"><span>Travel
+                                                            Tips</span></a>
                                                     <ul>
                                                         <li><a href="javascript:void(0);"><span>General
                                                                     Travel</span></a></li>
@@ -123,8 +115,7 @@
                                                                     Concerns</span></a></li>
                                                         <li><a href="javascript:void(0);"><span>Safety
                                                                     Measures</span></a></li>
-                                                        <li><a
-                                                                href="javascript:void(0);"><span>FAQ's</span></a>
+                                                        <li><a href="javascript:void(0);"><span>FAQ's</span></a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -154,13 +145,12 @@
                 <div class="card-body">
                     <div class="hori-sitemap">
                         <ul class="list-unstyled mb-0">
-                            <li class="p-0 parent-title"><a href="javascript: void(0);"
-                                    class="fw-semibold fs-14">My Account</a></li>
+                            <li class="p-0 parent-title"><a href="javascript: void(0);" class="fw-semibold fs-14">My
+                                    Account</a></li>
                             <li>
                                 <ul class="list-unstyled second-list row g-0 pt-0">
                                     <li class="col-sm-3">
-                                        <a href="javascript: void(0);"
-                                            class="fw-semibold sub-title">About
+                                        <a href="javascript: void(0);" class="fw-semibold sub-title">About
                                             Us</a>
                                         <ul class="list-unstyled row g-0 second-list">
                                             <li class="col-sm-6">
@@ -189,8 +179,7 @@
                                         </ul>
                                     </li>
                                     <li class="col-sm-3">
-                                        <a href="javascript: void(0);"
-                                            class="fw-semibold sub-title">Support
+                                        <a href="javascript: void(0);" class="fw-semibold sub-title">Support
                                             Us</a>
                                         <ul class="list-unstyled row g-0 sub-list">
                                             <li class="col-sm-6">
@@ -247,8 +236,7 @@
                                     <li>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary">Erica
+                                                <a href="javascript: void(0);" class="fw-medium text-primary">Erica
                                                     Kernan - Team Leader</a>
                                             </div>
                                             <ul class="second-list list-unstyled">
@@ -264,8 +252,7 @@
                                         </div>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary">Mary
+                                                <a href="javascript: void(0);" class="fw-medium text-primary">Mary
                                                     Jones
                                                     - Project Manager</a>
                                             </div>
@@ -285,8 +272,7 @@
                                         </div>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary">Tilly
+                                                <a href="javascript: void(0);" class="fw-medium text-primary">Tilly
                                                     Kent
                                                     - Executive Manager</a>
                                             </div>
@@ -317,8 +303,7 @@
                                         </div>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary">Rachel
+                                                <a href="javascript: void(0);" class="fw-medium text-primary">Rachel
                                                     Rose
                                                     - HR</a>
                                             </div>
@@ -337,8 +322,7 @@
                                     <li>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary"><i
+                                                <a href="javascript: void(0);" class="fw-medium text-primary"><i
                                                         class="ri-airplay-line me-1 align-bottom"></i>
                                                     Dashboards</a>
                                             </div>
@@ -353,8 +337,7 @@
                                         </div>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary"><i
+                                                <a href="javascript: void(0);" class="fw-medium text-primary"><i
                                                         class="ri-pencil-ruler-2-line me-1 align-bottom"></i>
                                                     App Pages</a>
                                             </div>
@@ -370,16 +353,14 @@
                                         </div>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary"><i
+                                                <a href="javascript: void(0);" class="fw-medium text-primary"><i
                                                         class="ri-file-list-3-line me-1 align-bottom"></i>
                                                     Pages</a>
                                             </div>
                                         </div>
                                         <div class="first-list">
                                             <div class="list-wrap">
-                                                <a href="javascript: void(0);"
-                                                    class="fw-medium text-primary"><i
+                                                <a href="javascript: void(0);" class="fw-medium text-primary"><i
                                                         class="ri-stack-line me-1 align-bottom"></i>
                                                     Components</a>
                                             </div>

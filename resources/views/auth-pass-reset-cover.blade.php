@@ -1,9 +1,8 @@
 @extends('layouts.master-without-nav')
 @section('title')
-@lang('translation.password-reset')
+    @lang('translation.password-reset')
 @endsection
 @section('content')
-
     <!-- auth-page wrapper -->
     <div class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">
         <div class="bg-overlay"></div>
@@ -20,7 +19,8 @@
                                         <div class="position-relative h-100 d-flex flex-column">
                                             <div class="mb-4">
                                                 <a href="index" class="d-block">
-                                                    <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="" height="18">
+                                                    <img src="{{ URL::asset('build/images/logo-light.png') }}"
+                                                        alt="" height="18">
                                                 </a>
                                             </div>
                                             <div class="mt-auto">
@@ -92,8 +92,7 @@
                                         </div>
 
                                         <div class="mt-5 text-center">
-                                            <p class="mb-0">Wait, I remember my password... <a
-                                                    href="auth-signin-cover"
+                                            <p class="mb-0">Wait, I remember my password... <a href="auth-signin-cover"
                                                     class="fw-semibold text-primary text-decoration-underline"> Click here
                                                 </a> </p>
                                         </div>
@@ -122,8 +121,8 @@
                         <div class="text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> Velzon. Crafted with <i
-                                    class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                            </script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                            Themesbrand</p>
                         </div>
                     </div>
                 </div>

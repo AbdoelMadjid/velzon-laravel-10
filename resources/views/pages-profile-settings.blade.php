@@ -9,7 +9,8 @@
             <div class="overlay-content">
                 <div class="text-end p-3">
                     <div class="p-0 ms-auto rounded-circle profile-photo-edit">
-                        <input id="profile-foreground-img-file-input" type="file" class="profile-foreground-img-file-input">
+                        <input id="profile-foreground-img-file-input" type="file"
+                            class="profile-foreground-img-file-input">
                         <label for="profile-foreground-img-file-input" class="profile-photo-edit btn btn-light">
                             <i class="ri-image-edit-line align-bottom me-1"></i> Change Cover
                         </label>
@@ -254,10 +255,8 @@
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="mb-3 pb-2">
-                                            <label for="exampleFormControlTextarea"
-                                                class="form-label">Description</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea" placeholder="Enter your description"
-                                                rows="3">Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is European languages are members of the same family.</textarea>
+                                            <label for="exampleFormControlTextarea" class="form-label">Description</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea" placeholder="Enter your description" rows="3">Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is European languages are members of the same family.</textarea>
                                         </div>
                                     </div>
                                     <!--end col-->
@@ -491,8 +490,7 @@
                                                 <div class="mb-3">
                                                     <label for="jobDescription" class="form-label">Job
                                                         Description</label>
-                                                    <textarea class="form-control" id="jobDescription" rows="3"
-                                                        placeholder="Enter description">You always want to make sure that your fonts work well together and try to limit the number of fonts you use to three or less. Experiment and play around with the fonts that you already have in the software you're working with reputable font websites. </textarea>
+                                                    <textarea class="form-control" id="jobDescription" rows="3" placeholder="Enter description">You always want to make sure that your fonts work well together and try to limit the number of fonts you use to three or less. Experiment and play around with the fonts that you already have in the software you're working with reputable font websites. </textarea>
                                                 </div>
                                             </div>
                                             <!--end col-->
@@ -651,7 +649,8 @@
                                 </p>
                                 <div>
                                     <input type="password" class="form-control" id="passwordInput"
-                                        placeholder="Enter your password" value="make@321654987" style="max-width: 265px;">
+                                        placeholder="Enter your password" value="make@321654987"
+                                        style="max-width: 265px;">
                                 </div>
                                 <div class="hstack gap-2 mt-3">
                                     <a href="javascript:void(0);" class="btn btn-soft-danger">Close &

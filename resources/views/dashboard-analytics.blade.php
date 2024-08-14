@@ -1,15 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.analytics') @endsection
+@section('title')
+    @lang('translation.analytics')
+@endsection
 @section('css')
-
     <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet">
-
 @endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Dashboards @endslot
-        @slot('title') Analytics @endslot
+        @slot('li_1')
+            Dashboards
+        @endslot
+        @slot('title')
+            Analytics
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -21,8 +24,7 @@
                             <div class="card-body p-0">
                                 <div class="alert alert-warning border-0 rounded-0 m-0 d-flex align-items-center"
                                     role="alert">
-                                    <i data-feather="alert-triangle"
-                                        class="text-warning me-2 icon-sm"></i>
+                                    <i data-feather="alert-triangle" class="text-warning me-2 icon-sm"></i>
                                     <div class="flex-grow-1 text-truncate">
                                         Your free trial expired in <b>17</b> days.
                                     </div>
@@ -35,13 +37,10 @@
                                 <div class="row align-items-end">
                                     <div class="col-sm-8">
                                         <div class="p-3">
-                                            <p class="fs-16 lh-base">Upgrade your plan from a <span
-                                                    class="fw-semibold">Free
-                                                    trial</span>, to ‘Premium Plan’ <i
-                                                    class="mdi mdi-arrow-right"></i></p>
+                                            <p class="fs-16 lh-base">Upgrade your plan from a <span class="fw-semibold">Free
+                                                    trial</span>, to ‘Premium Plan’ <i class="mdi mdi-arrow-right"></i></p>
                                             <div class="mt-3">
-                                                <a href="pages-pricing"
-                                                    class="btn btn-success">Upgrade Account!</a>
+                                                <a href="pages-pricing" class="btn btn-success">Upgrade Account!</a>
                                             </div>
                                         </div>
                                     </div>
@@ -64,10 +63,9 @@
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <p class="fw-medium text-muted mb-0">Users</p>
-                                        <h2 class="mt-4 ff-secondary fw-semibold"><span
-                                                class="counter-value" data-target="28.05">0</span>k</h2>
-                                        <p class="mb-0 text-muted"><span
-                                                class="badge bg-light text-success mb-0">
+                                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value"
+                                                data-target="28.05">0</span>k</h2>
+                                        <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
                                                 <i class="ri-arrow-up-line align-middle"></i> 16.24 %
                                             </span> vs. previous month</p>
                                     </div>
@@ -89,10 +87,9 @@
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <p class="fw-medium text-muted mb-0">Sessions</p>
-                                        <h2 class="mt-4 ff-secondary fw-semibold"><span
-                                                class="counter-value" data-target="97.66">0</span>k</h2>
-                                        <p class="mb-0 text-muted"><span
-                                                class="badge bg-light text-danger mb-0">
+                                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value"
+                                                data-target="97.66">0</span>k</h2>
+                                        <p class="mb-0 text-muted"><span class="badge bg-light text-danger mb-0">
                                                 <i class="ri-arrow-down-line align-middle"></i> 3.96 %
                                             </span> vs. previous month</p>
                                     </div>
@@ -116,12 +113,11 @@
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <p class="fw-medium text-muted mb-0">Avg. Visit Duration</p>
-                                        <h2 class="mt-4 ff-secondary fw-semibold"><span
-                                                class="counter-value" data-target="3">0</span>m
+                                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value"
+                                                data-target="3">0</span>m
                                             <span class="counter-value" data-target="40">0</span>sec
                                         </h2>
-                                        <p class="mb-0 text-muted"><span
-                                                class="badge bg-light text-danger mb-0">
+                                        <p class="mb-0 text-muted"><span class="badge bg-light text-danger mb-0">
                                                 <i class="ri-arrow-down-line align-middle"></i> 0.24 %
                                             </span> vs. previous month</p>
                                     </div>
@@ -143,10 +139,9 @@
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <p class="fw-medium text-muted mb-0">Bounce Rate</p>
-                                        <h2 class="mt-4 ff-secondary fw-semibold"><span
-                                                class="counter-value" data-target="33.48">0</span>%</h2>
-                                        <p class="mb-0 text-muted"><span
-                                                class="badge bg-light text-success mb-0">
+                                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value"
+                                                data-target="33.48">0</span>%</h2>
+                                        <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
                                                 <i class="ri-arrow-up-line align-middle"></i> 7.05 %
                                             </span> vs. previous month</p>
                                     </div>
@@ -311,9 +306,8 @@
                 </div><!-- end card header -->
                 <div class="card-body p-0 pb-2">
                     <div>
-                        <div id="audiences_metrics_charts"
-                            data-colors='["--vz-success", "--vz-light"]' class="apex-charts"
-                            dir="ltr"></div>
+                        <div id="audiences_metrics_charts" data-colors='["--vz-success", "--vz-light"]'
+                            class="apex-charts" dir="ltr"></div>
                     </div>
                 </div><!-- end card body -->
             </div><!-- end card -->
@@ -328,8 +322,7 @@
                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span class="fw-semibold text-uppercase fs-12">Sort by: </span><span
-                                    class="text-muted">Current Week<i
-                                        class="mdi mdi-chevron-down ms-1"></i></span>
+                                    class="text-muted">Current Week<i class="mdi mdi-chevron-down ms-1"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">Today</a>
@@ -342,8 +335,8 @@
                 </div><!-- end card header -->
                 <div class="card-body p-0">
                     <div>
-                        <div id="audiences-sessions-country-charts"
-                            data-colors='["--vz-success", "--vz-info"]' class="apex-charts" dir="ltr">
+                        <div id="audiences-sessions-country-charts" data-colors='["--vz-success", "--vz-info"]'
+                            class="apex-charts" dir="ltr">
                         </div>
                     </div>
                 </div><!-- end cardbody -->
@@ -360,8 +353,7 @@
                         <div class="dropdown card-header-dropdown">
                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted fs-16"><i
-                                        class="mdi mdi-dots-vertical align-middle"></i></span>
+                                <span class="text-muted fs-16"><i class="mdi mdi-dots-vertical align-middle"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">Today</a>
@@ -373,13 +365,11 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <div id="user_device_pie_charts"
-                        data-colors='["--vz-primary", "--vz-warning", "--vz-info"]' class="apex-charts"
-                        dir="ltr"></div>
+                    <div id="user_device_pie_charts" data-colors='["--vz-primary", "--vz-warning", "--vz-info"]'
+                        class="apex-charts" dir="ltr"></div>
 
                     <div class="table-responsive mt-3">
-                        <table
-                            class="table table-borderless table-sm table-centered align-middle table-nowrap mb-0">
+                        <table class="table table-borderless table-sm table-centered align-middle table-nowrap mb-0">
                             <tbody class="border-0">
                                 <tr>
                                     <td>
@@ -460,7 +450,8 @@
                         </div><!-- end col -->
                         <div class="col-6">
                             <div class="text-center">
-                                <img src="{{ URL::asset('build/images/illustrator-1.png') }}" class="img-fluid" alt="">
+                                <img src="{{ URL::asset('build/images/illustrator-1.png') }}" class="img-fluid"
+                                    alt="">
                             </div>
                         </div><!-- end col -->
                     </div><!-- end row -->
@@ -468,14 +459,14 @@
                         <div class="progress progress-lg rounded-pill">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 18%"
-                                aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 18%" aria-valuenow="18"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success" role="progressbar" style="width: 22%"
                                 aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 16%"
                                 aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 19%"
-                                aria-valuenow="19" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 19%" aria-valuenow="19"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div><!-- end -->
 
@@ -549,8 +540,7 @@
                         <div class="dropdown card-header-dropdown">
                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted fs-16"><i
-                                        class="mdi mdi-dots-vertical align-middle"></i></span>
+                                <span class="text-muted fs-16"><i class="mdi mdi-dots-vertical align-middle"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">Today</a>
@@ -563,8 +553,7 @@
                 </div><!-- end card header -->
                 <div class="card-body">
                     <div class="table-responsive table-card">
-                        <table
-                            class="table align-middle table-borderless table-centered table-nowrap mb-0">
+                        <table class="table align-middle table-borderless table-centered table-nowrap mb-0">
                             <thead class="text-muted table-light">
                                 <tr>
                                     <th scope="col" style="width: 62;">Active Page</th>

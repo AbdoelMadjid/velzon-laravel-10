@@ -1,12 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.vector') @endsection
+@section('title')
+    @lang('translation.vector')
+@endsection
 @section('css')
     <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Maps @endslot
-        @slot('title') Vector Maps @endslot
+        @slot('li_1')
+            Maps
+        @endslot
+        @slot('title')
+            Vector Maps
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -46,7 +52,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="world-map-markers-image" data-colors='["--vz-light"]' style="height: 350px" dir="ltr"></div>
+                    <div id="world-map-markers-image" data-colors='["--vz-light"]' style="height: 350px" dir="ltr">
+                    </div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>
@@ -91,7 +98,7 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="russia-vectormap"  data-colors='["--vz-success"]' style="height: 350px"></div>
+                    <div id="russia-vectormap" data-colors='["--vz-success"]' style="height: 350px"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>
@@ -113,7 +120,6 @@
     <!-- end row -->
 @endsection
 @section('script')
-
     <script src="{{ URL::asset('build/libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
     <script src="{{ URL::asset('build/libs/jsvectormap/maps/world-merc.js') }}"></script>
     <script src="{{ URL::asset('build/libs/jsvectormap/maps/us-merc-en.js') }}"></script>

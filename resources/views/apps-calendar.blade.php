@@ -110,7 +110,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="d-block fw-semibold mb-0"><span id="event-timepicker1-tag"></span> -
-                                                <span id="event-timepicker2-tag"></span></h6>
+                                                <span id="event-timepicker2-tag"></span>
+                                            </h6>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center mb-2">

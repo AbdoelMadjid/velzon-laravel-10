@@ -49,7 +49,8 @@
                                 <div class="d-flex p-2">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar-sm bg-light rounded">
-                                            <img data-dz-thumbnail class="img-fluid rounded d-block" src="{{URL::asset('build/images/new-document.png')}}"
+                                            <img data-dz-thumbnail class="img-fluid rounded d-block"
+                                                src="{{ URL::asset('build/images/new-document.png') }}"
                                                 alt="Dropzone-Image" />
                                         </div>
                                     </div>

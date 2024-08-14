@@ -3,8 +3,10 @@
     @lang('translation.pickers')
 @endsection
 @section('css')
-    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/classic.min.css') }}" /> <!-- 'classic' theme -->
-    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/monolith.min.css') }}" /> <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/classic.min.css') }}" />
+    <!-- 'classic' theme -->
+    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/monolith.min.css') }}" />
+    <!-- 'monolith' theme -->
     <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/nano.min.css') }}" /> <!-- 'nano' theme -->
 @endsection
 @section('content')
@@ -70,7 +72,7 @@
                                     <label class="form-label mb-0">MinDate and MaxDate</label>
                                     <p class="text-muted">Set
                                         <code>data-provider="flatpickr" data-date-format="d M, Y"
-                                            data-minDate="Your Min. Date" data-maxDate="Your Max. date"</code>
+                                        data-minDate="Your Min. Date" data-maxDate="Your Max. date"</code>
                                         attribute.
                                     </p>
                                     <input type="text" class="form-control" data-provider="flatpickr"
@@ -86,7 +88,7 @@
                                     <label class="form-label mb-0">Default Date</label>
                                     <p class="text-muted">Set
                                         <code>data-provider="flatpickr" data-date-format="d M, Y"
-                                            data-deafult-date="Your Default Date"</code>
+                                        data-deafult-date="Your Default Date"</code>
                                         attribute.
                                     </p>
                                     <input type="text" class="form-control" data-provider="flatpickr"
@@ -115,7 +117,7 @@
                                     <label class="form-label mb-0">Selecting Multiple Dates</label>
                                     <p class="text-muted">Set
                                         <code>data-provider="flatpickr" data-date-format="d M, Y"
-                                            data-multiple-date="true"</code>
+                                        data-multiple-date="true"</code>
                                         attribute.
                                     </p>
                                     <input type="text" class="form-control" data-provider="flatpickr"
@@ -128,7 +130,7 @@
                                     <label class="form-label mb-0">Range</label>
                                     <p class="text-muted">Set
                                         <code>data-provider="flatpickr" data-date-format="d M, Y"
-                                            data-range-date="true"</code>
+                                        data-range-date="true"</code>
                                         attribute.
                                     </p>
                                     <input type="text" class="form-control" data-provider="flatpickr"
@@ -145,7 +147,7 @@
                                     <label class="form-label mb-0">Inline</label>
                                     <p class="text-muted">Set
                                         <code>data-provider="flatpickr" data-date-format="d M, Y"
-                                            data-deafult-date="today" data-inline-date="true"</code>
+                                        data-deafult-date="today" data-inline-date="true"</code>
                                         attribute.
                                     </p>
                                     <input type="text" class="form-control" data-provider="flatpickr"
@@ -157,7 +159,7 @@
                                 <div class="mt-3">
                                     <label class="form-label mb-0">Week Numbers</label>
                                     <p class="text-muted">Set <code>data-provider="flatpickr" data-date-format="d M, Y"
-                                            data-week-number</code> attribute.</p>
+                                        data-week-number</code> attribute.</p>
                                     <input type="text" class="form-control" data-provider="flatpickr"
                                         data-date-format="d M, Y" data-week-number>
                                 </div>
@@ -216,7 +218,7 @@
                                     <label class="form-label mb-0">Time Picker w/ Limits</label>
                                     <p class="text-muted">Set
                                         <code>data-provider="timepickr" data-min-time="Min.Time"
-                                            data-max-time="Max.Time"</code>
+                                        data-max-time="Max.Time"</code>
                                         attribute.
                                     </p>
                                     <input type="text" class="form-control" data-provider="timepickr"

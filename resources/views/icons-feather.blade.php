@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.feather') @endsection
+@section('title')
+    @lang('translation.feather')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Icons @endslot
-        @slot('title') Feather @endslot
+        @slot('li_1')
+            Icons
+        @endslot
+        @slot('title')
+            Feather
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -891,7 +897,8 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Sizes</h4>
-                    <p class="text-muted mb-0">Use <code>&lt;i data-feather="activity" class="icon-**"&gt;&lt;/i&gt;</code>. Available sizes <code>xs, sm,md,lg,xl,xxl</code></p>
+                    <p class="text-muted mb-0">Use <code>&lt;i data-feather="activity"
+                            class="icon-**"&gt;&lt;/i&gt;</code>. Available sizes <code>xs, sm,md,lg,xl,xxl</code></p>
                 </div>
                 <div class="card-body pt-0">
                     <div class="row icon-demo-content">
@@ -936,7 +943,8 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Two Tones Color Icons</h4>
-                    <p class="text-muted mb-0">Use <code>&lt;i data-feather="activity" class="icon-dual-**"&gt;&lt;/i&gt;</code>.</p>
+                    <p class="text-muted mb-0">Use <code>&lt;i data-feather="activity"
+                            class="icon-dual-**"&gt;&lt;/i&gt;</code>.</p>
                 </div>
                 <div class="card-body pt-0">
 

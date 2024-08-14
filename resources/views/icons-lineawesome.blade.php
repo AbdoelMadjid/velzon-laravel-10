@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.line-awesome')  @endsection
+@section('title')
+    @lang('translation.line-awesome')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Icons @endslot
-        @slot('title') Line Awesome Icons @endslot
+        @slot('li_1')
+            Icons
+        @endslot
+        @slot('title')
+            Line Awesome Icons
+        @endslot
     @endcomponent
     <div class="row icon-demo-content">
         <div class="col-12">
@@ -19,7 +25,8 @@
                             <i class="lab la-accessible-icon"></i> lab la-accessible-icon
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
-                            <i class="las la-american-sign-language-interpreting"></i> las la-american-sign-language-interpreting
+                            <i class="las la-american-sign-language-interpreting"></i> las
+                            la-american-sign-language-interpreting
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
                             <i class="las la-assistive-listening-systems"></i> las la-assistive-listening-systems
@@ -1237,7 +1244,7 @@
                             <i class="lab la-hubspot"></i> lab la-hubspot
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
-                            <i class="lab la-imdb"></i>  lab la-imdb
+                            <i class="lab la-imdb"></i> lab la-imdb
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
                             <i class="lab la-instagram"></i> lab la-instagram
@@ -2215,7 +2222,7 @@
                             <i class="las la-campground"></i> las la-campground
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
-                            <i class="las la-compass"></i>  las la-compass
+                            <i class="las la-compass"></i> las la-compass
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
                             <i class="las la-fire"></i> las la-fire
@@ -2566,7 +2573,8 @@
                             <i class="las la-address-card"></i> las la-address-card
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
-                            <i class="las la-american-sign-language-interpreting"></i> las la-american-sign-language-interpreting
+                            <i class="las la-american-sign-language-interpreting"></i> las
+                            la-american-sign-language-interpreting
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6">
                             <i class="las la-assistive-listening-systems"></i> las la-assistive-listening-systems
@@ -8977,7 +8985,6 @@
         </div>
     </div>
     <!-- end row -->
-
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/js/app.js') }}"></script>

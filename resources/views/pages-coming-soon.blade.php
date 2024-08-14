@@ -3,7 +3,6 @@
     @lang('translation.coming-soon')
 @endsection
 @section('content')
-
     <div class="auth-page-wrapper pt-5">
         <!-- auth page bg -->
         <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
@@ -24,7 +23,8 @@
                     <div class="col-lg-12">
                         <div class="text-center mt-sm-5 pt-4 mb-4">
                             <div class="mb-sm-5 pb-sm-4 pb-5">
-                                <img src="{{ URL::asset('build/images/comingsoon.png') }}" alt="" height="120" class="move-animation">
+                                <img src="{{ URL::asset('build/images/comingsoon.png') }}" alt="" height="120"
+                                    class="move-animation">
                             </div>
                             <div class="mb-5">
                                 <h1 class="display-2 coming-soon-text">Coming Soon</h1>
@@ -67,8 +67,8 @@
                         <div class="text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> Velzon. Crafted with <i
-                                    class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                            </script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                            Themesbrand</p>
                         </div>
                     </div>
                 </div>

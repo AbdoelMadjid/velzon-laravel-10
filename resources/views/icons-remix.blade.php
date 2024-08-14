@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.remix') @endsection
+@section('title')
+    @lang('translation.remix')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Forms @endslot
-        @slot('title') Remix Icons @endslot
+        @slot('li_1')
+            Forms
+        @endslot
+        @slot('title')
+            Remix Icons
+        @endslot
     @endcomponent
     <div class="row">
 

@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.checkout') @endsection
+@section('title')
+    @lang('translation.checkout')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Ecommerce @endslot
-        @slot('title') Checkout @endslot
+        @slot('li_1')
+            Ecommerce
+        @endslot
+        @slot('title')
+            Checkout
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xl-8">
@@ -15,34 +21,30 @@
 
                             <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-15 p-3 active" id="pills-bill-info-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-bill-info"
-                                        type="button" role="tab" aria-controls="pills-bill-info"
-                                        aria-selected="true"><i
+                                    <button class="nav-link fs-15 p-3 active" id="pills-bill-info-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-bill-info" type="button" role="tab"
+                                        aria-controls="pills-bill-info" aria-selected="true"><i
                                             class="ri-user-2-line fs-16 p-2 bg-primary-subtle text-primary rounded-circle align-middle me-2"></i>
                                         Personal Info</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-15 p-3" id="pills-bill-address-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-bill-address"
-                                        type="button" role="tab" aria-controls="pills-bill-address"
-                                        aria-selected="false"><i
+                                    <button class="nav-link fs-15 p-3" id="pills-bill-address-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-bill-address" type="button" role="tab"
+                                        aria-controls="pills-bill-address" aria-selected="false"><i
                                             class="ri-truck-line fs-16 p-2 bg-primary-subtle text-primary rounded-circle align-middle me-2"></i>
                                         Shipping Info</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-15 p-3" id="pills-payment-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-payment"
-                                        type="button" role="tab" aria-controls="pills-payment"
-                                        aria-selected="false"><i
+                                    <button class="nav-link fs-15 p-3" id="pills-payment-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-payment" type="button" role="tab"
+                                        aria-controls="pills-payment" aria-selected="false"><i
                                             class="ri-bank-card-line fs-16 p-2 bg-primary-subtle text-primary rounded-circle align-middle me-2"></i>
                                         Payment Info</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-15 p-3" id="pills-finish-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-finish"
-                                        type="button" role="tab" aria-controls="pills-finish"
-                                        aria-selected="false"><i
+                                    <button class="nav-link fs-15 p-3" id="pills-finish-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-finish" type="button" role="tab"
+                                        aria-controls="pills-finish" aria-selected="false"><i
                                             class="ri-checkbox-circle-line fs-16 p-2 bg-primary-subtle text-primary rounded-circle align-middle me-2"></i>Finish</button>
                                 </li>
                             </ul>
@@ -60,22 +62,18 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="mb-3">
-                                                <label for="billinginfo-firstName"
-                                                    class="form-label">First
+                                                <label for="billinginfo-firstName" class="form-label">First
                                                     Name</label>
-                                                <input type="text" class="form-control"
-                                                    id="billinginfo-firstName"
+                                                <input type="text" class="form-control" id="billinginfo-firstName"
                                                     placeholder="Enter first name" value="">
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
                                             <div class="mb-3">
-                                                <label for="billinginfo-lastName"
-                                                    class="form-label">Last
+                                                <label for="billinginfo-lastName" class="form-label">Last
                                                     Name</label>
-                                                <input type="text" class="form-control"
-                                                    id="billinginfo-lastName"
+                                                <input type="text" class="form-control" id="billinginfo-lastName"
                                                     placeholder="Enter last name" value="">
                                             </div>
                                         </div>
@@ -86,35 +84,30 @@
                                             <div class="mb-3">
                                                 <label for="billinginfo-email" class="form-label">Email
                                                     <span class="text-muted">(Optional)</span></label>
-                                                <input type="email" class="form-control"
-                                                    id="billinginfo-email" placeholder="Enter email">
+                                                <input type="email" class="form-control" id="billinginfo-email"
+                                                    placeholder="Enter email">
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
                                             <div class="mb-3">
-                                                <label for="billinginfo-phone"
-                                                    class="form-label">Phone</label>
-                                                <input type="text" class="form-control"
-                                                    id="billinginfo-phone"
+                                                <label for="billinginfo-phone" class="form-label">Phone</label>
+                                                <input type="text" class="form-control" id="billinginfo-phone"
                                                     placeholder="Enter phone no.">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="billinginfo-address"
-                                            class="form-label">Address</label>
-                                        <textarea class="form-control" id="billinginfo-address"
-                                            placeholder="Enter address" rows="3"></textarea>
+                                        <label for="billinginfo-address" class="form-label">Address</label>
+                                        <textarea class="form-control" id="billinginfo-address" placeholder="Enter address" rows="3"></textarea>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="mb-3">
                                                 <label for="country" class="form-label">Country</label>
-                                                <select class="form-select" id="country"
-                                                    data-plugin="choices">
+                                                <select class="form-select" id="country" data-plugin="choices">
                                                     <option value="">Select Country...</option>
                                                     <option selected>United States</option>
                                                 </select>
@@ -124,8 +117,7 @@
                                         <div class="col-md-4">
                                             <div class="mb-3">
                                                 <label for="state" class="form-label">State</label>
-                                                <select class="form-select" id="state"
-                                                    data-plugin="choices">
+                                                <select class="form-select" id="state" data-plugin="choices">
                                                     <option value="">Select State...</option>
                                                     <option value="Alabama">Alabama</option>
                                                     <option value="Alaska">Alaska</option>
@@ -162,8 +154,7 @@
                                     </div>
 
                                     <div class="d-flex align-items-start gap-3 mt-3">
-                                        <button type="button"
-                                            class="btn btn-primary btn-label right ms-auto nexttab"
+                                        <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                                             data-nexttab="pills-bill-address-tab"><i
                                                 class="ri-truck-line label-icon align-middle fs-16 ms-2"></i>Proceed
                                             to Shipping</button>
@@ -187,8 +178,7 @@
                                         <div class="flex-shrink-0">
                                             <!-- Button trigger modal -->
                                             <button type="button" class="btn btn-sm btn-success mb-3"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#addAddressModal">
+                                                data-bs-toggle="modal" data-bs-target="#addAddressModal">
                                                 Add Address
                                             </button>
                                         </div>
@@ -196,35 +186,30 @@
                                     <div class="row gy-3">
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="form-check card-radio">
-                                                <input id="shippingAddress01" name="shippingAddress"
-                                                    type="radio" class="form-check-input" checked>
+                                                <input id="shippingAddress01" name="shippingAddress" type="radio"
+                                                    class="form-check-input" checked>
                                                 <label class="form-check-label" for="shippingAddress01">
-                                                    <span
-                                                        class="mb-4 fw-semibold d-block text-muted text-uppercase">Home
+                                                    <span class="mb-4 fw-semibold d-block text-muted text-uppercase">Home
                                                         Address</span>
 
                                                     <span class="fs-14 mb-2 d-block">Marcus
                                                         Alfaro</span>
-                                                    <span
-                                                        class="text-muted fw-normal text-wrap mb-1 d-block">4739
+                                                    <span class="text-muted fw-normal text-wrap mb-1 d-block">4739
                                                         Bubby Drive Austin, TX 78729</span>
                                                     <span class="text-muted fw-normal d-block">Mo.
                                                         012-345-6789</span>
                                                 </label>
                                             </div>
-                                            <div
-                                                class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
+                                            <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
                                                 <div>
                                                     <a href="#" class="d-block text-body p-1 px-2"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#addAddressModal"><i
+                                                        data-bs-toggle="modal" data-bs-target="#addAddressModal"><i
                                                             class="ri-pencil-fill text-muted align-bottom me-1"></i>
                                                         Edit</a>
                                                 </div>
                                                 <div>
                                                     <a href="#" class="d-block text-body p-1 px-2"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#removeItemModal"><i
+                                                        data-bs-toggle="modal" data-bs-target="#removeItemModal"><i
                                                             class="ri-delete-bin-fill text-muted align-bottom me-1"></i>
                                                         Remove</a>
                                                 </div>
@@ -232,35 +217,30 @@
                                         </div>
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="form-check card-radio">
-                                                <input id="shippingAddress02" name="shippingAddress"
-                                                    type="radio" class="form-check-input">
+                                                <input id="shippingAddress02" name="shippingAddress" type="radio"
+                                                    class="form-check-input">
                                                 <label class="form-check-label" for="shippingAddress02">
-                                                    <span
-                                                        class="mb-4 fw-semibold d-block text-muted text-uppercase">Office
+                                                    <span class="mb-4 fw-semibold d-block text-muted text-uppercase">Office
                                                         Address</span>
 
                                                     <span class="fs-14 mb-2 d-block">James Honda</span>
-                                                    <span
-                                                        class="text-muted fw-normal text-wrap mb-1 d-block">1246
+                                                    <span class="text-muted fw-normal text-wrap mb-1 d-block">1246
                                                         Virgil Street Pensacola, FL 32501
                                                     </span>
                                                     <span class="text-muted fw-normal d-block">Mo.
                                                         012-345-6789</span>
                                                 </label>
                                             </div>
-                                            <div
-                                                class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
+                                            <div class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1">
                                                 <div>
                                                     <a href="#" class="d-block text-body p-1 px-2"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#addAddressModal"><i
+                                                        data-bs-toggle="modal" data-bs-target="#addAddressModal"><i
                                                             class="ri-pencil-fill text-muted align-bottom me-1"></i>
                                                         Edit</a>
                                                 </div>
                                                 <div>
                                                     <a href="#" class="d-block text-body p-1 px-2"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#removeItemModal"><i
+                                                        data-bs-toggle="modal" data-bs-target="#removeItemModal"><i
                                                             class="ri-delete-bin-fill text-muted align-bottom me-1"></i>
                                                         Remove</a>
                                                 </div>
@@ -274,33 +254,28 @@
                                         <div class="row g-4">
                                             <div class="col-lg-6">
                                                 <div class="form-check card-radio">
-                                                    <input id="shippingMethod01" name="shippingMethod"
-                                                        type="radio" class="form-check-input" checked>
-                                                    <label class="form-check-label"
-                                                        for="shippingMethod01">
+                                                    <input id="shippingMethod01" name="shippingMethod" type="radio"
+                                                        class="form-check-input" checked>
+                                                    <label class="form-check-label" for="shippingMethod01">
                                                         <span
                                                             class="fs-20 float-end mt-2 text-wrap d-block fw-semibold">Free</span>
                                                         <span class="fs-14 mb-1 text-wrap d-block">Free
                                                             Delivery</span>
-                                                        <span
-                                                            class="text-muted fw-normal text-wrap d-block">Expected
+                                                        <span class="text-muted fw-normal text-wrap d-block">Expected
                                                             Delivery 3 to 5 Days</span>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="form-check card-radio">
-                                                    <input id="shippingMethod02" name="shippingMethod"
-                                                        type="radio" class="form-check-input" checked>
-                                                    <label class="form-check-label"
-                                                        for="shippingMethod02">
+                                                    <input id="shippingMethod02" name="shippingMethod" type="radio"
+                                                        class="form-check-input" checked>
+                                                    <label class="form-check-label" for="shippingMethod02">
                                                         <span
                                                             class="fs-20 float-end mt-2 text-wrap d-block fw-semibold">$24.99</span>
-                                                        <span
-                                                            class="fs-14 mb-1 text-wrap d-block">Express
+                                                        <span class="fs-14 mb-1 text-wrap d-block">Express
                                                             Delivery</span>
-                                                        <span
-                                                            class="text-muted fw-normal text-wrap d-block">Delivery
+                                                        <span class="text-muted fw-normal text-wrap d-block">Delivery
                                                             within 24hrs.</span>
                                                     </label>
                                                 </div>
@@ -314,8 +289,7 @@
                                         data-previous="pills-bill-info-tab"><i
                                             class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i>Back
                                         to Personal Info</button>
-                                    <button type="button"
-                                        class="btn btn-primary btn-label right ms-auto nexttab"
+                                    <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                                         data-nexttab="pills-payment-tab"><i
                                             class="ri-bank-card-line label-icon align-middle fs-16 ms-2"></i>Continue
                                         to Payment</button>
@@ -333,12 +307,11 @@
 
                                 <div class="row g-4">
                                     <div class="col-lg-4 col-sm-6">
-                                        <div data-bs-toggle="collapse"
-                                            data-bs-target="#paymentmethodCollapse.show"
+                                        <div data-bs-toggle="collapse" data-bs-target="#paymentmethodCollapse.show"
                                             aria-expanded="false" aria-controls="paymentmethodCollapse">
                                             <div class="form-check card-radio">
-                                                <input id="paymentMethod01" name="paymentMethod"
-                                                    type="radio" class="form-check-input">
+                                                <input id="paymentMethod01" name="paymentMethod" type="radio"
+                                                    class="form-check-input">
                                                 <label class="form-check-label" for="paymentMethod01">
                                                     <span class="fs-16 text-muted me-2"><i
                                                             class="ri-paypal-fill align-bottom"></i></span>
@@ -348,12 +321,11 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <div data-bs-toggle="collapse"
-                                            data-bs-target="#paymentmethodCollapse" aria-expanded="true"
-                                            aria-controls="paymentmethodCollapse">
+                                        <div data-bs-toggle="collapse" data-bs-target="#paymentmethodCollapse"
+                                            aria-expanded="true" aria-controls="paymentmethodCollapse">
                                             <div class="form-check card-radio">
-                                                <input id="paymentMethod02" name="paymentMethod"
-                                                    type="radio" class="form-check-input" checked>
+                                                <input id="paymentMethod02" name="paymentMethod" type="radio"
+                                                    class="form-check-input" checked>
                                                 <label class="form-check-label" for="paymentMethod02">
                                                     <span class="fs-16 text-muted me-2"><i
                                                             class="ri-bank-card-fill align-bottom"></i></span>
@@ -365,12 +337,11 @@
                                     </div>
 
                                     <div class="col-lg-4 col-sm-6">
-                                        <div data-bs-toggle="collapse"
-                                            data-bs-target="#paymentmethodCollapse.show"
+                                        <div data-bs-toggle="collapse" data-bs-target="#paymentmethodCollapse.show"
                                             aria-expanded="false" aria-controls="paymentmethodCollapse">
                                             <div class="form-check card-radio">
-                                                <input id="paymentMethod03" name="paymentMethod"
-                                                    type="radio" class="form-check-input">
+                                                <input id="paymentMethod03" name="paymentMethod" type="radio"
+                                                    class="form-check-input">
                                                 <label class="form-check-label" for="paymentMethod03">
                                                     <span class="fs-16 text-muted me-2"><i
                                                             class="ri-money-dollar-box-fill align-bottom"></i></span>
@@ -402,10 +373,9 @@
                                             </div>
 
                                             <div class="col-md-3">
-                                                <label for="cc-expiration"
-                                                    class="form-label">Expiration</label>
-                                                <input type="text" class="form-control"
-                                                    id="cc-expiration" placeholder="MM/YY">
+                                                <label for="cc-expiration" class="form-label">Expiration</label>
+                                                <input type="text" class="form-control" id="cc-expiration"
+                                                    placeholder="MM/YY">
                                             </div>
 
                                             <div class="col-md-3">
@@ -426,8 +396,7 @@
                                         data-previous="pills-bill-address-tab"><i
                                             class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i>Back
                                         to Shipping</button>
-                                    <button type="button"
-                                        class="btn btn-primary btn-label right ms-auto nexttab"
+                                    <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                                         data-nexttab="pills-finish-tab"><i
                                             class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"></i>Complete
                                         Order</button>
@@ -440,8 +409,8 @@
                                 <div class="text-center py-5">
 
                                     <div class="mb-4">
-                                        <lord-icon src="https://cdn.lordicon.com/lupuorrc.json"
-                                            trigger="loop" colors="primary:#0ab39c,secondary:#405189"
+                                        <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop"
+                                            colors="primary:#0ab39c,secondary:#405189"
                                             style="width:120px;height:120px"></lord-icon>
                                     </div>
                                     <h5>Thank you ! Your Order is Completed !</h5>
@@ -449,8 +418,7 @@
                                         with
                                         details of your order.</p>
 
-                                    <h3 class="fw-semibold">Order ID: <a
-                                            href="apps-ecommerce-order-details"
+                                    <h3 class="fw-semibold">Order ID: <a href="apps-ecommerce-order-details"
                                             class="text-decoration-underline">VZ2451</a></h3>
                                 </div>
                             </div>
@@ -522,8 +490,8 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <h5 class="fs-14"><a href="apps-ecommerce-product-details"
-                                                class="text-body">350 ml Glass Grocery Container</a>
+                                        <h5 class="fs-14"><a href="apps-ecommerce-product-details" class="text-body">350
+                                                ml Glass Grocery Container</a>
                                         </h5>
                                         <p class="text-muted mb-0">$ 24.99 x 1</p>
                                     </td>
@@ -567,8 +535,8 @@
     </div>
     <!-- end row -->
 
-     <!-- removeItemModal -->
-     <div id="removeItemModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+    <!-- removeItemModal -->
+    <div id="removeItemModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -611,13 +579,13 @@
 
                         <div class="mb-3">
                             <label for="addaddress-textarea" class="form-label">Address</label>
-                            <textarea class="form-control" id="addaddress-textarea" placeholder="Enter address"
-                                rows="2"></textarea>
+                            <textarea class="form-control" id="addaddress-textarea" placeholder="Enter address" rows="2"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="addaddress-Name" class="form-label">Phone</label>
-                            <input type="text" class="form-control" id="addaddress-Name" placeholder="Enter phone no.">
+                            <input type="text" class="form-control" id="addaddress-Name"
+                                placeholder="Enter phone no.">
                         </div>
 
                         <div class="mb-3">

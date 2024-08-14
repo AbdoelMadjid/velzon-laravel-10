@@ -29,8 +29,8 @@
                             <div class="hstack text-nowrap gap-2">
                                 <button class="btn btn-soft-danger" id="remove-actions" onClick="deleteMultiple()"><i
                                         class="ri-delete-bin-2-line"></i></button>
-                                <button class="btn btn-danger"><i
-                                        class="ri-filter-2-line me-1 align-bottom"></i> Filters</button>
+                                <button class="btn btn-danger"><i class="ri-filter-2-line me-1 align-bottom"></i>
+                                    Filters</button>
                                 <button class="btn btn-soft-success">Import</button>
                                 <button type="button" id="dropdownMenuLink1" data-bs-toggle="dropdown"
                                     aria-expanded="false" class="btn btn-soft-info"><i class="ri-more-2-fill"></i></button>

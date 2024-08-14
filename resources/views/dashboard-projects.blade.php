@@ -1,10 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.projects') @endsection
+@section('title')
+    @lang('translation.projects')
+@endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Dashboards @endslot
-        @slot('title') Projects @endslot
+        @slot('li_1')
+            Dashboards
+        @endslot
+        @slot('title')
+            Projects
+        @endslot
     @endcomponent
     <div class="row project-wrapper">
         <div class="col-xxl-8">
@@ -14,8 +19,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="avatar-sm flex-shrink-0">
-                                    <span
-                                        class="avatar-title bg-primary-subtle text-primary rounded-2 fs-2">
+                                    <span class="avatar-title bg-primary-subtle text-primary rounded-2 fs-2">
                                         <i data-feather="briefcase" class="text-primary"></i>
                                     </span>
                                 </div>
@@ -41,8 +45,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="avatar-sm flex-shrink-0">
-                                    <span
-                                        class="avatar-title bg-warning-subtle text-warning rounded-2 fs-2">
+                                    <span class="avatar-title bg-warning-subtle text-warning rounded-2 fs-2">
                                         <i data-feather="award" class="text-warning"></i>
                                     </span>
                                 </div>
@@ -115,24 +118,21 @@
                             <div class="row g-0 text-center">
                                 <div class="col-6 col-sm-3">
                                     <div class="p-3 border border-dashed border-start-0">
-                                        <h5 class="mb-1"><span class="counter-value"
-                                                data-target="9851">0</span></h5>
+                                        <h5 class="mb-1"><span class="counter-value" data-target="9851">0</span></h5>
                                         <p class="text-muted mb-0">Number of Projects</p>
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-6 col-sm-3">
                                     <div class="p-3 border border-dashed border-start-0">
-                                        <h5 class="mb-1"><span class="counter-value"
-                                                data-target="1026">0</span></h5>
+                                        <h5 class="mb-1"><span class="counter-value" data-target="1026">0</span></h5>
                                         <p class="text-muted mb-0">Active Projects</p>
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-6 col-sm-3">
                                     <div class="p-3 border border-dashed border-start-0">
-                                        <h5 class="mb-1">$<span class="counter-value"
-                                                data-target="228.89">0</span>k</h5>
+                                        <h5 class="mb-1">$<span class="counter-value" data-target="228.89">0</span>k</h5>
                                         <p class="text-muted mb-0">Revenue</p>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@
                         <div class="card-body p-0 pb-2">
                             <div>
                                 <div id="projects-overview-chart"
-                                    data-colors='["--vz-primary", "--vz-warning", "--vz-success"]'
-                                    dir="ltr" class="apex-charts"></div>
+                                    data-colors='["--vz-primary", "--vz-warning", "--vz-success"]' dir="ltr"
+                                    class="apex-charts"></div>
                             </div>
                         </div><!-- end card body -->
                     </div><!-- end card -->
@@ -166,15 +166,14 @@
                 </div><!-- end cardheader -->
                 <div class="card-body pt-0">
                     <div class="upcoming-scheduled">
-                        <input type="text" class="form-control" data-provider="flatpickr"
-                            data-date-format="d M, Y" data-deafult-date="today" data-inline-date="true">
+                        <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y"
+                            data-deafult-date="today" data-inline-date="true">
                     </div>
 
                     <h6 class="text-uppercase fw-semibold mt-4 mb-3 text-muted">Events:</h6>
                     <div class="mini-stats-wid d-flex align-items-center mt-3">
                         <div class="flex-shrink-0 avatar-sm">
-                            <span
-                                class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
+                            <span class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
                                 09
                             </span>
                         </div>
@@ -188,8 +187,7 @@
                     </div><!-- end -->
                     <div class="mini-stats-wid d-flex align-items-center mt-3">
                         <div class="flex-shrink-0 avatar-sm">
-                            <span
-                                class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
+                            <span class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
                                 12
                             </span>
                         </div>
@@ -203,8 +201,7 @@
                     </div><!-- end -->
                     <div class="mini-stats-wid d-flex align-items-center mt-3">
                         <div class="flex-shrink-0 avatar-sm">
-                            <span
-                                class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
+                            <span class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
                                 25
                             </span>
                         </div>
@@ -218,8 +215,7 @@
                     </div><!-- end -->
                     <div class="mini-stats-wid d-flex align-items-center mt-3">
                         <div class="flex-shrink-0 avatar-sm">
-                            <span
-                                class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
+                            <span class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
                                 27
                             </span>
                         </div>
@@ -277,11 +273,9 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 me-1 text-muted fs-13">53%</div>
-                                            <div class="progress progress-sm  flex-grow-1"
-                                                style="width: 68%;">
-                                                <div class="progress-bar bg-primary rounded"
-                                                    role="progressbar" style="width: 53%"
-                                                    aria-valuenow="53" aria-valuemin="0"
+                                            <div class="progress progress-sm  flex-grow-1" style="width: 68%;">
+                                                <div class="progress-bar bg-primary rounded" role="progressbar"
+                                                    style="width: 53%" aria-valuenow="53" aria-valuemin="0"
                                                     aria-valuemax="100"></div>
                                             </div>
                                         </div>
@@ -290,20 +284,20 @@
                                         <div class="avatar-group flex-nowrap">
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                         </div>
@@ -322,11 +316,9 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 text-muted me-1">0%</div>
-                                            <div class="progress progress-sm flex-grow-1"
-                                                style="width: 68%;">
-                                                <div class="progress-bar bg-primary rounded"
-                                                    role="progressbar" style="width: 0%"
-                                                    aria-valuenow="0" aria-valuemin="0"
+                                            <div class="progress progress-sm flex-grow-1" style="width: 68%;">
+                                                <div class="progress-bar bg-primary rounded" role="progressbar"
+                                                    style="width: 0%" aria-valuenow="0" aria-valuemin="0"
                                                     aria-valuemax="100"></div>
                                             </div>
                                         </div>
@@ -335,14 +327,14 @@
                                         <div class="avatar-group">
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                         </div>
@@ -361,11 +353,9 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 text-muted me-1">100%</div>
-                                            <div class="progress progress-sm flex-grow-1"
-                                                style="width: 68%;">
-                                                <div class="progress-bar bg-primary rounded"
-                                                    role="progressbar" style="width: 100%"
-                                                    aria-valuenow="100" aria-valuemin="0"
+                                            <div class="progress progress-sm flex-grow-1" style="width: 68%;">
+                                                <div class="progress-bar bg-primary rounded" role="progressbar"
+                                                    style="width: 100%" aria-valuenow="100" aria-valuemin="0"
                                                     aria-valuemax="100"></div>
                                             </div>
                                         </div>
@@ -374,14 +364,14 @@
                                         <div class="avatar-group">
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                         </div>
@@ -400,11 +390,9 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 text-muted me-1">64%</div>
-                                            <div class="progress flex-grow-1 progress-sm"
-                                                style="width: 68%;">
-                                                <div class="progress-bar bg-primary rounded"
-                                                    role="progressbar" style="width: 64%"
-                                                    aria-valuenow="64" aria-valuemin="0"
+                                            <div class="progress flex-grow-1 progress-sm" style="width: 68%;">
+                                                <div class="progress-bar bg-primary rounded" role="progressbar"
+                                                    style="width: 64%" aria-valuenow="64" aria-valuemin="0"
                                                     aria-valuemax="100"></div>
                                             </div>
                                         </div>
@@ -413,8 +401,8 @@
                                         <div class="avatar-group">
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                         </div>
@@ -433,11 +421,9 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 text-muted me-1">77%</div>
-                                            <div class="progress flex-grow-1 progress-sm"
-                                                style="width: 68%;">
-                                                <div class="progress-bar bg-primary rounded"
-                                                    role="progressbar" style="width: 77%"
-                                                    aria-valuenow="77" aria-valuemin="0"
+                                            <div class="progress flex-grow-1 progress-sm" style="width: 68%;">
+                                                <div class="progress-bar bg-primary rounded" role="progressbar"
+                                                    style="width: 77%" aria-valuenow="77" aria-valuemin="0"
                                                     aria-valuemax="100"></div>
                                             </div>
                                         </div>
@@ -446,20 +432,20 @@
                                         <div class="avatar-group">
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                             <div class="avatar-group-item">
                                                 <a href="javascript: void(0);" class="d-inline-block">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt=""
-                                                        class="rounded-circle avatar-xxs">
+                                                    <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}"
+                                                        alt="" class="rounded-circle avatar-xxs">
                                                 </a>
                                             </div>
                                         </div>
@@ -508,8 +494,7 @@
                         <div class="dropdown card-header-dropdown">
                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted">All Tasks <i
-                                        class="mdi mdi-chevron-down ms-1"></i></span>
+                                <span class="text-muted">All Tasks <i class="mdi mdi-chevron-down ms-1"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">All Tasks</a>
@@ -522,8 +507,7 @@
                 </div><!-- end card header -->
                 <div class="card-body">
                     <div class="table-responsive table-card">
-                        <table
-                            class="table table-borderless table-nowrap table-centered align-middle mb-0">
+                        <table class="table table-borderless table-nowrap table-centered align-middle mb-0">
                             <thead class="table-light text-muted">
                                 <tr>
                                     <th scope="col">Name</th>
@@ -536,8 +520,8 @@
                                 <tr>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input fs-15" type="checkbox"
-                                                value="" id="checkTask1">
+                                            <input class="form-check-input fs-15" type="checkbox" value=""
+                                                id="checkTask1">
                                             <label class="form-check-label ms-1" for="checkTask1">
                                                 Create new Admin Template
                                             </label>
@@ -546,9 +530,8 @@
                                     <td class="text-muted">03 Nov 2021</td>
                                     <td><span class="badge bg-success-subtle text-success">Completed</span></td>
                                     <td>
-                                        <a href="javascript: void(0);" class="d-inline-block"
-                                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                            data-bs-original-title="Mary Stoner">
+                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="" data-bs-original-title="Mary Stoner">
                                             <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -557,8 +540,8 @@
                                 <tr>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input fs-15" type="checkbox"
-                                                value="" id="checkTask2">
+                                            <input class="form-check-input fs-15" type="checkbox" value=""
+                                                id="checkTask2">
                                             <label class="form-check-label ms-1" for="checkTask2">
                                                 Marketing Coordinator
                                             </label>
@@ -567,9 +550,8 @@
                                     <td class="text-muted">17 Nov 2021</td>
                                     <td><span class="badge bg-warning-subtle text-warning">Progress</span></td>
                                     <td>
-                                        <a href="javascript: void(0);" class="d-inline-block"
-                                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                            data-bs-original-title="Den Davis">
+                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="" data-bs-original-title="Den Davis">
                                             <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -578,8 +560,8 @@
                                 <tr>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input fs-15" type="checkbox"
-                                                value="" id="checkTask3">
+                                            <input class="form-check-input fs-15" type="checkbox" value=""
+                                                id="checkTask3">
                                             <label class="form-check-label ms-1" for="checkTask3">
                                                 Administrative Analyst
                                             </label>
@@ -588,9 +570,8 @@
                                     <td class="text-muted">26 Nov 2021</td>
                                     <td><span class="badge bg-success-subtle text-success">Completed</span></td>
                                     <td>
-                                        <a href="javascript: void(0);" class="d-inline-block"
-                                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                            data-bs-original-title="Alex Brown">
+                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="" data-bs-original-title="Alex Brown">
                                             <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -599,8 +580,8 @@
                                 <tr>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input fs-15" type="checkbox"
-                                                value="" id="checkTask4">
+                                            <input class="form-check-input fs-15" type="checkbox" value=""
+                                                id="checkTask4">
                                             <label class="form-check-label ms-1" for="checkTask4">
                                                 E-commerce Landing Page
                                             </label>
@@ -609,9 +590,8 @@
                                     <td class="text-muted">10 Dec 2021</td>
                                     <td><span class="badge bg-danger-subtle text-danger">Pending</span></td>
                                     <td>
-                                        <a href="javascript: void(0);" class="d-inline-block"
-                                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                            data-bs-original-title="Prezy Morin">
+                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="" data-bs-original-title="Prezy Morin">
                                             <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
                                         </a>
@@ -620,8 +600,8 @@
                                 <tr>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input fs-15" type="checkbox"
-                                                value="" id="checkTask5">
+                                            <input class="form-check-input fs-15" type="checkbox" value=""
+                                                id="checkTask5">
                                             <label class="form-check-label ms-1" for="checkTask5">
                                                 UI/UX Design
                                             </label>
@@ -630,8 +610,8 @@
                                     <td class="text-muted">22 Dec 2021</td>
                                     <td><span class="badge bg-warning-subtle text-warning">Progress</span></td>
                                     <td>
-                                        <a href="javascript: void(0);" class="d-inline-block"
-                                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
+                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title=""
                                             data-bs-original-title="Stine Nielsen">
                                             <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
@@ -641,8 +621,8 @@
                                 <tr>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input fs-15" type="checkbox"
-                                                value="" id="checkTask6">
+                                            <input class="form-check-input fs-15" type="checkbox" value=""
+                                                id="checkTask6">
                                             <label class="form-check-label ms-1" for="checkTask6">
                                                 Projects Design
                                             </label>
@@ -651,8 +631,8 @@
                                     <td class="text-muted">31 Dec 2021</td>
                                     <td><span class="badge bg-danger-subtle text-danger">Pending</span></td>
                                     <td>
-                                        <a href="javascript: void(0);" class="d-inline-block"
-                                            data-bs-toggle="tooltip" data-bs-placement="top" title=""
+                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title=""
                                             data-bs-original-title="Jansh William">
                                             <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt=""
                                                 class="rounded-circle avatar-xxs">
@@ -681,8 +661,7 @@
                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span class="fw-semibold text-uppercase fs-12">Sort by: </span><span
-                                    class="text-muted">Last 30 Days<i
-                                        class="mdi mdi-chevron-down ms-1"></i></span>
+                                    class="text-muted">Last 30 Days<i class="mdi mdi-chevron-down ms-1"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">Today</a>
@@ -726,8 +705,8 @@
                                         258
                                     </td>
                                     <td style="width:5%;">
-                                        <div id="radialBar_chart_1" data-colors='["--vz-primary"]'
-                                            data-chart-series="50" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_1" data-colors='["--vz-primary"]' data-chart-series="50"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                                 <tr>
@@ -746,8 +725,8 @@
                                         105
                                     </td>
                                     <td>
-                                        <div id="radialBar_chart_2" data-colors='["--vz-primary"]'
-                                            data-chart-series="45" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_2" data-colors='["--vz-primary"]' data-chart-series="45"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                                 <tr>
@@ -766,8 +745,8 @@
                                         75
                                     </td>
                                     <td>
-                                        <div id="radialBar_chart_3" data-colors='["--vz-primary"]'
-                                            data-chart-series="75" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_3" data-colors='["--vz-primary"]' data-chart-series="75"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                                 <tr>
@@ -786,8 +765,8 @@
                                         85
                                     </td>
                                     <td>
-                                        <div id="radialBar_chart_4" data-colors='["--vz-warning"]'
-                                            data-chart-series="25" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_4" data-colors='["--vz-warning"]' data-chart-series="25"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                                 <tr>
@@ -806,8 +785,8 @@
                                         69
                                     </td>
                                     <td>
-                                        <div id="radialBar_chart_5" data-colors='["--vz-primary"]'
-                                            data-chart-series="60" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_5" data-colors='["--vz-primary"]' data-chart-series="60"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                                 <tr>
@@ -828,8 +807,8 @@
                                         658
                                     </td>
                                     <td>
-                                        <div id="radialBar_chart_6" data-colors='["--vz-success"]'
-                                            data-chart-series="85" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_6" data-colors='["--vz-success"]' data-chart-series="85"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                                 <tr>
@@ -849,8 +828,8 @@
                                         125
                                     </td>
                                     <td>
-                                        <div id="radialBar_chart_7" data-colors='["--vz-primary"]'
-                                            data-chart-series="70" class="apex-charts" dir="ltr"></div>
+                                        <div id="radialBar_chart_7" data-colors='["--vz-primary"]' data-chart-series="70"
+                                            class="apex-charts" dir="ltr"></div>
                                     </td>
                                 </tr><!-- end tr -->
                             </tbody><!-- end tbody -->
@@ -868,8 +847,7 @@
                         <div class="dropdown card-header-dropdown">
                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted"><i
-                                        class="ri-settings-4-line align-middle me-1"></i>Setting <i
+                                <span class="text-muted"><i class="ri-settings-4-line align-middle me-1"></i>Setting <i
                                         class="mdi mdi-chevron-down ms-1"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
@@ -893,12 +871,12 @@
                 <div class="card-body p-0">
                     <div id="users-chat">
                         <div class="chat-conversation p-3" id="chat-conversation" data-simplebar style="height: 400px;">
-                            <ul class="list-unstyled chat-conversation-list chat-sm"
-                                id="users-conversation">
+                            <ul class="list-unstyled chat-conversation-list chat-sm" id="users-conversation">
                                 <li class="chat-list left">
                                     <div class="conversation-list">
                                         <div class="chat-avatar">
-                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="">
+                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="user-chat-content">
                                             <div class="ctext-wrap">
@@ -925,9 +903,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="conversation-name"><small
-                                                    class="text-muted time">09:07 am</small> <span
-                                                    class="text-success check-message-icon"><i
+                                            <div class="conversation-name"><small class="text-muted time">09:07 am</small>
+                                                <span class="text-success check-message-icon"><i
                                                         class="ri-check-double-line align-bottom"></i></span>
                                             </div>
                                         </div>
@@ -963,9 +940,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="conversation-name"><small
-                                                    class="text-muted time">09:08 am</small> <span
-                                                    class="text-success check-message-icon"><i
+                                            <div class="conversation-name"><small class="text-muted time">09:08 am</small>
+                                                <span class="text-success check-message-icon"><i
                                                         class="ri-check-double-line align-bottom"></i></span>
                                             </div>
                                         </div>
@@ -976,7 +952,8 @@
                                 <li class="chat-list left">
                                     <div class="conversation-list">
                                         <div class="chat-avatar">
-                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="">
+                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="user-chat-content">
                                             <div class="ctext-wrap">
@@ -1030,9 +1007,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="conversation-name"><small
-                                                    class="text-muted time">09:10 am</small> <span
-                                                    class="text-success check-message-icon"><i
+                                            <div class="conversation-name"><small class="text-muted time">09:10 am</small>
+                                                <span class="text-success check-message-icon"><i
                                                         class="ri-check-double-line align-bottom"></i></span>
                                             </div>
                                         </div>
@@ -1067,9 +1043,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="conversation-name"><small
-                                                    class="text-muted time">09:12 am</small> <span
-                                                    class="text-success check-message-icon"><i
+                                            <div class="conversation-name"><small class="text-muted time">09:12 am</small>
+                                                <span class="text-success check-message-icon"><i
                                                         class="ri-check-double-line align-bottom"></i></span>
                                             </div>
                                         </div>
@@ -1080,7 +1055,8 @@
                                 <li class="chat-list left">
                                     <div class="conversation-list">
                                         <div class="chat-avatar">
-                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="">
+                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="user-chat-content">
                                             <div class="ctext-wrap">
@@ -1097,10 +1073,8 @@
                                                             <ul class="list-inline mb-0">
                                                                 <li class="list-inline-item dropdown">
                                                                     <a class="dropdown-toggle" href="#"
-                                                                        role="button"
-                                                                        data-bs-toggle="dropdown"
-                                                                        aria-haspopup="true"
-                                                                        aria-expanded="false">
+                                                                        role="button" data-bs-toggle="dropdown"
+                                                                        aria-haspopup="true" aria-expanded="false">
                                                                         <i class="ri-more-fill"></i>
                                                                     </a>
                                                                     <div class="dropdown-menu">
@@ -1135,10 +1109,8 @@
                                                             <ul class="list-inline mb-0">
                                                                 <li class="list-inline-item dropdown">
                                                                     <a class="dropdown-toggle" href="#"
-                                                                        role="button"
-                                                                        data-bs-toggle="dropdown"
-                                                                        aria-haspopup="true"
-                                                                        aria-expanded="false">
+                                                                        role="button" data-bs-toggle="dropdown"
+                                                                        aria-haspopup="true" aria-expanded="false">
                                                                         <i class="ri-more-fill"></i>
                                                                     </a>
                                                                     <div class="dropdown-menu">
@@ -1163,9 +1135,8 @@
                                                 </div>
                                             </div>
 
-                                            <div class="conversation-name"><small
-                                                    class="text-muted time">09:30 am</small> <span
-                                                    class="text-success check-message-icon"><i
+                                            <div class="conversation-name"><small class="text-muted time">09:30 am</small>
+                                                <span class="text-success check-message-icon"><i
                                                         class="ri-check-double-line align-bottom"></i></span>
                                             </div>
                                         </div>
@@ -1215,8 +1186,7 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="prjects-status"
-                        data-colors='["--vz-success", "--vz-primary", "--vz-warning", "--vz-danger"]'
+                    <div id="prjects-status" data-colors='["--vz-success", "--vz-primary", "--vz-warning", "--vz-danger"]'
                         class="apex-charts" dir="ltr"></div>
                     <div class="mt-3">
                         <div class="d-flex justify-content-center align-items-center mb-4">
@@ -1230,8 +1200,7 @@
                             </div>
                         </div>
 
-                        <div
-                            class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
+                        <div class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
                             <p class="fw-medium mb-0"><i
                                     class="ri-checkbox-blank-circle-fill text-success align-middle me-2"></i>
                                 Completed</p>
@@ -1240,8 +1209,7 @@
                                 <span class="text-success fw-medium fs-12">15870hrs</span>
                             </div>
                         </div><!-- end -->
-                        <div
-                            class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
+                        <div class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
                             <p class="fw-medium mb-0"><i
                                     class="ri-checkbox-blank-circle-fill text-primary align-middle me-2"></i>
                                 In Progress</p>
@@ -1250,8 +1218,7 @@
                                 <span class="text-success fw-medium fs-12">243hrs</span>
                             </div>
                         </div><!-- end -->
-                        <div
-                            class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
+                        <div class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
                             <p class="fw-medium mb-0"><i
                                     class="ri-checkbox-blank-circle-fill text-warning align-middle me-2"></i>
                                 Yet to Start</p>

@@ -547,7 +547,8 @@
                                         </div>
                                         <div class="conversation-name"><small class="text-muted time">09:07 am</small>
                                             <span class="text-success check-message-icon"><i
-                                                    class="ri-check-double-line align-bottom"></i></span></div>
+                                                    class="ri-check-double-line align-bottom"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -578,7 +579,8 @@
                                         </div>
                                         <div class="conversation-name"><small class="text-muted time">09:08 am</small>
                                             <span class="text-success check-message-icon"><i
-                                                    class="ri-check-double-line align-bottom"></i></span></div>
+                                                    class="ri-check-double-line align-bottom"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -612,7 +614,8 @@
                                         </div>
                                         <div class="conversation-name"><small class="text-muted time">09:10 am</small>
                                             <span class="text-success check-message-icon"><i
-                                                    class="ri-check-double-line align-bottom"></i></span></div>
+                                                    class="ri-check-double-line align-bottom"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -642,7 +645,8 @@
                                         </div>
                                         <div class="conversation-name"><small class="text-muted time">09:12 am</small>
                                             <span class="text-success check-message-icon"><i
-                                                    class="ri-check-double-line align-bottom"></i></span></div>
+                                                    class="ri-check-double-line align-bottom"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>

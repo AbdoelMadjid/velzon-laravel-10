@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.ribbons') @endsection
+@section('title')
+    @lang('translation.ribbons')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Base UI @endslot
-        @slot('title') Ribbons @endslot
+        @slot('li_1')
+            Base UI
+        @endslot
+        @slot('title')
+            Ribbons
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -30,8 +36,10 @@
                                         <h5 class="fs-14 text-end">Rounded Ribbon</h5>
 
                                         <div class="ribbon-content mt-4 text-muted">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -43,8 +51,10 @@
                                         <div class="ribbon ribbon-success round-shape">Success</div>
                                         <h5 class="fs-14 text-end">Rounded Ribbon</h5>
                                         <div class="ribbon-content mt-4 text-muted">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -57,8 +67,10 @@
                                         <div class="ribbon ribbon-info round-shape">Info</div>
                                         <h5 class="fs-14 text-start">Rounded Ribbon Right</h5>
                                         <div class="ribbon-content mt-4 text-muted">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +80,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;!-- Rounded Ribbon --&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;!-- Rounded Ribbon --&gt;
 &lt;div class=&quot;card ribbon-box border shadow-none mb-lg-0&quot;&gt;
 &lt;div class=&quot;card-body&quot;&gt;
 &lt;div class=&quot;ribbon ribbon-primary round-shape&quot;&gt;Primary&lt;/div&gt;
@@ -134,8 +146,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                         <div class="ribbon ribbon-primary ribbon-shape">Primary</div>
                                         <h5 class="fs-14 text-end">Ribbon Shape</h5>
                                         <div class="ribbon-content text-muted mt-4">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -147,8 +161,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                         <div class="ribbon ribbon-success ribbon-shape">Success</div>
                                         <h5 class="fs-14 text-end">Ribbon Shape</h5>
                                         <div class="ribbon-content text-muted mt-4">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -160,8 +176,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                         <div class="ribbon ribbon-info ribbon-shape">Info</div>
                                         <h5 class="fs-14 text-start">Ribbon Shape Right</h5>
                                         <div class="ribbon-content text-muted mt-4">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -171,7 +189,7 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;!-- Ribbon Shape --&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;!-- Ribbon Shape --&gt;
 &lt;div class=&quot;card ribbon-box border shadow-none mb-lg-0&quot;&gt;
 &lt;div class=&quot;card-body&quot;&gt;
 &lt;div class=&quot;ribbon ribbon-primary ribbon-shape&quot;&gt;Primary&lt;/div&gt;
@@ -238,8 +256,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                         <div class="ribbon ribbon-primary">New</div>
                                         <h5 class="fs-14 text-end">Fill Ribbon</h5>
                                         <div class="ribbon-content mt-3 text-muted">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -251,8 +271,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                         <div class="ribbon ribbon-success">Sale</div>
                                         <h5 class="fs-14 text-end">Fill Ribbon</h5>
                                         <div class="ribbon-content mt-3 text-muted">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -265,8 +287,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                         <div class="ribbon ribbon-info">New</div>
                                         <h5 class="fs-14 text-start">Fill Ribbon Right</h5>
                                         <div class="ribbon-content mt-3 text-muted">
-                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas
-                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio.</p>
+                                            <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse
+                                                convallis dignissim eros at volutpat. In egestas
+                                                mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et
+                                                sem ac, commodo dapibus odio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +300,7 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border ribbon-fill shadow-none mb-lg-0&quot;&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border ribbon-fill shadow-none mb-lg-0&quot;&gt;
 &lt;div class=&quot;card-body&quot;&gt;
 &lt;div class=&quot;ribbon ribbon-primary&quot;&gt;- 10 %&lt;/div&gt;
 &lt;h5 class=&quot;fs-14 text-end&quot;&gt;Fill Ribbon&lt;/h5&gt;
@@ -334,13 +358,17 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
 
                     <div class="live-preview">
                         <div class="row g-3">
-                            <p class="text-muted">Use <code>ribbon-box</code> class with <code>ribbon-two</code> class at child element to show below-mentioned shaped ribbon.</p>
+                            <p class="text-muted">Use <code>ribbon-box</code> class with <code>ribbon-two</code> class at
+                                child element to show below-mentioned shaped ribbon.</p>
                             <div class="col-xxl-4">
                                 <div class="card ribbon-box border shadow-none mb-lg-0">
                                     <div class="card-body text-muted">
                                         <div class="ribbon-two ribbon-two-primary"><span>Basic</span></div>
                                         <h5 class="fs-14 text-end mb-3">Box Ribbon</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div>
@@ -350,7 +378,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                     <div class="card-body text-muted">
                                         <div class="ribbon-two ribbon-two-success"><span>Standard</span></div>
                                         <h5 class="fs-14 text-end mb-3">Box Ribbon</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div>
@@ -361,7 +392,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                     <div class="card-body text-muted">
                                         <div class="ribbon-two ribbon-two-info"><span>Premium</span></div>
                                         <h5 class="fs-14 mb-3">Box Ribbon Right</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus elementum ornare.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus elementum ornare.</p>
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +404,7 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border shadow-none mb-lg-0&quot;&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border shadow-none mb-lg-0&quot;&gt;
 &lt;div class=&quot;card-body text-muted&quot;&gt;
 &lt;div class=&quot;ribbon-two ribbon-two-primary&quot;&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/div&gt;
 &lt;p class=&quot;mb-0&quot;&gt;Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.&lt;/p&gt;
@@ -415,13 +449,17 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
 
                     <div class="live-preview">
                         <div class="row g-3">
-                            <p class="text-muted">Use <code>ribbon-box</code> class with <code>ribbon-three</code> class at child element to show below-mentioned shaped ribbon.</p>
+                            <p class="text-muted">Use <code>ribbon-box</code> class with <code>ribbon-three</code> class at
+                                child element to show below-mentioned shaped ribbon.</p>
                             <div class="col-xxl-4">
                                 <div class="card ribbon-box border shadow-none mb-lg-0">
                                     <div class="card-body text-muted">
                                         <span class="ribbon-three ribbon-three-primary"><span>Featured</span></span>
                                         <h5 class="fs-14 text-end mb-3">Ribbon Shape</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div><!--end col-->
@@ -431,7 +469,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                     <div class="card-body text-muted">
                                         <span class="ribbon-three ribbon-three-success"><span>Featured</span></span>
                                         <h5 class="fs-14 text-end mb-3">Ribbon Shape</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div><!--end col-->
@@ -441,7 +482,10 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                     <div class="card-body text-muted">
                                         <span class="ribbon-three ribbon-three-info"><span>Featured</span></span>
                                         <h5 class="fs-14 mb-3">Ribbon Right Shape</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div><!--end col-->
@@ -450,7 +494,7 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border shadow-none mb-lg-0&quot;&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border shadow-none mb-lg-0&quot;&gt;
 &lt;div class=&quot;card-body text-muted&quot;&gt;
 &lt;span class=&quot;ribbon-three ribbon-three-primary&quot;&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/span&gt;
 &lt;p class=&quot;mb-0&quot;&gt;Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.&lt;/p&gt;
@@ -494,15 +538,20 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                 <div class="card-body">
                     <div class="live-preview">
                         <div class="row g-3">
-                            <p class="text-muted">Use <code>trending-ribbon</code> class to show ribbon with hovering effect.</p>
+                            <p class="text-muted">Use <code>trending-ribbon</code> class to show ribbon with hovering
+                                effect.</p>
                             <div class="col-xxl-4">
                                 <div class="card ribbon-box border shadow-none overflow-hidden mb-lg-0">
                                     <div class="card-body text-muted">
                                         <div class="ribbon ribbon-info ribbon-shape trending-ribbon">
-                                            <span class="trending-ribbon-text">Trending</span> <i class="ri-flashlight-fill text-white align-bottom float-end ms-1"></i>
+                                            <span class="trending-ribbon-text">Trending</span> <i
+                                                class="ri-flashlight-fill text-white align-bottom float-end ms-1"></i>
                                         </div>
                                         <h5 class="fs-14 text-end mb-3">Ribbon Shape</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div><!--end col-->
@@ -511,10 +560,14 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                 <div class="card ribbon-box border shadow-none overflow-hidden mb-lg-0">
                                     <div class="card-body text-muted">
                                         <div class="ribbon ribbon-info ribbon-shape trending-ribbon">
-                                            <span class="trending-ribbon-text">Trending</span> <i class="ri-flashlight-fill text-white align-bottom float-end ms-1"></i>
+                                            <span class="trending-ribbon-text">Trending</span> <i
+                                                class="ri-flashlight-fill text-white align-bottom float-end ms-1"></i>
                                         </div>
                                         <h5 class="fs-14 text-end mb-3">Ribbon Shape</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div><!--end col-->
@@ -523,10 +576,14 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                                 <div class="card ribbon-box right border shadow-none overflow-hidden mb-lg-0">
                                     <div class="card-body text-muted">
                                         <div class="ribbon ribbon-info ribbon-shape trending-ribbon">
-                                            <i class="ri-flashlight-fill text-white align-bottom float-start me-1"></i> <span class="trending-ribbon-text">Trending</span>
+                                            <i class="ri-flashlight-fill text-white align-bottom float-start me-1"></i>
+                                            <span class="trending-ribbon-text">Trending</span>
                                         </div>
                                         <h5 class="fs-14 mb-3">Ribbon Right Shape</h5>
-                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus pretium nec odio cursus.</p>
+                                        <p class="mb-0">Quisque nec turpis at urna dictum luctus. Suspendisse convallis
+                                            dignissim eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
+                                            aliquet. Nulla sapien mauris, eleifend et sem ac, commodo dapibus odio. Vivamus
+                                            pretium nec odio cursus.</p>
                                     </div>
                                 </div>
                             </div><!--end col-->
@@ -534,7 +591,7 @@ mattis dui. Aliquam mattis dictum aliquet. Nulla sapien mauris, eleifend et sem 
                         <!-- end row -->
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border shadow-none overflow-hidden&quot;&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;div class=&quot;card ribbon-box border shadow-none overflow-hidden&quot;&gt;
 &lt;div class=&quot;card-body text-muted&quot;&gt;
 &lt;div class=&quot;ribbon ribbon-info ribbon-shape trending-ribbon&quot;&gt;
 &lt;span class=&quot;trending-ribbon-text&quot;&gt;Trending&lt;/span&gt; &lt;i class=&quot;ri-flashlight-fill text-white align-bottom float-end ms-1&quot;&gt;&lt;/i&gt;

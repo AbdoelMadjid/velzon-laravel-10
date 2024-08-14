@@ -1,13 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.transactions') @endsection
+@section('title')
+    @lang('translation.transactions')
+@endsection
 @section('css')
-    <link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css')}}" rel="stylesheet" type="text/css" />
-
+    <link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Crypto @endslot
-        @slot('title') Transactions @endslot
+        @slot('li_1')
+            Crypto
+        @endslot
+        @slot('title')
+            Transactions
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xxl-3 col-md-6">
@@ -15,8 +20,8 @@
                 <div class="card-body">
                     <div class="d-flex mb-3">
                         <div class="flex-grow-1">
-                            <lord-icon
-                                src="https://cdn.lordicon.com/fhtaantg.json" trigger="loop" colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
+                            <lord-icon src="https://cdn.lordicon.com/fhtaantg.json" trigger="loop"
+                                colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
                             </lord-icon>
                         </div>
                         <div class="flex-shrink-0">
@@ -26,7 +31,8 @@
                             <a href="javascript:void(0);" class="badge bg-danger-subtle text-danger badge-border">EUR</a>
                         </div>
                     </div>
-                    <h3 class="mb-2">$<span class="counter-value" data-target="74858">0</span><small class="text-muted fs-13">.68k</small></h3>
+                    <h3 class="mb-2">$<span class="counter-value" data-target="74858">0</span><small
+                            class="text-muted fs-13">.68k</small></h3>
                     <h6 class="text-muted mb-0">Available Balance (USD)</h6>
                 </div>
             </div><!--end card-->
@@ -36,7 +42,8 @@
                 <div class="card-body">
                     <div class="d-flex mb-3">
                         <div class="flex-grow-1">
-                            <lord-icon src="https://cdn.lordicon.com/qhviklyi.json" trigger="loop" colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px"></lord-icon>
+                            <lord-icon src="https://cdn.lordicon.com/qhviklyi.json" trigger="loop"
+                                colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px"></lord-icon>
                         </div>
                         <div class="flex-shrink-0">
                             <a href="javascript:void(0);" class="badge bg-warning-subtle text-warning badge-border">BTC</a>
@@ -45,7 +52,8 @@
                             <a href="javascript:void(0);" class="badge bg-danger-subtle text-danger badge-border">EUR</a>
                         </div>
                     </div>
-                    <h3 class="mb-2">$<span class="counter-value" data-target="74361">0</span><small class="text-muted fs-13">.34k</small></h3>
+                    <h3 class="mb-2">$<span class="counter-value" data-target="74361">0</span><small
+                            class="text-muted fs-13">.34k</small></h3>
                     <h6 class="text-muted mb-0">Send (Previous Month)</h6>
                 </div>
             </div><!--end card-->
@@ -55,11 +63,8 @@
                 <div class="card-body">
                     <div class="d-flex mb-3">
                         <div class="flex-grow-1">
-                            <lord-icon
-                                src="https://cdn.lordicon.com/yeallgsa.json"
-                                trigger="loop"
-                                colors="primary:#405189,secondary:#0ab39c"
-                                style="width:55px;height:55px">
+                            <lord-icon src="https://cdn.lordicon.com/yeallgsa.json" trigger="loop"
+                                colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
                             </lord-icon>
                         </div>
                         <div class="flex-shrink-0">
@@ -69,7 +74,8 @@
                             <a href="javascript:void(0);" class="badge bg-danger-subtle text-danger badge-border">EUR</a>
                         </div>
                     </div>
-                    <h3 class="mb-2">$<span class="counter-value" data-target="97685">0</span><small class="text-muted fs-13">.22k</small></h3>
+                    <h3 class="mb-2">$<span class="counter-value" data-target="97685">0</span><small
+                            class="text-muted fs-13">.22k</small></h3>
                     <h6 class="text-muted mb-0">Receive (Previous Month)</h6>
                 </div>
             </div><!--end card-->
@@ -82,8 +88,7 @@
                             <div class="card-body bg-warning-subtle">
                                 <div class="d-flex mb-3">
                                     <div class="flex-grow-1">
-                                        <lord-icon
-                                            src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
+                                        <lord-icon src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
                                             colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
                                         </lord-icon>
                                     </div>
@@ -101,8 +106,7 @@
                             <div class="card-body bg-warning-subtle">
                                 <div class="d-flex mb-3">
                                     <div class="flex-grow-1">
-                                        <lord-icon
-                                            src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
+                                        <lord-icon src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
                                             colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
                                         </lord-icon>
                                     </div>
@@ -120,8 +124,7 @@
                             <div class="card-body bg-warning-subtle">
                                 <div class="d-flex mb-3">
                                     <div class="flex-grow-1">
-                                        <lord-icon
-                                            src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
+                                        <lord-icon src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
                                             colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
                                         </lord-icon>
                                     </div>
@@ -143,7 +146,8 @@
         <div class="col-sm-3">
             <div class="d-flex align-items-center gap-2">
                 <span class="text-muted flex-shrink-0">Sort by: </span>
-                <select class="form-control mb-0" data-choices data-choices-search-false name="choices-single-default" id="choices-single-default">
+                <select class="form-control mb-0" data-choices data-choices-search-false name="choices-single-default"
+                    id="choices-single-default">
                     <option value="All" selected>All</option>
                     <option value="USD">USD</option>
                     <option value="ETH">ETH</option>
@@ -173,7 +177,8 @@
                             <input type="text" class="form-control search" placeholder="Search for transactions...">
                             <i class="ri-search-line search-icon"></i>
                         </div>
-                        <button class="btn btn-success"><i class="ri-equalizer-line align-bottom me-1"></i> Filters</button>
+                        <button class="btn btn-success"><i class="ri-equalizer-line align-bottom me-1"></i>
+                            Filters</button>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -197,7 +202,8 @@
                     </thead>
                     <tbody class="list form-check-all">
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ001</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ001</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
@@ -208,7 +214,8 @@
                             <td class="date">24 Dec, 2021 <small class="text-muted">08:58AM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/btc.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/btc.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     BTC
                                 </div>
                             </td>
@@ -222,11 +229,13 @@
                                 <p class="text-muted mb-0">$697.88k</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-warning-subtle text-warning fs-11"><i class="ri-time-line align-bottom"></i> Processing</span>
+                                <span class="badge bg-warning-subtle text-warning fs-11"><i
+                                        class="ri-time-line align-bottom"></i> Processing</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ002</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ002</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
@@ -237,7 +246,8 @@
                             <td class="date">16 Dec, 2021 <small class="text-muted">10:32PM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/eth.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/eth.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     ETH
                                 </div>
                             </td>
@@ -251,11 +261,13 @@
                                 <p class="text-muted mb-0">$14565.35</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-success-subtle text-success fs-11"><i class="ri-checkbox-circle-line align-bottom"></i> Success</span>
+                                <span class="badge bg-success-subtle text-success fs-11"><i
+                                        class="ri-checkbox-circle-line align-bottom"></i> Success</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ003</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ003</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
@@ -266,7 +278,8 @@
                             <td class="date">04 Jan, 2022 <small class="text-muted">02:24AM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/eur.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/eur.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     EUR
                                 </div>
                             </td>
@@ -280,11 +293,13 @@
                                 <p class="text-muted mb-0">$354.14</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-danger-subtle text-danger fs-11"><i class="ri-close-circle-line align-bottom"></i> Failed</span>
+                                <span class="badge bg-danger-subtle text-danger fs-11"><i
+                                        class="ri-close-circle-line align-bottom"></i> Failed</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ004</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ004</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
@@ -295,7 +310,8 @@
                             <td class="date">28 Oct, 2021 <small class="text-muted">11:42AM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/gbp.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/gbp.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     GBP
                                 </div>
                             </td>
@@ -309,11 +325,13 @@
                                 <p class="text-muted mb-0">$7532.21</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-success-subtle text-success fs-11"><i class="ri-checkbox-circle-line align-bottom"></i> Success</span>
+                                <span class="badge bg-success-subtle text-success fs-11"><i
+                                        class="ri-checkbox-circle-line align-bottom"></i> Success</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ005</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ005</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
@@ -324,7 +342,8 @@
                             <td class="date">14 Nov, 2021 <small class="text-muted">12:38PM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/jpy.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/jpy.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     JPY
                                 </div>
                             </td>
@@ -338,11 +357,13 @@
                                 <p class="text-muted mb-0">$748.10</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-warning-subtle text-warning fs-11"><i class="ri-time-line align-bottom"></i> Processing</span>
+                                <span class="badge bg-warning-subtle text-warning fs-11"><i
+                                        class="ri-time-line align-bottom"></i> Processing</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ006</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ006</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
@@ -353,7 +374,8 @@
                             <td class="date">02 Jan, 2022 <small class="text-muted">08:58AM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/xrp.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/xrp.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     XRP
                                 </div>
                             </td>
@@ -367,11 +389,13 @@
                                 <p class="text-muted mb-0">$3254.20</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-danger-subtle text-danger fs-11"><i class="ri-close-circle-line align-bottom"></i> Failed</span>
+                                <span class="badge bg-danger-subtle text-danger fs-11"><i
+                                        class="ri-close-circle-line align-bottom"></i> Failed</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ007</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ007</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
@@ -382,7 +406,8 @@
                             <td class="date">17 Oct, 2021 <small class="text-muted">07:08PM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/ltc.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/ltc.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     LTC
                                 </div>
                             </td>
@@ -396,11 +421,13 @@
                                 <p class="text-muted mb-0">$149.32</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-success-subtle text-success fs-11"><i class="ri-checkbox-circle-line align-bottom"></i> Success</span>
+                                <span class="badge bg-success-subtle text-success fs-11"><i
+                                        class="ri-checkbox-circle-line align-bottom"></i> Success</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ008</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ008</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
@@ -411,7 +438,8 @@
                             <td class="date">27 Dec, 2021 <small class="text-muted">01:24PM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/xmr.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/xmr.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     XMR
                                 </div>
                             </td>
@@ -425,11 +453,13 @@
                                 <p class="text-muted mb-0">$754.91</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-danger-subtle text-danger fs-11"><i class="ri-close-circle-line align-bottom"></i> Failed</span>
+                                <span class="badge bg-danger-subtle text-danger fs-11"><i
+                                        class="ri-close-circle-line align-bottom"></i> Failed</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ009</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ009</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
@@ -440,7 +470,8 @@
                             <td class="date">23 Dec, 2021 <small class="text-muted">01:47AM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/xpm.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/xpm.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     XPM
                                 </div>
                             </td>
@@ -454,11 +485,13 @@
                                 <p class="text-muted mb-0">$657.28</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-warning-subtle text-warning fs-11"><i class="ri-time-line align-bottom"></i> Processing</span>
+                                <span class="badge bg-warning-subtle text-warning fs-11"><i
+                                        class="ri-time-line align-bottom"></i> Processing</span>
                             </td>
                         </tr><!--end tr-->
                         <tr>
-                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ010</a></td>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);"
+                                    class="fw-medium link-primary">#VZ010</a></td>
                             <td>
                                 <div class="avatar-xs">
                                     <div class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
@@ -469,7 +502,8 @@
                             <td class="date">15 Dec, 2021 <small class="text-muted">08:58AM</small></td>
                             <td class="currency_name">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/ppt.svg') }}" alt="" class="avatar-xxs me-2">
+                                    <img src="{{ URL::asset('build/images/svg/crypto-icons/ppt.svg') }}" alt=""
+                                        class="avatar-xxs me-2">
                                     PPT
                                 </div>
                             </td>
@@ -483,7 +517,8 @@
                                 <p class="text-muted mb-0">$398.35</p>
                             </td>
                             <td class="status">
-                                <span class="badge bg-success-subtle text-success fs-11"><i class="ri-checkbox-circle-line align-bottom"></i> Success</span>
+                                <span class="badge bg-success-subtle text-success fs-11"><i
+                                        class="ri-checkbox-circle-line align-bottom"></i> Success</span>
                             </td>
                         </tr><!--end tr-->
                     </tbody>

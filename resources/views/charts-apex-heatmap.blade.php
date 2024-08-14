@@ -20,7 +20,8 @@
 
                 <div class="card-body">
                     <div class="live-preview">
-                        <div id="basic_heatmap" data-colors='["--vz-success", "--vz-secondary-bg"]' class="apex-charts" dir="ltr"></div>
+                        <div id="basic_heatmap" data-colors='["--vz-success", "--vz-secondary-bg"]' class="apex-charts"
+                            dir="ltr"></div>
                     </div>
                 </div><!-- end card-body -->
             </div><!-- end card -->

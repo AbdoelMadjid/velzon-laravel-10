@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.progress') @endsection
+@section('title')
+    @lang('translation.progress')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Base UI @endslot
-        @slot('title') Progress Bars @endslot
+        @slot('li_1')
+            Base UI
+        @endslot
+        @slot('title')
+            Progress Bars
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -24,24 +30,24 @@
 
                     <div class="live-preview">
                         <div class="progress mb-4">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar" role="progressbar" style="width: 25%"
-                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar" role="progressbar" style="width: 50%"
-                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress mb-4">
-                            <div class="progress-bar" role="progressbar" style="width: 75%"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 100%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
@@ -81,8 +87,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="background-show-code" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="background-show-code">
+                            <input class="form-check-input code-switcher" type="checkbox" id="background-show-code">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -94,24 +99,24 @@
 
                     <div class="live-preview">
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"
-                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 15%" aria-valuenow="15"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
-                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
@@ -154,8 +159,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="labelprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="labelprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="labelprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -167,8 +171,8 @@
 
                     <div class="live-preview">
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 25%;"
-                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
                         </div>
                     </div>
 
@@ -192,8 +196,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="multibarprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="multibarprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="multibarprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -204,12 +207,12 @@
 
                     <div class="live-preview">
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 15%"
-                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success" role="progressbar" style="width: 30%"
                                 aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%"
-                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
@@ -238,8 +241,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="heightprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="heightprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="heightprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -254,35 +256,32 @@
                             <h5 class="fs-13">Small Progress</h5>
                             <!-- Prgress sm -->
                             <div class="progress progress-sm">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="mb-4">
                             <h5 class="fs-13">Default Progress </h5>
                             <!-- Prgress md -->
                             <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar"
-                                    style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;"
+                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="mb-4">
                             <h5 class="fs-13">Large Progress</h5>
                             <!-- Prgress lg -->
                             <div class="progress progress-lg">
-                                <div class="progress-bar bg-warning" role="progressbar"
-                                    style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div>
                             <h5 class="fs-13">Extra Large Progress</h5>
                             <!-- Prgress xl -->
                             <div class="progress progress-xl">
-                                <div class="progress-bar bg-danger" role="progressbar"
-                                    style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -322,8 +321,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="stripesprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="stripesprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="stripesprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -334,14 +332,12 @@
                         the progress.</p>
                     <div class="live-preview">
                         <div class="progress mb-4">
-                            <div class="progress-bar progress-bar-striped" role="progressbar"
-                                style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
-                                style="width: 40%" aria-valuenow="40" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
@@ -364,8 +360,7 @@
                     <h4 class="card-title mb-0 flex-grow-1">Animated Striped Progress</h4>
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
-                            <label for="animationstripesprogress-showcode"
-                                class="form-label text-muted">Show Code</label>
+                            <label for="animationstripesprogress-showcode" class="form-label text-muted">Show Code</label>
                             <input class="form-check-input code-switcher" type="checkbox"
                                 id="animationstripesprogress-showcode">
                         </div>
@@ -379,9 +374,8 @@
 
                     <div class="live-preview">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100" style="width: 75%"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                         </div>
                     </div>
 
@@ -407,8 +401,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="gradientprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="gradientprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="gradientprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -420,29 +413,24 @@
 
                     <div class="live-preview">
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-primary bg-gradient" role="progressbar"
-                                style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary bg-gradient" role="progressbar" style="width: 15%"
+                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-success bg-gradient" role="progressbar"
-                                style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success bg-gradient" role="progressbar" style="width: 25%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-info bg-gradient" role="progressbar"
-                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info bg-gradient" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress mb-4">
-                            <div class="progress-bar bg-warning bg-gradient" role="progressbar"
-                                style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning bg-gradient" role="progressbar" style="width: 75%"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-danger bg-gradient" role="progressbar"
-                                style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger bg-gradient" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
@@ -476,8 +464,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="animatedprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="animatedprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="animatedprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -495,8 +482,8 @@
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress animated-progress mb-4">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress animated-progress mb-4">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
@@ -542,8 +529,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="customprogress-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="customprogress-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="customprogress-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -561,8 +547,8 @@
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress animated-progress custom-progress mb-4">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="progress animated-progress custom-progress mb-4">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
@@ -627,9 +613,8 @@
                             </div>
                             <div class="flex-grow-1">
                                 <div class="progress animated-progress custom-progress progress-label">
-                                    <div class="progress-bar bg-primary" role="progressbar"
-                                        style="width: 15%" aria-valuenow="15" aria-valuemin="0"
-                                        aria-valuemax="100">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"
+                                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                                         <div class="label">15%</div>
                                     </div>
                                 </div>
@@ -646,9 +631,8 @@
                             </div>
                             <div class="flex-grow-1">
                                 <div class="progress animated-progress custom-progress progress-label">
-                                    <div class="progress-bar bg-success" role="progressbar"
-                                        style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         <div class="label">25%</div>
                                     </div>
                                 </div>
@@ -665,9 +649,8 @@
                             </div>
                             <div class="flex-grow-1">
                                 <div class="progress animated-progress custom-progress progress-label">
-                                    <div class="progress-bar bg-info" role="progressbar"
-                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                        aria-valuemax="100">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                         <div class="label">30%</div>
                                     </div>
                                 </div>
@@ -739,8 +722,7 @@
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="bsprogrescontent-showcode" class="form-label text-muted">Show
                                 Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox"
-                                id="bsprogrescontent-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="bsprogrescontent-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -763,9 +745,8 @@
                                 </div>
                             </div>
                             <div class="progress bg-secondary-subtle rounded-0">
-                                <div class="progress-bar bg-secondary" role="progressbar"
-                                    style="width: 30%" aria-valuenow="30" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 30%"
+                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -782,9 +763,8 @@
                                 </div>
                             </div>
                             <div class="progress bg-success-subtle rounded-0">
-                                <div class="progress-bar bg-success" role="progressbar"
-                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -801,9 +781,8 @@
                                 </div>
                             </div>
                             <div class="progress bg-danger-subtle rounded-0">
-                                <div class="progress-bar bg-danger" role="progressbar"
-                                    style="width: 82%" aria-valuenow="82" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 82%"
+                                    aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -884,8 +863,8 @@
                     <div class="live-preview">
                         <div class="position-relative m-4">
                             <div class="progress" style="height: 1px;">
-                                <div class="progress-bar" role="progressbar" style="width: 50%;"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <button type="button"
                                 class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
@@ -932,13 +911,12 @@
 
                     <div class="live-preview">
                         <div class="progress progress-step-arrow progress-info">
-                            <div class="progress-bar" role="progressbar" style="width: 100%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Step 1</div>
-                            <div class="progress-bar" role="progressbar" style="width: 100%"
-                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"> Step 2</div>
-                            <div class="progress-bar bg-light text-body" role="progressbar"
-                                style="width: 100%" aria-valuenow="20" aria-valuemin="0"
-                                aria-valuemax="100"> Step 3</div>
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">Step 1</div>
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="30"
+                                aria-valuemin="0" aria-valuemax="100"> Step 2</div>
+                            <div class="progress-bar bg-light text-body" role="progressbar" style="width: 100%"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> Step 3</div>
                         </div>
                     </div>
 
@@ -958,7 +936,6 @@
 
     </div>
     <!-- end row -->
-
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/libs/prismjs/prism.js') }}"></script>

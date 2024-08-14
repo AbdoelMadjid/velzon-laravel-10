@@ -1,10 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.highlight') @endsection
+@section('title')
+    @lang('translation.highlight')
+@endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Advanced UI @endslot
-        @slot('title') Highlight @endslot
+        @slot('li_1')
+            Advanced UI
+        @endslot
+        @slot('title')
+            Highlight
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -16,7 +21,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">HTML highlight is used to mark or highlight text that is of property, relevance, or special interest to an HTML document. here is the example shown below.</p>
+                    <p class="text-muted">HTML highlight is used to mark or highlight text that is of property, relevance, or
+                        special interest to an HTML document. here is the example shown below.</p>
 
                     <div class="live-preview">
                         <pre>
@@ -53,7 +59,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">CSS highlight is used to mark or highlight text that is of property, relevance, or special interest to a CSS document. Here is the example shown below.</p>
+                    <p class="text-muted">CSS highlight is used to mark or highlight text that is of property, relevance, or
+                        special interest to a CSS document. Here is the example shown below.</p>
                     <div class="live-preview">
                         <pre>
 <code class="language-css">body {
@@ -84,7 +91,8 @@ color: #74788d;
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Javascript highlight is used to mark or highlight text that is of property, relevance, or special interest to a Javascript document. Here is the example shown below.</p>
+                    <p class="text-muted">Javascript highlight is used to mark or highlight text that is of property,
+                        relevance, or special interest to a Javascript document. Here is the example shown below.</p>
                     <div class="live-preview">
                         <pre>
 <code class="language-js">function myFunction() {

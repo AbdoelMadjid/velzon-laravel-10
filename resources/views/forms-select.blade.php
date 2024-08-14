@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.form-select') @endsection
+@section('title')
+    @lang('translation.form-select')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Forms @endslot
-        @slot('title')Form Select @endslot
+        @slot('li_1')
+            Forms
+        @endslot
+        @slot('title')
+            Form Select
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -18,7 +24,8 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>&lt;select&gt;</code> attribute with numerous options to show value with choice's option.</p>
+                    <p class="text-muted">Use <code>&lt;select&gt;</code> attribute with numerous options to show value with
+                        choice's option.</p>
                     <div class="live-preview">
                         <div class="row">
                             <div class="col-lg-6">
@@ -49,8 +56,8 @@
                     </div>
 
 
-<div class="d-none code-view">
-<pre class="language-markup">
+                    <div class="d-none code-view">
+                        <pre class="language-markup">
 <code> &lt;select class=&quot;form-select mb-3&quot; aria-label=&quot;Default select example&quot;&gt;
 &lt;option selected&gt;Open this select menu&lt;/option&gt;
 &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
@@ -71,7 +78,7 @@
 &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
 &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
 &lt;/select&gt;</code></pre>
-</div>
+                    </div>
 
                 </div>
             </div>
@@ -91,7 +98,9 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>multiple</code> attribute to select multiple values and <code>size="your value"</code> attribute to show a number of choice option within a select area. </p>
+                    <p class="text-muted">Use <code>multiple</code> attribute to select multiple values and
+                        <code>size="your value"</code> attribute to show a number of choice option within a select area.
+                    </p>
                     <div class="live-preview">
                         <div class="row gy-4">
                             <div class="col-lg-6">
@@ -114,8 +123,8 @@
                             </div>
                         </div>
                     </div>
-<div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;">
+                    <div class="d-none code-view">
+                        <pre class="language-markup" style="height: 275px;">
 <code>&lt;select class=&quot;form-select&quot; multiple aria-label=&quot;multiple select example&quot;&gt;
 &lt;option selected&gt;Open this select menu (multiple select option)&lt;/option&gt;
 &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
@@ -131,7 +140,7 @@
 &lt;option value=&quot;4&quot;&gt;Four&lt;/option&gt;
 &lt;option value=&quot;5&quot;&gt;Five&lt;/option&gt;
 &lt;/select&gt;</code></pre>
-</div>
+                    </div>
 
                 </div>
             </div>
@@ -151,7 +160,8 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>form-select-sm</code> class to set small select size and <code>form-select-lg</code> class to form-select class to
+                    <p class="text-muted">Use <code>form-select-sm</code> class to set small select size and
+                        <code>form-select-lg</code> class to form-select class to
                         set large select size. No such class is required for default select size.</p>
                     <div class="live-preview">
                         <div class="row align-items-center g-3">
@@ -182,7 +192,7 @@
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;select class=&quot;form-select form-select-sm  mb-3&quot; aria-label=&quot;.form-select-sm example&quot;&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;select class=&quot;form-select form-select-sm  mb-3&quot; aria-label=&quot;.form-select-sm example&quot;&gt;
 &lt;option selected&gt;Open this select menu&lt;/option&gt;
 &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
 &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
@@ -225,7 +235,8 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="mb-3">
                                         <label for="choices-single-default" class="form-label text-muted">Default</label>
-                                        <p class="text-muted">Set <code>data-choices</code> attribute to set a default single select.</p>
+                                        <p class="text-muted">Set <code>data-choices</code> attribute to set a default
+                                            single select.</p>
                                         <select class="form-control" data-choices name="choices-single-default"
                                             id="choices-single-default">
                                             <option value="">This is a placeholder</option>
@@ -240,8 +251,11 @@
                                     <div class="mb-3">
                                         <label for="choices-single-groups" class="form-label text-muted">Option
                                             Groups</label>
-                                        <p class="text-muted">Set <code>data-choices data-choices-groups</code> attribute to set option group</p>
-                                        <select class="form-control" id="choices-single-groups" data-choices data-choices-groups  data-placeholder="Select City" name="choices-single-groups">
+                                        <p class="text-muted">Set <code>data-choices data-choices-groups</code> attribute
+                                            to set option group</p>
+                                        <select class="form-control" id="choices-single-groups" data-choices
+                                            data-choices-groups data-placeholder="Select City"
+                                            name="choices-single-groups">
                                             <option value="">Choose a city</option>
                                             <optgroup label="UK">
                                                 <option value="London">London</option>
@@ -281,16 +295,19 @@
                                     <div class="mb-3">
                                         <label for="choices-single-no-search" class="form-label text-muted">Options added
                                             via config with no search</label>
-                                        <p class="text-muted">Set <code>data-choices data-choices-search-false data-choices-removeItem</code></p>
-                                        <select class="form-control" id="choices-single-no-search" name="choices-single-no-search" data-choices data-choices-search-false  data-choices-removeItem>
-                                        <option value="Zero">Zero</option>
-                                        <option value="One">One</option>
-                                        <option value="Two">Two</option>
-                                        <option value="Three">Three</option>
-                                        <option value="Four">Four</option>
-                                        <option value="Five">Five</option>
-                                        <option value="Six">Six</option>
-                                    </select>
+                                        <p class="text-muted">Set <code>data-choices data-choices-search-false
+                                                data-choices-removeItem</code></p>
+                                        <select class="form-control" id="choices-single-no-search"
+                                            name="choices-single-no-search" data-choices data-choices-search-false
+                                            data-choices-removeItem>
+                                            <option value="Zero">Zero</option>
+                                            <option value="One">One</option>
+                                            <option value="Two">Two</option>
+                                            <option value="Three">Three</option>
+                                            <option value="Four">Four</option>
+                                            <option value="Five">Five</option>
+                                            <option value="Six">Six</option>
+                                        </select>
                                     </div>
                                 </div>
 
@@ -298,9 +315,10 @@
                                     <div class="mb-3">
                                         <label for="choices-single-no-sorting" class="form-label text-muted">Options added
                                             via config with no sorting</label>
-                                            <p class="text-muted">Set <code>data-choices data-choices-sorting-false</code> attribute.</p>
-                                        <select class="form-control" id="choices-single-no-sorting" name="choices-single-no-sorting" data-choices data-choices-sorting-false
-                                            >
+                                        <p class="text-muted">Set <code>data-choices data-choices-sorting-false</code>
+                                            attribute.</p>
+                                        <select class="form-control" id="choices-single-no-sorting"
+                                            name="choices-single-no-sorting" data-choices data-choices-sorting-false>
                                             <option value="Madrid">Madrid</option>
                                             <option value="Toronto">Toronto</option>
                                             <option value="Vancouver">Vancouver</option>
@@ -334,7 +352,8 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="mb-3">
-                                        <label for="choices-multiple-default" class="form-label text-muted">Default</label>
+                                        <label for="choices-multiple-default"
+                                            class="form-label text-muted">Default</label>
                                         <p class="text-muted">Set <code>data-choices multiple</code> attribute.</p>
                                         <select class="form-control" id="choices-multiple-default" data-choices
                                             name="choices-multiple-default" multiple>
@@ -350,9 +369,10 @@
                                     <div class="mb-3">
                                         <label for="choices-multiple-remove-button" class="form-label text-muted">With
                                             remove button</label>
-                                        <p class="text-muted">Set <code>data-choices data-choices-removeItem multiple</code> attribute.</p>
-                                        <select class="form-control" id="choices-multiple-remove-button" data-choices data-choices-removeItem name="choices-multiple-remove-button"
-                                            multiple>
+                                        <p class="text-muted">Set <code>data-choices data-choices-removeItem
+                                                multiple</code> attribute.</p>
+                                        <select class="form-control" id="choices-multiple-remove-button" data-choices
+                                            data-choices-removeItem name="choices-multiple-remove-button" multiple>
                                             <option value="Choice 1" selected>Choice 1</option>
                                             <option value="Choice 2">Choice 2</option>
                                             <option value="Choice 3">Choice 3</option>
@@ -365,9 +385,11 @@
                                     <div class="mb-3">
                                         <label for="choices-multiple-groups" class="form-label text-muted">Option
                                             groups</label>
-                                        <p class="text-muted">Set <code>data-choices data-choices-multiple-groups="true" multiple</code> attribute. </p>
-                                        <select class="form-control" id="choices-multiple-groups" name="choices-multiple-groups" data-choices data-choices-multiple-groups="true"
-                                            multiple>
+                                        <p class="text-muted">Set <code>data-choices data-choices-multiple-groups="true"
+                                                multiple</code> attribute. </p>
+                                        <select class="form-control" id="choices-multiple-groups"
+                                            name="choices-multiple-groups" data-choices
+                                            data-choices-multiple-groups="true" multiple>
                                             <option value="">Choose a city</option>
                                             <optgroup label="UK">
                                                 <option value="London">London</option>
@@ -416,9 +438,11 @@
                                     <div class="mb-3">
                                         <label for="choices-text-remove-button" class="form-label text-muted">Set limit
                                             values with remove button</label>
-                                            <p class="text-muted">Set <code>data-choices data-choices-limit="Required Limit" data-choices-removeItem</code>
-                                                attribute.</p>
-                                        <input class="form-control" id="choices-text-remove-button" data-choices data-choices-limit="3" data-choices-removeItem type="text"
+                                        <p class="text-muted">Set <code>data-choices data-choices-limit="Required Limit"
+                                                data-choices-removeItem</code>
+                                            attribute.</p>
+                                        <input class="form-control" id="choices-text-remove-button" data-choices
+                                            data-choices-limit="3" data-choices-removeItem type="text"
                                             value="Task-1" />
                                     </div>
                                 </div>
@@ -426,11 +450,13 @@
 
                                 <div class="col-lg-4 col-md-6">
                                     <div class="mb-3">
-                                        <label for="choices-text-unique-values" class="form-label text-muted">Unique values
+                                        <label for="choices-text-unique-values" class="form-label text-muted">Unique
+                                            values
                                             only, no pasting</label>
-                                        <p class="text-muted">Set <code>data-choices data-choices-text-unique-true</code> attribute.</p>
-                                        <input class="form-control" id="choices-text-unique-values" data-choices data-choices-text-unique-true type="text"
-                                            value="Project-A, Project-B" />
+                                        <p class="text-muted">Set <code>data-choices data-choices-text-unique-true</code>
+                                            attribute.</p>
+                                        <input class="form-control" id="choices-text-unique-values" data-choices
+                                            data-choices-text-unique-true type="text" value="Project-A, Project-B" />
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -439,8 +465,10 @@
 
                             <div>
                                 <label for="choices-text-disabled" class="form-label text-muted">Disabled</label>
-                                <p class="text-muted">Set <code>data-choices data-choices-text-disabled-true</code> attribute.</p>
-                                <input class="form-control" id="choices-text-disabled" data-choices data-choices-text-disabled-true type="text"
+                                <p class="text-muted">Set <code>data-choices data-choices-text-disabled-true</code>
+                                    attribute.</p>
+                                <input class="form-control" id="choices-text-disabled" data-choices
+                                    data-choices-text-disabled-true type="text"
                                     value="josh@joshuajohnson.co.uk, joe@bloggs.co.uk" />
                             </div>
                         </div>

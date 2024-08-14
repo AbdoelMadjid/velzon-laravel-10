@@ -81,13 +81,14 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm">
                                     <span class="avatar-title bg-warning-subtle rounded p-2">
-                                        <img src="{{ URL::asset('build/images/brands/slack.png') }}" alt="" class="img-fluid p-1">
+                                        <img src="{{ URL::asset('build/images/brands/slack.png') }}" alt=""
+                                            class="img-fluid p-1">
                                     </span>
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview"
-                                        class="text-body">Slack brand logo design</a></h5>
+                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview" class="text-body">Slack brand logo
+                                        design</a></h5>
                                 <p class="text-muted text-truncate-two-lines mb-3">Create a Brand logo
                                     design for a velzon admin.</p>
                             </div>
@@ -119,7 +120,8 @@
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
                                     data-bs-trigger="hover" data-bs-placement="top" title="Darline Williams">
                                     <div class="avatar-xxs">
-                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="rounded-circle img-fluid">
+                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
+                                            class="rounded-circle img-fluid">
                                     </div>
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
@@ -190,13 +192,14 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm">
                                     <span class="avatar-title bg-danger-subtle rounded p-2">
-                                        <img src="{{ URL::asset('build/images/brands/dribbble.png') }}" alt="" class="img-fluid p-1">
+                                        <img src="{{ URL::asset('build/images/brands/dribbble.png') }}" alt=""
+                                            class="img-fluid p-1">
                                     </span>
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview"
-                                        class="text-body">Redesign - Landing page</a></h5>
+                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview" class="text-body">Redesign -
+                                        Landing page</a></h5>
                                 <p class="text-muted text-truncate-two-lines mb-3">Resign a landing page
                                     design. as per abc minimal design.</p>
                             </div>
@@ -315,13 +318,14 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm">
                                     <span class="avatar-title bg-success-subtle rounded p-2">
-                                        <img src="{{ URL::asset('build/images/brands/mail_chimp.png') }}" alt="" class="img-fluid p-1">
+                                        <img src="{{ URL::asset('build/images/brands/mail_chimp.png') }}" alt=""
+                                            class="img-fluid p-1">
                                     </span>
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview"
-                                        class="text-body">Chat Application</a></h5>
+                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview" class="text-body">Chat
+                                        Application</a></h5>
                                 <p class="text-muted text-truncate-two-lines mb-3">Create a Chat
                                     application for business messaging needs. Collaborate efficiently
                                     with secure direct messages and group chats.</p>
@@ -434,13 +438,14 @@
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm">
                                     <span class="avatar-title bg-info-subtle rounded p-2">
-                                        <img src="{{ URL::asset('build/images/brands/dropbox.png') }}" alt="" class="img-fluid p-1">
+                                        <img src="{{ URL::asset('build/images/brands/dropbox.png') }}" alt=""
+                                            class="img-fluid p-1">
                                     </span>
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview"
-                                        class="text-body">Project App</a></h5>
+                                <h5 class="mb-1 fs-15"><a href="apps-projects-overview" class="text-body">Project App</a>
+                                </h5>
                                 <p class="text-muted text-truncate-two-lines mb-3">Create a project
                                     application for a project management and task management.</p>
                             </div>
@@ -521,8 +526,8 @@
                     <div class="p-3 mt-n3 mx-n3 bg-danger-subtle rounded-top">
                         <div class="d-flex align-items-center">
                             <div class="flex-grow-1">
-                                <h5 class="mb-0 fs-14"><a href="apps-projects-overview"
-                                        class="text-body">Multipurpose landing template</a></h5>
+                                <h5 class="mb-0 fs-14"><a href="apps-projects-overview" class="text-body">Multipurpose
+                                        landing template</a></h5>
                             </div>
                             <div class="flex-shrink-0">
                                 <div class="d-flex gap-1 align-items-center my-n2">
@@ -638,8 +643,8 @@
                     <div class="p-3 mt-n3 mx-n3 bg-warning-subtle rounded-top">
                         <div class="d-flex align-items-center">
                             <div class="flex-grow-1">
-                                <h5 class="mb-0 fs-14"><a href="apps-projects-overview"
-                                        class="text-body">Dashboard UI</a></h5>
+                                <h5 class="mb-0 fs-14"><a href="apps-projects-overview" class="text-body">Dashboard
+                                        UI</a></h5>
                             </div>
                             <div class="flex-shrink-0">
                                 <div class="d-flex gap-1 align-items-center my-n2">
@@ -745,8 +750,8 @@
                     <div class="p-3 mt-n3 mx-n3 bg-info-subtle rounded-top">
                         <div class="d-flex align-items-center">
                             <div class="flex-grow-1">
-                                <h5 class="mb-0 fs-14"><a href="apps-projects-overview"
-                                        class="text-body">Vector Images</a></h5>
+                                <h5 class="mb-0 fs-14"><a href="apps-projects-overview" class="text-body">Vector
+                                        Images</a></h5>
                             </div>
                             <div class="flex-shrink-0">
                                 <div class="d-flex gap-1 align-items-center my-n2">
@@ -902,7 +907,8 @@
                             <div class="avatar-group">
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
                                     data-bs-trigger="hover" data-bs-placement="top" title="Virginia Wall">
-                                    <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                    <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
+                                        class="rounded-circle avatar-xxs">
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
                                     data-bs-trigger="hover" data-bs-placement="top" title="Add Members">
@@ -975,7 +981,8 @@
                             </div>
                         </div>
                         <div class="text-center pb-3">
-                            <img src="{{ URL::asset('build/images/brands/dribbble.png') }}" alt="" height="32">
+                            <img src="{{ URL::asset('build/images/brands/dribbble.png') }}" alt=""
+                                height="32">
                         </div>
                     </div>
 
@@ -1109,11 +1116,13 @@
                             <div class="avatar-group">
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
                                     data-bs-trigger="hover" data-bs-placement="top" title="Irma Metz">
-                                    <img src="{{ URL::asset('build/images/users/avatar-9.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                    <img src="{{ URL::asset('build/images/users/avatar-9.jpg') }}" alt=""
+                                        class="rounded-circle avatar-xxs">
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
                                     data-bs-trigger="hover" data-bs-placement="top" title="James Clem">
-                                    <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                    <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt=""
+                                        class="rounded-circle avatar-xxs">
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip"
                                     data-bs-trigger="hover" data-bs-placement="top" title="Add Members">
@@ -1182,7 +1191,8 @@
                             </div>
                         </div>
                         <div class="text-center pb-3">
-                            <img src="{{ URL::asset('build/images/brands/dropbox.png') }}" alt="" height="32">
+                            <img src="{{ URL::asset('build/images/brands/dropbox.png') }}" alt=""
+                                height="32">
                         </div>
                     </div>
 
@@ -1297,13 +1307,14 @@
                             </div>
                         </div>
                         <div class="text-center pb-3">
-                            <img src="{{ URL::asset('build/images/brands/mail_chimp.png') }}" alt="" height="32">
+                            <img src="{{ URL::asset('build/images/brands/mail_chimp.png') }}" alt=""
+                                height="32">
                         </div>
                     </div>
 
                     <div class="py-3">
-                        <h5 class="mb-3 fs-14"><a href="apps-projects-overview"
-                                class="text-body">Multipurpose landing template</a></h5>
+                        <h5 class="mb-3 fs-14"><a href="apps-projects-overview" class="text-body">Multipurpose landing
+                                template</a></h5>
                         <div class="row gy-3">
                             <div class="col-6">
                                 <div>
@@ -1367,8 +1378,8 @@
                             </div>
                         </div>
                         <div class="progress progress-sm animated-progress">
-                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100" style="width: 75%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
                             </div><!-- /.progress-bar -->
                         </div><!-- /.progress -->
                     </div>
@@ -1438,7 +1449,8 @@
                     </div>
                     <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
                         <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn w-sm btn-danger" id="remove-project">Yes, Delete It!</button>
+                        <button type="button" class="btn w-sm btn-danger" id="remove-project">Yes, Delete
+                            It!</button>
                     </div>
                 </div>
 

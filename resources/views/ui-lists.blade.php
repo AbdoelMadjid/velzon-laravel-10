@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.lists') @endsection
+@section('title')
+    @lang('translation.lists')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Base UI @endslot
-        @slot('title') Lists @endslot
+        @slot('li_1')
+            Base UI
+        @endslot
+        @slot('title')
+            Lists
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -19,17 +25,22 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>list-group</code> class in an unordered list and <code>list-group-item</code> class to create a default list group.</p>
+                    <p class="text-muted">Use <code>list-group</code> class in an unordered list and
+                        <code>list-group-item</code> class to create a default list group.</p>
                     <div class="live-preview">
                         <ul class="list-group">
-                            <li class="list-group-item"><i class="ri-bill-line align-middle me-2"></i> Send the billing agreement</li>
-                            <li class="list-group-item"><i class="ri-file-copy-2-line align-middle me-2"></i>Send over all the documentation.</li>
-                            <li class="list-group-item"><i class="ri-question-answer-line align-middle me-2"></i>Meeting with daron to review the intake form</li>
-                            <li class="list-group-item"><i class="ri-secure-payment-line align-middle me-2"></i>Check uikings theme and give customer support</li>
+                            <li class="list-group-item"><i class="ri-bill-line align-middle me-2"></i> Send the billing
+                                agreement</li>
+                            <li class="list-group-item"><i class="ri-file-copy-2-line align-middle me-2"></i>Send over all
+                                the documentation.</li>
+                            <li class="list-group-item"><i class="ri-question-answer-line align-middle me-2"></i>Meeting
+                                with daron to review the intake form</li>
+                            <li class="list-group-item"><i class="ri-secure-payment-line align-middle me-2"></i>Check
+                                uikings theme and give customer support</li>
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;ri-bill-line align-middle me-2&quot;&gt;&lt;/i&gt; Send the billing agreement&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;ri-file-copy-2-line align-middle me-2&quot;&gt;&lt;/i&gt;Send over all the documentation.&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;ri-question-answer-line align-middle me-2&quot;&gt;&lt;/i&gt;Meeting with daron to review the intake form&lt;/li&gt;
@@ -53,7 +64,8 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>active</code> class to <code>list-group-item</code> to indicate the current active selection.</p>
+                    <p class="text-muted">Use <code>active</code> class to <code>list-group-item</code> to indicate the
+                        current active selection.</p>
                     <div class="live-preview">
                         <ul class="list-group">
                             <li class="list-group-item active" aria-current="true">Send the billing agreement</li>
@@ -64,7 +76,7 @@
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item active&quot; aria-current=&quot;true&quot;&gt;Send the billing agreement&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Send over all the documentation.&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Meeting with daron to review the intake form&lt;/li&gt;
@@ -89,13 +101,15 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>disabled</code> class to <code>list-group-item</code> to make it <em>appear</em> disabled.</p>
+                    <p class="text-muted">Use <code>disabled</code> class to <code>list-group-item</code> to make it
+                        <em>appear</em> disabled.</p>
                     <div class="live-preview">
                         <ul class="list-group">
                             <li class="list-group-item disabled" aria-disabled="true">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="avatar-xs rounded-circle">
+                                        <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
+                                            class="avatar-xs rounded-circle">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         James Ballard
@@ -105,7 +119,8 @@
                             <li class="list-group-item">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="avatar-xs rounded-circle">
+                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
+                                            class="avatar-xs rounded-circle">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         Nancy Martino
@@ -115,7 +130,8 @@
                             <li class="list-group-item">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="avatar-xs rounded-circle">
+                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
+                                            class="avatar-xs rounded-circle">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         Henry Baird
@@ -125,7 +141,8 @@
                             <li class="list-group-item">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="avatar-xs rounded-circle">
+                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
+                                            class="avatar-xs rounded-circle">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         Erica Kernan
@@ -135,7 +152,7 @@
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 215px;"><code>&lt;ul class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup" style="height: 215px;"><code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item disabled&quot; aria-disabled=&quot;true&quot;&gt;
 &lt;div class=&quot;d-flex align-items-center&quot;&gt;
 &lt;div class=&quot;flex-shrink-0&quot;&gt;
@@ -195,19 +212,25 @@ Erica Kernan
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>&lt;a&gt;</code> tag to create actionable list group items with hover, disabled, and active states by adding list-group-item-action.</p>
+                    <p class="text-muted">Use <code>&lt;a&gt;</code> tag to create actionable list group items with hover,
+                        disabled, and active states by adding list-group-item-action.</p>
                     <div class="live-preview">
                         <div class="list-group list-group-fill-success">
-                            <a href="#" class="list-group-item list-group-item-action active"><i class="ri-download-2-fill align-middle me-2"></i>Category Download</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="ri-shield-check-line align-middle me-2"></i>Security Access</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="ri-database-2-line align-middle me-2"></i>Storage folder</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="ri-notification-3-line align-middle me-2"></i>Push Notification</a>
-                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"><i class="ri-moon-fill align-middle me-2"></i>Dark Mode</a>
+                            <a href="#" class="list-group-item list-group-item-action active"><i
+                                    class="ri-download-2-fill align-middle me-2"></i>Category Download</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="ri-shield-check-line align-middle me-2"></i>Security Access</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="ri-database-2-line align-middle me-2"></i>Storage folder</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="ri-notification-3-line align-middle me-2"></i>Push Notification</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"><i
+                                    class="ri-moon-fill align-middle me-2"></i>Dark Mode</a>
                         </div>
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;div class=&quot;list-group list-group-fill-success&quot;&gt;
+                        <pre class="language-markup"><code>&lt;div class=&quot;list-group list-group-fill-success&quot;&gt;
 &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action active&quot;&gt;&lt;i class=&quot;ri-download-2-fill align-middle me-2&quot;&gt;&lt;/i&gt;Category Download&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;i class=&quot;ri-shield-check-line align-middle me-2&quot;&gt;&lt;/i&gt;Security Access&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;i class=&quot;ri-database-2-line align-middle me-2&quot;&gt;&lt;/i&gt;Storage folder&lt;/a&gt;
@@ -232,18 +255,24 @@ Erica Kernan
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>&lt;button&gt;</code> tag to create actionable list group items with hover, disabled, and active states by adding list-group-item-action.</p>
+                    <p class="text-muted">Use <code>&lt;button&gt;</code> tag to create actionable list group items with
+                        hover, disabled, and active states by adding list-group-item-action.</p>
                     <div class="live-preview">
                         <div class="list-group">
-                            <button type="button" class="list-group-item list-group-item-action active" aria-current="true"><i class="ri-reply-fill align-middle me-2"></i>Reply</button>
-                            <button type="button" class="list-group-item list-group-item-action"><i class="ri-share-forward-fill align-middle me-2"></i>Forward Message</button>
-                            <button type="button" class="list-group-item list-group-item-action"><i class="ri-equalizer-line align-middle me-2"></i>Filter Message</button>
-                            <button type="button" class="list-group-item list-group-item-action"><i class="ri-delete-bin-5-line align-middle me-2"></i>Delete Message</button>
-                            <button type="button" class="list-group-item list-group-item-action" disabled><i class="ri-forbid-line align-middle me-2"></i>Block "Mark Spencer</button>
+                            <button type="button" class="list-group-item list-group-item-action active"
+                                aria-current="true"><i class="ri-reply-fill align-middle me-2"></i>Reply</button>
+                            <button type="button" class="list-group-item list-group-item-action"><i
+                                    class="ri-share-forward-fill align-middle me-2"></i>Forward Message</button>
+                            <button type="button" class="list-group-item list-group-item-action"><i
+                                    class="ri-equalizer-line align-middle me-2"></i>Filter Message</button>
+                            <button type="button" class="list-group-item list-group-item-action"><i
+                                    class="ri-delete-bin-5-line align-middle me-2"></i>Delete Message</button>
+                            <button type="button" class="list-group-item list-group-item-action" disabled><i
+                                    class="ri-forbid-line align-middle me-2"></i>Block "Mark Spencer</button>
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;div class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup"><code>&lt;div class=&quot;list-group&quot;&gt;
 &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action active&quot; aria-current=&quot;true&quot;&gt;&lt;i class=&quot;ri-reply-fill align-middle me-2&quot;&gt;&lt;/i&gt;Reply&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;i class=&quot;ri-share-forward-fill align-middle me-2&quot;&gt;&lt;/i&gt;Forward Message&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;i class=&quot;ri-equalizer-line align-middle me-2&quot;&gt;&lt;/i&gt;Filter Message&lt;/button&gt;
@@ -268,7 +297,8 @@ Erica Kernan
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>list-group-flush</code> class to remove some borders and rounded corners to render list group items.</p>
+                    <p class="text-muted">Use <code>list-group-flush</code> class to remove some borders and rounded
+                        corners to render list group items.</p>
                     <div class="live-preview">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Send the billing agreement</li>
@@ -279,7 +309,7 @@ Erica Kernan
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+                        <pre class="language-markup"><code>&lt;ul class=&quot;list-group list-group-flush&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Send the billing agreement&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Send over all the documentation.&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Meeting with daron to review the intake form&lt;/li&gt;
@@ -307,7 +337,8 @@ Erica Kernan
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>list-group-horizontal</code> class to change the layout of list group items from vertical to horizontal across all breakpoints.</p>
+                    <p class="text-muted">Use <code>list-group-horizontal</code> class to change the layout of list group
+                        items from vertical to horizontal across all breakpoints.</p>
                     <div class="live-preview">
                         <ul class="list-group list-group-horizontal-md mb-3">
                             <li class="list-group-item">Inbox</li>
@@ -326,7 +357,7 @@ Erica Kernan
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;!-- Start Alignment --&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;!-- Start Alignment --&gt;
 &lt;ul class=&quot;list-group list-group-horizontal-md&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Inbox&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Work&lt;/li&gt;
@@ -367,7 +398,8 @@ Erica Kernan
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use contextual classes to style list items with a stateful background and color.</p>
+                    <p class="text-muted">Use contextual classes to style list items with a stateful background and color.
+                    </p>
                     <div class="live-preview">
                         <ul class="list-group">
                             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -382,7 +414,7 @@ Erica Kernan
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
 &lt;li class=&quot;list-group-item list-group-item-primary&quot;&gt;A simple primary list group item&lt;/li&gt;
 &lt;li class=&quot;list-group-item list-group-item-secondary&quot;&gt;A simple secondary list group item&lt;/li&gt;
@@ -406,27 +438,38 @@ Erica Kernan
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="contextuallist-withlink-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="contextuallist-withlink-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="contextuallist-withlink-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example.</p>
+                    <p class="text-muted">Contextual classes also work with <code>.list-group-item-action</code>. Note the
+                        addition of the hover styles here not present in the previous example.</p>
                     <div class="live-preview">
                         <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action">A simple default list group
+                                item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A
+                                simple primary list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A
+                                simple secondary list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">A
+                                simple success list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A
+                                simple danger list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A
+                                simple warning list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple
+                                info list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light">A
+                                simple light list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple
+                                dark list group item</a>
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;div class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup"><code>&lt;div class=&quot;list-group&quot;&gt;
 &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;A simple default list group item&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-primary&quot;&gt;A simple primary list group item&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-secondary&quot;&gt;A simple secondary list group item&lt;/a&gt;
@@ -455,7 +498,8 @@ Erica Kernan
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>list-group-fill-</code> with modifier class to style list items with a stateful background and color.</p>
+                    <p class="text-muted">Use <code>list-group-fill-</code> with modifier class to style list items with a
+                        stateful background and color.</p>
                     <div class="live-preview">
                         <ul class="list-group">
                             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -470,7 +514,7 @@ Erica Kernan
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup"><code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
 &lt;li class=&quot;list-group-item list-group-fill-primary&quot;&gt;A simple primary list group item&lt;/li&gt;
 &lt;li class=&quot;list-group-item list-group-fill-secondary&quot;&gt;A simple secondary list group item&lt;/li&gt;
@@ -503,7 +547,8 @@ Erica Kernan
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="https://getbootstrap.com/docs/5.1/utilities/flex/">flexbox utilities</a>.</p>
+                    <p class="text-muted">Add nearly any HTML within, even for linked list groups like the one below, with
+                        the help of <a href="https://getbootstrap.com/docs/5.1/utilities/flex/">flexbox utilities</a>.</p>
                     <div class="live-preview">
                         <div class="list-group">
                             <a href="javascript:void(0);" class="list-group-item list-group-item-action active">
@@ -512,14 +557,18 @@ Erica Kernan
                                 </div>
                                 <div class="d-flex mb-2 align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="avatar-sm rounded-circle" />
+                                        <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
+                                            class="avatar-sm rounded-circle" />
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="list-title fs-15 mb-1">Charlie Pritchard</h5>
                                         <p class="list-text mb-0 fs-12">12 min Ago</p>
                                     </div>
                                 </div>
-                                <p class="list-text mb-0">They all have something to say beyond the words on the page. They can come across as casual or neutral, exotic or graphic. That's why it's important to think about your message, then choose a font that fits. Cosby sweater eu banh mi, qui irure terry richardson ex squid.</p>
+                                <p class="list-text mb-0">They all have something to say beyond the words on the page. They
+                                    can come across as casual or neutral, exotic or graphic. That's why it's important to
+                                    think about your message, then choose a font that fits. Cosby sweater eu banh mi, qui
+                                    irure terry richardson ex squid.</p>
                             </a>
                             <a href="javascript:void(0);" class="list-group-item list-group-item-action">
                                 <div class="float-end">
@@ -527,14 +576,18 @@ Erica Kernan
                                 </div>
                                 <div class="d-flex mb-2 align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="avatar-sm rounded-circle" />
+                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
+                                            class="avatar-sm rounded-circle" />
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="list-title fs-15 mb-1">Dominic Charlton</h5>
                                         <p class="list-text mb-0 fs-12">12 min Ago</p>
                                     </div>
                                 </div>
-                                <p class="list-text mb-0">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.</p>
+                                <p class="list-text mb-0">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art
+                                    party before they sold out master cleanse gluten-free squid scenester freegan cosby
+                                    sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo
+                                    park Austin.</p>
                             </a>
                             <a href="javascript:void(0);" class="list-group-item list-group-item-action">
                                 <div class="float-end">
@@ -542,14 +595,18 @@ Erica Kernan
                                 </div>
                                 <div class="d-flex mb-2 align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="avatar-sm rounded-circle" />
+                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
+                                            class="avatar-sm rounded-circle" />
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="list-title fs-15 mb-1">Declan Long</h5>
                                         <p class="list-text mb-0 fs-12">12 min Ago</p>
                                     </div>
                                 </div>
-                                <p class="list-text mb-0">Big July earthquakes confound zany experimental vow. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. try again until it looks right, and each assumenda labore aes Homo nostrud organic, assumenda labore aesthetic magna elements, buttons, everything.</p>
+                                <p class="list-text mb-0">Big July earthquakes confound zany experimental vow. My girl wove
+                                    six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to
+                                    waltz. try again until it looks right, and each assumenda labore aes Homo nostrud
+                                    organic, assumenda labore aesthetic magna elements, buttons, everything.</p>
                             </a>
                             <a href="javascript:void(0);" class="list-group-item list-group-item-action">
                                 <div class="float-end">
@@ -557,19 +614,23 @@ Erica Kernan
                                 </div>
                                 <div class="d-flex mb-2 align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="avatar-sm rounded-circle" />
+                                        <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt=""
+                                            class="avatar-sm rounded-circle" />
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="list-title fs-15 mb-1">Angela Bernier</h5>
                                         <p class="list-text mb-0 fs-12">5 days Ago</p>
                                     </div>
                                 </div>
-                                <p class="list-text mb-0">Just like in the image where we talked about using multiple fonts, you can see that the background in this graphic design is blurred. Whenever you put text on top of an image, it’s important that your viewers can understand the text, and sometimes that means applying a gaussian readable.</p>
+                                <p class="list-text mb-0">Just like in the image where we talked about using multiple
+                                    fonts, you can see that the background in this graphic design is blurred. Whenever you
+                                    put text on top of an image, it’s important that your viewers can understand the text,
+                                    and sometimes that means applying a gaussian readable.</p>
                             </a>
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 300px;">
+                        <pre class="language-markup" style="height: 300px;">
 <code>&lt;div class=&quot;list-group&quot;&gt;
 &lt;a href=&quot;javascript:void(0);&quot; class=&quot;list-group-item list-group-item-action active&quot;&gt;
 &lt;div class=&quot;float-end&quot;&gt;
@@ -652,7 +713,8 @@ Successful
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use badges to any list group item to show unread counts, activity, and more with the help of some <a href="https://getbootstrap.com/docs/5.1/utilities/">utilities</a>.</p>
+                    <p class="text-muted">Use badges to any list group item to show unread counts, activity, and more with
+                        the help of some <a href="https://getbootstrap.com/docs/5.1/utilities/">utilities</a>.</p>
                     <div class="live-preview">
                         <ul class="list-group">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -665,7 +727,8 @@ Successful
                                 Meeting with daron to review the intake form <span class="badge bg-danger">Low</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Check uikings theme and give customer support <span class="badge bg-secondary">Medium</span>
+                                Check uikings theme and give customer support <span
+                                    class="badge bg-secondary">Medium</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Start making a presentation <span class="badge bg-success">High</span>
@@ -673,7 +736,7 @@ Successful
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 200px;"><code>&lt;ul class=&quot;list-group&quot;&gt;
+                        <pre class="language-markup" style="height: 200px;"><code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;
 Send the billing agreement &lt;span class=&quot;badge bg-success&quot;&gt;High&lt;/span&gt;
 &lt;/li&gt;
@@ -734,7 +797,7 @@ Start making a presentation &lt;span class=&quot;badge bg-success&quot;&gt;High&
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;">
+                        <pre class="language-markup" style="height: 275px;">
 <code>&lt;div class=&quot;list-group&quot;&gt;
 &lt;label class=&quot;list-group-item&quot;&gt;
 &lt;input class=&quot;form-check-input me-1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
@@ -779,29 +842,34 @@ Wrong UX/UI Solution
                     <div class="live-preview">
                         <div class="list-group">
                             <label class="list-group-item">
-                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios" type="radio" value="">
+                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios"
+                                    type="radio" value="">
                                 Declined Payment
                             </label>
                             <label class="list-group-item">
-                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios" type="radio" value="" checked>
+                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios"
+                                    type="radio" value="" checked>
                                 Delivery Error
                             </label>
                             <label class="list-group-item">
-                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios" type="radio" value="">
+                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios"
+                                    type="radio" value="">
                                 Wrong Amount
                             </label>
                             <label class="list-group-item">
-                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios" type="radio" value="">
+                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios"
+                                    type="radio" value="">
                                 Wrong Address
                             </label>
                             <label class="list-group-item">
-                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios" type="radio" value="">
+                                <input class="form-check-input fs-14 mt-0 align-middle me-1" name="exampleRadios"
+                                    type="radio" value="">
                                 Wrong UX/UI Solution
                             </label>
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;">
+                        <pre class="language-markup" style="height: 275px;">
 <code>&lt;div class=&quot;list-group&quot;&gt;
 &lt;label class=&quot;list-group-item&quot;&gt;
 &lt;input class=&quot;form-check-input me-1&quot; name=&quot;exampleRadios&quot; type=&quot;radio&quot; value=&quot;&quot;&gt;
@@ -845,15 +913,20 @@ Wrong UX/UI Solution
                     <p class="text-muted">Use icons to any list group item to show icons to list group items.</p>
                     <div class="live-preview">
                         <ul class="list-group">
-                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Send the billing agreement</li>
-                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Send over all the documentation.</li>
-                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Meeting with daron to review the intake form</li>
-                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Check uikings theme and give customer support</li>
-                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Start making a presentation</li>
+                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Send the
+                                billing agreement</li>
+                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Send
+                                over all the documentation.</li>
+                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Meeting
+                                with daron to review the intake form</li>
+                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Check
+                                uikings theme and give customer support</li>
+                            <li class="list-group-item"><i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Start
+                                making a presentation</li>
                         </ul>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;mdi mdi-check-bold align-middle lh-1 me-2&quot;&gt;&lt;/i&gt; Send the billing agreement&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;&lt;i class=&quot;mdi mdi-check-bold align-middle lh-1 me-2&quot;&gt;&lt;/i&gt; Send over all the documentation.&lt;/li&gt;
@@ -879,7 +952,8 @@ Wrong UX/UI Solution
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>list-group-numbered</code> class (optionally use an <code>&lt;ol&gt;</code> element) to show numbered list group items. </p>
+                    <p class="text-muted">Use <code>list-group-numbered</code> class (optionally use an
+                        <code>&lt;ol&gt;</code> element) to show numbered list group items. </p>
                     <div class="live-preview">
                         <ol class="list-group list-group-numbered">
                             <li class="list-group-item">Send the billing agreement</li>
@@ -890,7 +964,7 @@ Wrong UX/UI Solution
                         </ol>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;ol class=&quot;list-group list-group-numbered&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Send the billing agreement&lt;/li&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;Send over all the documentation.&lt;/li&gt;
@@ -911,12 +985,15 @@ Wrong UX/UI Solution
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="withcustomcontent-list-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="withcustomcontent-list-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="withcustomcontent-list-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="https://getbootstrap.com/docs/5.1/utilities/flex/">flexbox utilities</a>.</p>                           <div class="live-preview">
+                    <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a
+                            href="https://getbootstrap.com/docs/5.1/utilities/flex/">flexbox utilities</a>.</p>
+                    <div class="live-preview">
                         <div data-simplebar style="max-height: 215px;">
                             <ul class="list-group mb-1">
                                 <li class="list-group-item">
@@ -964,7 +1041,8 @@ Wrong UX/UI Solution
                                         <div class="flex-grow-1">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="avatar-xs rounded" />
+                                                    <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                                        alt="" class="avatar-xs rounded" />
                                                 </div>
                                                 <div class="flex-shrink-0 ms-2">
                                                     <h6 class="fs-14 mb-0">Emily Slater</h6>
@@ -1002,7 +1080,8 @@ Wrong UX/UI Solution
                                         <div class="flex-grow-1">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0">
-                                                    <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="avatar-xs rounded" />
+                                                    <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}"
+                                                        alt="" class="avatar-xs rounded" />
                                                 </div>
                                                 <div class="flex-shrink-0 ms-2">
                                                     <h6 class="fs-14 mb-0">Harvey Wells</h6>
@@ -1019,7 +1098,7 @@ Wrong UX/UI Solution
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 215px;">
+                        <pre class="language-markup" style="height: 215px;">
 <code>&lt;div data-simplebar style=&quot;max-height: 215px;&quot;&gt;
 &lt;ul class=&quot;list-group&quot;&gt;
 &lt;li class=&quot;list-group-item&quot;&gt;
@@ -1128,9 +1207,9 @@ Wrong UX/UI Solution
 
     </div>
     <!-- end row -->
-    @endsection
-    @section('script')
-        <script src="{{ URL::asset('build/libs/prismjs/prism.js') }}"></script>
+@endsection
+@section('script')
+    <script src="{{ URL::asset('build/libs/prismjs/prism.js') }}"></script>
 
-        <script src="{{ URL::asset('build/js/app.js') }}"></script>
-    @endsection
+    <script src="{{ URL::asset('build/js/app.js') }}"></script>
+@endsection

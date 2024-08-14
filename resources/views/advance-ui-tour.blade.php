@@ -1,13 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.tour') @endsection
+@section('title')
+    @lang('translation.tour')
+@endsection
 @section('css')
-    <link href="{{ URL::asset('build/libs/shepherd.js/css/shepherd.css')}}" rel="stylesheet" type="text/css" />
-
+    <link href="{{ URL::asset('build/libs/shepherd.js/css/shepherd.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Advance UI @endslot
-        @slot('title') Tour @endslot
+        @slot('li_1')
+            Advance UI
+        @endslot
+        @slot('title')
+            Tour
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -18,7 +23,8 @@
 
                 <div class="card-body">
 
-                    <p class="text-muted mb-4">Use when you want to help users along getting accustomed to your user interface or
+                    <p class="text-muted mb-4">Use when you want to help users along getting accustomed to your user
+                        interface or
                         Use when you want to notify your users of new or unfamiliar features.
                     </p>
 
@@ -27,8 +33,10 @@
                             <div class="col-lg-5">
                                 <div class="text-center mt-4 mb-5">
                                     <div class="py-3 px-2 d-inline-block" id="logo-tour">
-                                        <img src="{{ URL::asset('build/images/logo-dark.png') }}" class="card-logo card-logo-dark" alt="logo" height="17">
-                                        <img src="{{ URL::asset('build/images/logo-light.png') }}" class="card-logo card-logo-light" alt="logo" height="17">
+                                        <img src="{{ URL::asset('build/images/logo-dark.png') }}"
+                                            class="card-logo card-logo-dark" alt="logo" height="17">
+                                        <img src="{{ URL::asset('build/images/logo-light.png') }}"
+                                            class="card-logo card-logo-light" alt="logo" height="17">
                                     </div>
                                     <h5 class="fs-16">Responsive Admin Dashboard Template</h5>
                                     <p class="text-muted">Vestibulum auctor tincidunt semper. Phasellus
@@ -51,8 +59,7 @@
                                         <div class="card border shadow-none">
                                             <div class="card-body text-center">
                                                 <div class="avatar-md mx-auto mb-4" id="register-tour">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-primary fs-24">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary fs-24">
                                                         <i class="ri-edit-box-line"></i>
                                                     </div>
                                                 </div>
@@ -66,8 +73,7 @@
                                         <div class="card border shadow-none">
                                             <div class="card-body text-center">
                                                 <div class="avatar-md mx-auto mb-4" id="login-tour">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-primary fs-24">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary fs-24">
                                                         <i class="ri-user-shared-line"></i>
                                                     </div>
                                                 </div>
@@ -81,8 +87,7 @@
                                         <div class="card border shadow-none">
                                             <div class="card-body text-center">
                                                 <div class="avatar-md mx-auto mb-4" id="getproduct-tour">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-primary fs-24">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary fs-24">
                                                         <i class="ri-file-download-line"></i>
                                                     </div>
                                                 </div>
@@ -115,5 +120,4 @@
     <script src="{{ URL::asset('build/js/pages/tour.init.js') }}"></script>
 
     <script src="{{ URL::asset('build/js/app.js') }}"></script>
-
 @endsection

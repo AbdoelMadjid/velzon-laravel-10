@@ -433,8 +433,8 @@
                         <div class="row align-items-center gy-4">
                             <div class="col-lg-6 col-sm-7 mx-auto">
                                 <div>
-                                    <img src="{{ URL::asset('build/images/landing/features/img-1.png') }}"
-                                        alt="" class="img-fluid mx-auto">
+                                    <img src="{{ URL::asset('build/images/landing/features/img-1.png') }}" alt=""
+                                        class="img-fluid mx-auto">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -603,8 +603,8 @@
                             <!-- end col -->
                             <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
                                 <div>
-                                    <img src="{{ URL::asset('build/images/landing/features/img-2.png') }}"
-                                        alt="" class="img-fluid">
+                                    <img src="{{ URL::asset('build/images/landing/features/img-2.png') }}" alt=""
+                                        class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -613,8 +613,8 @@
                         <div class="row align-items-center mt-5 pt-lg-5 gy-4">
                             <div class="col-lg-6 col-sm-7 col-10 mx-auto">
                                 <div>
-                                    <img src="{{ URL::asset('build/images/landing/features/img-3.png') }}"
-                                        alt="" class="img-fluid">
+                                    <img src="{{ URL::asset('build/images/landing/features/img-3.png') }}" alt=""
+                                        class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -696,7 +696,8 @@
                                             <label class="form-check-label" for="plan-switch"></label>
                                         </div>
                                         <div>
-                                            <h5 class="fs-14 mb-0">Annual <span class="badge bg-success-subtle text-success">Save
+                                            <h5 class="fs-14 mb-0">Annual <span
+                                                    class="badge bg-success-subtle text-success">Save
                                                     20%</span></h5>
                                         </div>
                                     </div>
@@ -1464,8 +1465,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">
@@ -1507,8 +1508,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">
@@ -1528,8 +1529,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">
@@ -1553,8 +1554,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">
@@ -1575,8 +1576,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">
@@ -1597,8 +1598,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">
@@ -1619,8 +1620,8 @@
                                 <div class="card">
                                     <div class="card-body text-center p-4">
                                         <div class="avatar-xl mx-auto mb-4 position-relative">
-                                            <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}"
-                                                alt="" class="img-fluid rounded-circle">
+                                            <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
+                                                class="img-fluid rounded-circle">
                                             <a href="apps-mailbox"
                                                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                                                 <div class="avatar-title bg-transparent">

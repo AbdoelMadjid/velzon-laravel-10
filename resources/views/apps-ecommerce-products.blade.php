@@ -5,7 +5,6 @@
 @section('css')
     <link href="{{ URL::asset('build/libs/nouislider/nouislider.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('build/libs/gridjs/theme/mermaid.min.css') }}">
-
 @endsection
 @section('content')
     @component('components.breadcrumb')
@@ -30,8 +29,8 @@
                     </div>
 
                     <div class="filter-choices-input">
-                        <input class="form-control" data-choices data-choices-removeItem type="text" id="filter-choices-input"
-                            value="T-Shirts" />
+                        <input class="form-control" data-choices data-choices-removeItem type="text"
+                            id="filter-choices-input" value="T-Shirts" />
                     </div>
                 </div>
 
@@ -119,16 +118,17 @@
 
                         <div id="product-price-range"></div>
                         <div class="formCost d-flex gap-2 align-items-center mt-3">
-                            <input class="form-control form-control-sm" type="text" id="minCost" value="0" /> <span class="fw-semibold text-muted">to</span> <input
-                                class="form-control form-control-sm" type="text" id="maxCost" value="1000" />
+                            <input class="form-control form-control-sm" type="text" id="minCost" value="0" />
+                            <span class="fw-semibold text-muted">to</span> <input class="form-control form-control-sm"
+                                type="text" id="maxCost" value="1000" />
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingBrands">
                             <button class="accordion-button bg-transparent shadow-none" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseBrands"
-                                aria-expanded="true" aria-controls="flush-collapseBrands">
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseBrands" aria-expanded="true"
+                                aria-controls="flush-collapseBrands">
                                 <span class="text-muted text-uppercase fs-12 fw-medium">Brands</span> <span
                                     class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
                             </button>
@@ -138,33 +138,30 @@
                             aria-labelledby="flush-headingBrands">
                             <div class="accordion-body text-body pt-0">
                                 <div class="search-box search-box-sm">
-                                    <input type="text" class="form-control bg-light border-0" id="searchBrandsList" placeholder="Search Brands...">
+                                    <input type="text" class="form-control bg-light border-0" id="searchBrandsList"
+                                        placeholder="Search Brands...">
                                     <i class="ri-search-line search-icon"></i>
                                 </div>
                                 <div class="d-flex flex-column gap-2 mt-3 filter-check">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="Boat"
                                             id="productBrandRadio5" checked>
-                                        <label class="form-check-label"
-                                            for="productBrandRadio5">Boat</label>
+                                        <label class="form-check-label" for="productBrandRadio5">Boat</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="OnePlus"
                                             id="productBrandRadio4">
-                                        <label class="form-check-label"
-                                            for="productBrandRadio4">OnePlus</label>
+                                        <label class="form-check-label" for="productBrandRadio4">OnePlus</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="Realme"
                                             id="productBrandRadio3">
-                                        <label class="form-check-label"
-                                            for="productBrandRadio3">Realme</label>
+                                        <label class="form-check-label" for="productBrandRadio3">Realme</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="Sony"
                                             id="productBrandRadio2">
-                                        <label class="form-check-label"
-                                            for="productBrandRadio2">Sony</label>
+                                        <label class="form-check-label" for="productBrandRadio2">Sony</label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="JBL"
@@ -186,8 +183,8 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingDiscount">
                             <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseDiscount"
-                                aria-expanded="true" aria-controls="flush-collapseDiscount">
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseDiscount" aria-expanded="true"
+                                aria-controls="flush-collapseDiscount">
                                 <span class="text-muted text-uppercase fs-12 fw-medium">Discount</span> <span
                                     class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
                             </button>
@@ -242,9 +239,8 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingRating">
-                            <button class="accordion-button bg-transparent shadow-none collapsed"
-                                type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseRating" aria-expanded="false"
+                            <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseRating" aria-expanded="false"
                                 aria-controls="flush-collapseRating">
                                 <span class="text-muted text-uppercase fs-12 fw-medium">Rating</span> <span
                                     class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
@@ -332,7 +328,8 @@
                             <div class="col-sm">
                                 <div class="d-flex justify-content-sm-end">
                                     <div class="search-box ms-2">
-                                        <input type="text" class="form-control" id="searchProductList" placeholder="Search Products...">
+                                        <input type="text" class="form-control" id="searchProductList"
+                                            placeholder="Search Products...">
                                         <i class="ri-search-line search-icon"></i>
                                     </div>
                                 </div>
@@ -345,15 +342,17 @@
                             <div class="col">
                                 <ul class="nav nav-tabs-custom card-header-tabs border-bottom-0" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active fw-semibold" data-bs-toggle="tab" href="#productnav-all"
-                                            role="tab">
-                                            All <span class="badge bg-danger-subtle text-danger align-middle rounded-pill ms-1">12</span>
+                                        <a class="nav-link active fw-semibold" data-bs-toggle="tab"
+                                            href="#productnav-all" role="tab">
+                                            All <span
+                                                class="badge bg-danger-subtle text-danger align-middle rounded-pill ms-1">12</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link fw-semibold" data-bs-toggle="tab" href="#productnav-published"
                                             role="tab">
-                                            Published <span class="badge bg-danger-subtle text-danger align-middle rounded-pill ms-1">5</span>
+                                            Published <span
+                                                class="badge bg-danger-subtle text-danger align-middle rounded-pill ms-1">5</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -367,7 +366,9 @@
                             <div class="col-auto">
                                 <div id="selection-element">
                                     <div class="my-n1 d-flex align-items-center text-muted">
-                                        Select <div id="select-content" class="text-body fw-semibold px-1"></div> Result <button type="button" class="btn btn-link link-danger p-0 ms-3" data-bs-toggle="modal" data-bs-target="#removeItemModal">Remove</button>
+                                        Select <div id="select-content" class="text-body fw-semibold px-1"></div> Result
+                                        <button type="button" class="btn btn-link link-danger p-0 ms-3"
+                                            data-bs-toggle="modal" data-bs-target="#removeItemModal">Remove</button>
                                     </div>
                                 </div>
                             </div>
@@ -389,9 +390,8 @@
 
                             <div class="tab-pane" id="productnav-draft" role="tabpanel">
                                 <div class="py-4 text-center">
-                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
-                                        trigger="loop" colors="primary:#405189,secondary:#0ab39c"
-                                        style="width:72px;height:72px">
+                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop"
+                                        colors="primary:#405189,secondary:#0ab39c" style="width:72px;height:72px">
                                     </lord-icon>
                                     <h5 class="mt-4">Sorry! No Result Found</h5>
                                 </div>

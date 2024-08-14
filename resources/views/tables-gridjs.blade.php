@@ -1,13 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.grid-js') @endsection
+@section('title')
+    @lang('translation.grid-js')
+@endsection
 @section('css')
     <link rel="stylesheet" href="{{ URL::asset('build/libs/gridjs/theme/mermaid.min.css') }}">
-
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Tables @endslot
-        @slot('title') Grid Js @endslot
+        @slot('li_1')
+            Tables
+        @endslot
+        @slot('title')
+            Grid Js
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">

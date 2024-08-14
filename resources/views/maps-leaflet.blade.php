@@ -1,13 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.leaflet') @endsection
+@section('title')
+    @lang('translation.leaflet')
+@endsection
 @section('css')
     <link href="{{ URL::asset('build/libs/leaflet/leaflet.css') }}" rel="stylesheet" type="text/css" />
-
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Maps @endslot
-        @slot('title') Leaflet Maps @endslot
+        @slot('li_1')
+            Maps
+        @endslot
+        @slot('title')
+            Leaflet Maps
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-6">

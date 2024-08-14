@@ -1,11 +1,17 @@
 @extends('layouts.master')
-@section('title') @lang('translation.kyc-application') @endsection
+@section('title')
+    @lang('translation.kyc-application')
+@endsection
 @section('css')
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Crypto @endslot
-        @slot('title') KYC Application @endslot
+        @slot('li_1')
+            Crypto
+        @endslot
+        @slot('title')
+            KYC Application
+        @endslot
     @endcomponent
 
 
@@ -44,43 +50,37 @@
     </div>
     <!--end row-->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header p-3">
                     <h5 class="modal-title text-uppercase" id="exampleModalLabel">Verify your Account
                     </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="#" class="checkout-tab">
                     <div class="modal-body p-0">
                         <div class="step-arrow-nav">
                             <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link p-3 active" id="pills-bill-info-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-bill-info"
-                                        type="button" role="tab" aria-controls="pills-bill-info"
-                                        aria-selected="true">Personal Info</button>
+                                    <button class="nav-link p-3 active" id="pills-bill-info-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-bill-info" type="button" role="tab"
+                                        aria-controls="pills-bill-info" aria-selected="true">Personal Info</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link p-3" id="pills-bill-address-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-bill-address"
-                                        type="button" role="tab" aria-controls="pills-bill-address"
-                                        aria-selected="false">Bank Details</button>
+                                    <button class="nav-link p-3" id="pills-bill-address-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-bill-address" type="button" role="tab"
+                                        aria-controls="pills-bill-address" aria-selected="false">Bank Details</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link p-3" id="pills-payment-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-payment"
-                                        type="button" role="tab" aria-controls="pills-payment"
-                                        aria-selected="false">Document Verification</button>
+                                    <button class="nav-link p-3" id="pills-payment-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-payment" type="button" role="tab"
+                                        aria-controls="pills-payment" aria-selected="false">Document Verification</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link p-3" id="pills-finish-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-finish"
-                                        type="button" role="tab" aria-controls="pills-finish"
-                                        aria-selected="false">Verified</button>
+                                    <button class="nav-link p-3" id="pills-finish-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-finish" type="button" role="tab"
+                                        aria-controls="pills-finish" aria-selected="false">Verified</button>
                                 </li>
                             </ul>
                         </div>
@@ -120,8 +120,7 @@
                                             <label for="dateofBirth" class="form-label">Date of
                                                 Birth</label>
                                             <input type="text" class="form-control" id="dateofBirth"
-                                                data-provider="flatpickr"
-                                                placeholder="Enter your date of birth">
+                                                data-provider="flatpickr" placeholder="Enter your date of birth">
                                         </div>
                                     </div>
                                     <!--end col-->
@@ -145,8 +144,7 @@
                                         <div>
                                             <label for="confirmPassword" class="form-label">Confirm
                                                 Password</label>
-                                            <input type="password" class="form-control"
-                                                id="confirmPassword"
+                                            <input type="password" class="form-control" id="confirmPassword"
                                                 placeholder="Enter your confirm password">
                                         </div>
                                     </div>
@@ -170,10 +168,9 @@
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div>
-                                            <label for="country-select"
-                                                class="form-label">Country</label>
-                                            <select class="form-control" data-choices
-                                                name="country-select" id="country-select">
+                                            <label for="country-select" class="form-label">Country</label>
+                                            <select class="form-control" data-choices name="country-select"
+                                                id="country-select">
                                                 <option value="">Select country</option>
                                                 <option value="Argentina">Argentina</option>
                                                 <option value="Belgium">Belgium</option>
@@ -195,8 +192,7 @@
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="d-flex align-items-start gap-3 mt-3">
-                                            <button type="button"
-                                                class="btn btn-primary btn-label right ms-auto nexttab"
+                                            <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                                                 data-nexttab="pills-bill-address-tab"><i
                                                     class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>
                                                 Next Step</button>
@@ -232,8 +228,7 @@
                                         <div class="mb-3">
                                             <label for="accountnameInput" class="form-label">Account
                                                 Holder Name</label>
-                                            <input type="text" class="form-control"
-                                                id="accountnameInput"
+                                            <input type="text" class="form-control" id="accountnameInput"
                                                 placeholder="Enter account holder name">
                                         </div>
                                     </div>
@@ -242,8 +237,7 @@
                                         <div class="mb-3">
                                             <label for="accountnumberInput" class="form-label">Account
                                                 Number</label>
-                                            <input type="number" class="form-control"
-                                                id="accountnumberInput"
+                                            <input type="number" class="form-control" id="accountnumberInput"
                                                 placeholder="Enter account number">
                                         </div>
                                     </div>
@@ -258,13 +252,11 @@
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="hstack align-items-start gap-3 mt-4">
-                                            <button type="button"
-                                                class="btn btn-light btn-label previestab"
+                                            <button type="button" class="btn btn-light btn-label previestab"
                                                 data-previous="pills-bill-info-tab"><i
                                                     class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i>Back
                                                 to Personal Info</button>
-                                            <button type="button"
-                                                class="btn btn-primary btn-label right ms-auto nexttab"
+                                            <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                                                 data-nexttab="pills-payment-tab"><i
                                                     class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Next
                                                 Step</button>
@@ -283,24 +275,20 @@
                                     <div>
                                         <input type="radio" class="btn-check" id="passport" checked
                                             name="choose-document">
-                                        <label class="btn btn-outline-info"
-                                            for="passport">Passport</label>
+                                        <label class="btn btn-outline-info" for="passport">Passport</label>
                                     </div>
                                     <div>
-                                        <input type="radio" class="btn-check" id="aadhar-card"
-                                            name="choose-document">
+                                        <input type="radio" class="btn-check" id="aadhar-card" name="choose-document">
                                         <label class="btn btn-outline-info" for="aadhar-card">Aadhar
                                             Card</label>
                                     </div>
                                     <div>
-                                        <input type="radio" class="btn-check" id="pan-card"
-                                            name="choose-document">
+                                        <input type="radio" class="btn-check" id="pan-card" name="choose-document">
                                         <label class="btn btn-outline-info" for="pan-card">Pan
                                             Card</label>
                                     </div>
                                     <div>
-                                        <input type="radio" class="btn-check" id="other"
-                                            name="choose-document">
+                                        <input type="radio" class="btn-check" id="other" name="choose-document">
                                         <label class="btn btn-outline-info" for="other">Other</label>
                                     </div>
                                 </div>
@@ -333,13 +321,11 @@
                                                         <h5 class="fs-14 mb-1" data-dz-name>&nbsp;</h5>
                                                         <p class="fs-13 text-muted mb-0" data-dz-size>
                                                         </p>
-                                                        <strong class="error text-danger"
-                                                            data-dz-errormessage></strong>
+                                                        <strong class="error text-danger" data-dz-errormessage></strong>
                                                     </div>
                                                 </div>
                                                 <div class="flex-shrink-0 ms-3">
-                                                    <button data-dz-remove
-                                                        class="btn btn-sm btn-danger">Delete</button>
+                                                    <button data-dz-remove class="btn btn-sm btn-danger">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -351,8 +337,7 @@
                                         data-previous="pills-bill-address-tab"><i
                                             class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i>Back
                                         to Bank Details</button>
-                                    <button type="button"
-                                        class="btn btn-primary btn-label right ms-auto nexttab"
+                                    <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                                         data-nexttab="pills-finish-tab"><i
                                             class="ri-save-line label-icon align-middle fs-16 ms-2"></i>Submit</button>
                                 </div>
@@ -364,8 +349,7 @@
                                 <div class="row text-center justify-content-center py-4">
                                     <div class="col-lg-11">
                                         <div class="mb-4">
-                                            <lord-icon src="https://cdn.lordicon.com/lupuorrc.json"
-                                                trigger="loop"
+                                            <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop"
                                                 colors="primary:#0ab39c,secondary:#405189"
                                                 style="width:120px;height:120px"></lord-icon>
                                         </div>
@@ -373,7 +357,8 @@
                                         <p class="text-muted mb-4">To stay verified, don't remove the
                                             meta tag form your site's home page. To avoid losing
                                             verification, you may want to add multiple methods form the
-                                            <span class="fw-medium">Crypto > KYC Application.</span></p>
+                                            <span class="fw-medium">Crypto > KYC Application.</span>
+                                        </p>
 
                                         <div class="hstack justify-content-center gap-2">
                                             <button type="button" class="btn btn-ghost-success"

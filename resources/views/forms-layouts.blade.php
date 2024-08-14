@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.form-layouts') @endsection
+@section('title')
+    @lang('translation.form-layouts')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Forms @endslot
-        @slot('title') Form layout @endslot
+        @slot('li_1')
+            Forms
+        @endslot
+        @slot('title')
+            Form layout
+        @endslot
     @endcomponent
 
     <div class="row">
@@ -14,62 +20,73 @@
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="form-grid-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher"  type="checkbox" id="form-grid-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox" id="form-grid-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options. <span class="fw-medium">Requires the <code>$enable-grid-classes</code> Sass variable to be enabled</span> (on by default).</p>
+                    <p class="text-muted">More complex forms can be built using our grid classes. Use these for form layouts
+                        that require multiple columns, varied widths, and additional alignment options. <span
+                            class="fw-medium">Requires the <code>$enable-grid-classes</code> Sass variable to be
+                            enabled</span> (on by default).</p>
                     <div class="live-preview">
                         <form action="javascript:void(0);">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter your firstname" id="firstNameinput">
+                                        <input type="text" class="form-control" placeholder="Enter your firstname"
+                                            id="firstNameinput">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="lastNameinput" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter your lastname" id="lastNameinput">
+                                        <input type="text" class="form-control" placeholder="Enter your lastname"
+                                            id="lastNameinput">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label for="compnayNameinput" class="form-label">Company Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter company name" id="compnayNameinput">
+                                        <input type="text" class="form-control" placeholder="Enter company name"
+                                            id="compnayNameinput">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="phonenumberInput" class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" placeholder="+(245) 451 45123" id="phonenumberInput">
+                                        <input type="tel" class="form-control" placeholder="+(245) 451 45123"
+                                            id="phonenumberInput">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="emailidInput" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="example@gamil.com" id="emailidInput">
+                                        <input type="email" class="form-control" placeholder="example@gamil.com"
+                                            id="emailidInput">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label for="address1ControlTextarea" class="form-label">Address</label>
-                                        <input type="text" class="form-control" placeholder="Address 1" id="address1ControlTextarea">
+                                        <input type="text" class="form-control" placeholder="Address 1"
+                                            id="address1ControlTextarea">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="citynameInput" class="form-label">City</label>
-                                        <input type="email" class="form-control" placeholder="Enter your city" id="citynameInput">
+                                        <input type="email" class="form-control" placeholder="Enter your city"
+                                            id="citynameInput">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="ForminputState" class="form-label">State</label>
-                                        <select id="ForminputState" class="form-select" data-choices data-choices-sorting="true" >
+                                        <select id="ForminputState" class="form-select" data-choices
+                                            data-choices-sorting="true">
                                             <option selected>Choose...</option>
                                             <option>...</option>
                                         </select>
@@ -84,7 +101,7 @@
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 375px;">
+                        <pre class="language-markup" style="height: 375px;">
 <code>&lt;form action=&quot;javascript:void(0);&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-6&quot;&gt;
@@ -163,12 +180,16 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">By adding <a href="/docs/5.1/layout/gutters/" class="text-decoration-underline">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <span class="fw-medium">Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</span> (on by default).</p>
+                    <p class="text-muted">By adding <a href="/docs/5.1/layout/gutters/"
+                            class="text-decoration-underline">gutter modifier classes</a>, you can have control over the
+                        gutter width in as well the inline as block direction. <span class="fw-medium">Also requires the
+                            <code>$enable-grid-classes</code> Sass variable to be enabled</span> (on by default).</p>
                     <div class="live-preview">
                         <form action="javascript:void(0);" class="row g-3">
                             <div class="col-md-12">
                                 <label for="fullnameInput" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="fullnameInput" placeholder="Enter your name">
+                                <input type="text" class="form-control" id="fullnameInput"
+                                    placeholder="Enter your name">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
@@ -184,7 +205,8 @@
                             </div>
                             <div class="col-12">
                                 <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputCity" class="form-label">City</label>
@@ -217,7 +239,7 @@
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 375px;">
+                        <pre class="language-markup" style="height: 375px;">
 <code>&lt;form action=&quot;javascript:void(0);&quot; class=&quot;row g-3&quot;&gt;
 &lt;div class=&quot;col-md-12&quot;&gt;
 &lt;label for=&quot;fullnameInput&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;
@@ -287,20 +309,24 @@ Check me out
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Example of vertical form using <code>form-control</code> class. No need to specify row and col class to create vertical form.</p>
+                    <p class="text-muted">Example of vertical form using <code>form-control</code> class. No need to
+                        specify row and col class to create vertical form.</p>
                     <div class="live-preview">
                         <form action="javascript:void(0);">
                             <div class="mb-3">
                                 <label for="employeeName" class="form-label">Employee Name</label>
-                                <input type="text" class="form-control" id="employeeName" placeholder="Enter emploree name">
+                                <input type="text" class="form-control" id="employeeName"
+                                    placeholder="Enter emploree name">
                             </div>
                             <div class="mb-3">
                                 <label for="employeeUrl" class="form-label">Employee Department URL</label>
-                                <input type="url" class="form-control" id="employeeUrl" placeholder="Enter emploree url">
+                                <input type="url" class="form-control" id="employeeUrl"
+                                    placeholder="Enter emploree url">
                             </div>
                             <div class="mb-3">
                                 <label for="StartleaveDate" class="form-label">Start Leave Date</label>
-                                <input type="date" class="form-control" data-provider="flatpickr" id="StartleaveDate">
+                                <input type="date" class="form-control" data-provider="flatpickr"
+                                    id="StartleaveDate">
                             </div>
                             <div class="mb-3">
                                 <label for="EndleaveDate" class="form-label">End Leave Date</label>
@@ -316,7 +342,7 @@ Check me out
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 375px;">
+                        <pre class="language-markup" style="height: 375px;">
 <code>&lt;form action=&quot;&quot;&gt;
 &lt;div class=&quot;mb-3&quot;&gt;
 &lt;label for=&quot;employeeName&quot; class=&quot;form-label&quot;&gt;Employee Name&lt;/label&gt;
@@ -358,7 +384,10 @@ Check me out
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Create horizontal forms with the grid by adding the <code>row</code> class to form groups and using the <code>col-*-*</code> class to specify the width of your labels and controls. Be sure to add <code>col-form-label</code> class to your <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.</p>
+                    <p class="text-muted">Create horizontal forms with the grid by adding the <code>row</code> class to
+                        form groups and using the <code>col-*-*</code> class to specify the width of your labels and
+                        controls. Be sure to add <code>col-form-label</code> class to your <code>&lt;label&gt;</code>s as
+                        well so they’re vertically centered with their associated form controls.</p>
                     <div class="live-preview">
                         <form action="javascript:void(0);">
                             <div class="row mb-3">
@@ -366,7 +395,8 @@ Check me out
                                     <label for="nameInput" class="form-label">Name</label>
                                 </div>
                                 <div class="col-lg-9">
-                                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                                    <input type="text" class="form-control" id="nameInput"
+                                        placeholder="Enter your name">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -374,7 +404,8 @@ Check me out
                                     <label for="websiteUrl" class="form-label">Website URL</label>
                                 </div>
                                 <div class="col-lg-9">
-                                    <input type="url" class="form-control" id="websiteUrl" placeholder="Enter your url">
+                                    <input type="url" class="form-control" id="websiteUrl"
+                                        placeholder="Enter your url">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -390,7 +421,8 @@ Check me out
                                     <label for="timeInput" class="form-label">Time</label>
                                 </div>
                                 <div class="col-lg-9">
-                                    <input type="time" class="form-control" data-provider="timepickr" data-time-basic="true" id="timeInput">
+                                    <input type="time" class="form-control" data-provider="timepickr"
+                                        data-time-basic="true" id="timeInput">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -398,7 +430,8 @@ Check me out
                                     <label for="leaveemails" class="form-label">Email Id</label>
                                 </div>
                                 <div class="col-lg-9">
-                                    <input type="email" class="form-control" id="leaveemails" placeholder="Enter your email">
+                                    <input type="email" class="form-control" id="leaveemails"
+                                        placeholder="Enter your email">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -406,7 +439,8 @@ Check me out
                                     <label for="contactNumber" class="form-label">Contact Number</label>
                                 </div>
                                 <div class="col-lg-9">
-                                    <input type="number" class="form-control" id="contactNumber" placeholder="+91 9876543210">
+                                    <input type="number" class="form-control" id="contactNumber"
+                                        placeholder="+91 9876543210">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -423,7 +457,7 @@ Check me out
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 375px;">
+                        <pre class="language-markup" style="height: 375px;">
 <code>&lt;form action=&quot;&quot;&gt;
 &lt;div class=&quot;row mb-3&quot;&gt;
 &lt;div class=&quot;col-lg-3&quot;&gt;
@@ -498,20 +532,26 @@ Check me out
                     <h4 class="card-title mb-0 flex-grow-1">Horizontal Form Label Sizing</h4>
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
-                            <label for="horizontal-form-labelsize-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="horizontal-form-labelsize-showcode">
+                            <label for="horizontal-form-labelsize-showcode" class="form-label text-muted">Show
+                                Code</label>
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="horizontal-form-labelsize-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>col-form-label-sm</code> class to set small size form label or <code>col-form-label-lg</code> class to set large size form label to &lt;label&gt;. No such class is required for the default size form label.</p>
+                    <p class="text-muted">Use <code>col-form-label-sm</code> class to set small size form label or
+                        <code>col-form-label-lg</code> class to set large size form label to &lt;label&gt;. No such class is
+                        required for the default size form label.</p>
                     <div class="live-preview">
                         <div class="row align-items-center g-3">
                             <div class="col-xxl-4">
                                 <div class="row">
-                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                    <label for="colFormLabelSm"
+                                        class="col-sm-2 col-form-label col-form-label-sm">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+                                        <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
+                                            placeholder="col-form-label-sm">
                                     </div>
                                 </div>
                             </div>
@@ -519,22 +559,25 @@ Check me out
                                 <div class="row">
                                     <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                                        <input type="email" class="form-control" id="colFormLabel"
+                                            placeholder="col-form-label">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xxl-4">
                                 <div class="row">
-                                    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                                    <label for="colFormLabelLg"
+                                        class="col-sm-2 col-form-label col-form-label-lg">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+                                        <input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+                                            placeholder="col-form-label-lg">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;">
+                        <pre class="language-markup" style="height: 275px;">
 <code>&lt;!-- Col Form Label Small --&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;label for=&quot;colFormLabelSm&quot; class=&quot;col-sm-2 col-form-label col-form-label-sm&quot;&gt;Email&lt;/label&gt;
@@ -576,23 +619,28 @@ Check me out
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>col-sm-</code> class with required size value to set column size as per your requirement.</p>
+                    <p class="text-muted">Use <code>col-sm-</code> class with required size value to set column size as per
+                        your requirement.</p>
                     <div class="live-preview">
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" placeholder="Firstname" aria-label="First-Name">
+                                <input type="text" class="form-control" placeholder="Firstname"
+                                    aria-label="First-Name">
                             </div><!--end col-->
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" placeholder="Lastname" aria-label="Last-Name">
+                                <input type="text" class="form-control" placeholder="Lastname"
+                                    aria-label="Last-Name">
                             </div><!--end col-->
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" placeholder="Email id" aria-label="Email Id">
                             </div><!--end col-->
                             <div class="col-sm-4">
-                                <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                                <input type="password" class="form-control" placeholder="Password"
+                                    aria-label="Password">
                             </div><!--end col-->
                             <div class="col-sm-4">
-                                <input type="password" class="form-control" placeholder="Confirm Password" aria-label="confirm-password">
+                                <input type="password" class="form-control" placeholder="Confirm Password"
+                                    aria-label="confirm-password">
                             </div><!--end col-->
                             <div class="col-sm-7">
                                 <input type="text" class="form-control" placeholder="City" aria-label="City">
@@ -606,7 +654,7 @@ Check me out
                         </div><!--end row-->
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;">
+                        <pre class="language-markup" style="height: 275px;">
 <code>&lt;div class=&quot;row g-3&quot;&gt;
 &lt;div class=&quot;col-sm-6&quot;&gt;
 &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Firstname&quot; aria-label=&quot;First-Name&quot;&gt;
@@ -653,24 +701,29 @@ Check me out
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Change <code>col</code> class to <code>col-auto</code> class so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.</p>
+                    <p class="text-muted">Change <code>col</code> class to <code>col-auto</code> class so that your columns
+                        only take up as much space as needed. Put another way, the column sizes itself based on the
+                        contents.</p>
                     <div class="live-preview">
                         <form action="javascript:void(0);">
                             <div class="row gy-2 gx-3 mb-3 align-items-center">
                                 <div class="col-sm-auto">
                                     <label class="visually-hidden" for="autoSizingInput">Name</label>
-                                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                                    <input type="text" class="form-control" id="autoSizingInput"
+                                        placeholder="Jane Doe">
                                 </div><!--end col-->
                                 <div class="col-sm-auto">
                                     <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
                                     <div class="input-group">
                                         <div class="input-group-text">@</div>
-                                        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                                        <input type="text" class="form-control" id="autoSizingInputGroup"
+                                            placeholder="Username">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-sm-auto">
                                     <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                                    <select class="form-select" data-choices data-choices-sorting="true" id="autoSizingSelect">
+                                    <select class="form-select" data-choices data-choices-sorting="true"
+                                        id="autoSizingSelect">
                                         <option selected>Choose...</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -695,18 +748,21 @@ Check me out
                             <div class="row gx-3 gy-2 align-items-center">
                                 <div class="col-sm-3">
                                     <label class="visually-hidden" for="specificSizeInputName">Name</label>
-                                    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+                                    <input type="text" class="form-control" id="specificSizeInputName"
+                                        placeholder="Jane Doe">
                                 </div><!--end col-->
                                 <div class="col-sm-3">
                                     <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
                                     <div class="input-group">
                                         <div class="input-group-text">@</div>
-                                        <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Username">
+                                        <input type="text" class="form-control" id="specificSizeInputGroupUsername"
+                                            placeholder="Username">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-sm-3">
                                     <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                                    <select class="form-select" data-choices data-choices-sorting="true" id="specificSizeSelect">
+                                    <select class="form-select" data-choices data-choices-sorting="true"
+                                        id="specificSizeSelect">
                                         <option selected>Choose...</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -728,7 +784,7 @@ Check me out
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px">
+                        <pre class="language-markup" style="height: 275px">
 <code>&lt;form action=&quot;javascript:void(0);&quot;&gt;
 &lt;div class=&quot;row gy-2 gx-3 mb-3 align-items-center&quot;&gt;
 &lt;div class=&quot;col-sm-auto&quot;&gt;
@@ -828,12 +884,14 @@ Remember me
                                     <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                                     <div class="input-group">
                                         <div class="input-group-text">@</div>
-                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                            placeholder="Username">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-12">
                                     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                                    <select class="form-select" data-choices data-choices-sorting="true" id="inlineFormSelectPref">
+                                    <select class="form-select" data-choices data-choices-sorting="true"
+                                        id="inlineFormSelectPref">
                                         <option selected>Choose...</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -855,7 +913,7 @@ Remember me
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px">
+                        <pre class="language-markup" style="height: 275px">
 <code>&lt;form action=&quot;javascript:void(0);&quot;&gt;
 &lt;div class=&quot;row row-cols-lg-auto g-3 align-items-center&quot;&gt;
 &lt;div class=&quot;col-12&quot;&gt;
@@ -906,61 +964,70 @@ Remember me
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>form-floating</code> class to enable floating labels with Bootstrap’s textual form fields.</p>
+                    <p class="text-muted">Use <code>form-floating</code> class to enable floating labels with Bootstrap’s
+                        textual form fields.</p>
                     <div class="live-preview">
                         <form action="#">
                             <div class="row g-3">
                                 <div class="col-lg-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="firstnamefloatingInput" placeholder="Enter your firstname">
+                                        <input type="text" class="form-control" id="firstnamefloatingInput"
+                                            placeholder="Enter your firstname">
                                         <label for="firstnamefloatingInput">First Name</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="lastnamefloatingInput" placeholder="Enter your Lastname">
+                                        <input type="text" class="form-control" id="lastnamefloatingInput"
+                                            placeholder="Enter your Lastname">
                                         <label for="lastnamefloatingInput">Last Name</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="emailfloatingInput" placeholder="Enter your email">
+                                        <input type="email" class="form-control" id="emailfloatingInput"
+                                            placeholder="Enter your email">
                                         <label for="emailfloatingInput">Email Address</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control" id="passwordfloatingInput" placeholder="Enter your password">
+                                        <input type="password" class="form-control" id="passwordfloatingInput"
+                                            placeholder="Enter your password">
                                         <label for="passwordfloatingInput">Password</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control" id="passwordfloatingInput1" placeholder="Confirm password">
+                                        <input type="password" class="form-control" id="passwordfloatingInput1"
+                                            placeholder="Confirm password">
                                         <label for="passwordfloatingInput1">Confirm Password</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="cityfloatingInput" placeholder="Enter your city">
+                                        <input type="text" class="form-control" id="cityfloatingInput"
+                                            placeholder="Enter your city">
                                         <label for="cityfloatingInput">City</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-floating">
-                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                          <option selected>Choose...</option>
-                                          <option value="1">USA</option>
-                                          <option value="2">Brazil</option>
-                                          <option value="3">France</option>
-                                          <option value="4">Germany</option>
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Choose...</option>
+                                            <option value="1">USA</option>
+                                            <option value="2">Brazil</option>
+                                            <option value="3">France</option>
+                                            <option value="4">Germany</option>
                                         </select>
                                         <label for="floatingSelect">Country</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-floating">
-                                        <input type="number" class="form-control" id="zipfloatingInput" placeholder="Enter your zipcode">
+                                        <input type="number" class="form-control" id="zipfloatingInput"
+                                            placeholder="Enter your zipcode">
                                         <label for="zipfloatingInput">Zipcode</label>
                                     </div>
                                 </div>
@@ -973,7 +1040,7 @@ Remember me
                         </form>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px">
+                        <pre class="language-markup" style="height: 275px">
 <code>&lt;form action=&quot;#&quot;&gt;
 &lt;div class=&quot;row g-3&quot;&gt;
 &lt;div class=&quot;col-lg-6&quot;&gt;

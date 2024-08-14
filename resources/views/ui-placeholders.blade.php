@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.placeholders') @endsection
+@section('title')
+    @lang('translation.placeholders')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Base UI @endslot
-        @slot('title') Placeholders @endslot
+        @slot('li_1')
+            Base UI
+        @endslot
+        @slot('title')
+            Placeholders
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -20,7 +26,8 @@
 
                 <div class="card-body">
 
-                    <p class="text-muted">In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”.</p>
+                    <p class="text-muted">In the example below, we take a typical card component and recreate it with
+                        placeholders applied to create a “loading card”.</p>
 
                     <div class="live-preview">
                         <div class="row justify-content-center">
@@ -28,29 +35,33 @@
                                 <div class="row justify-content-between">
                                     <div class="col-lg-5 col-sm-6">
                                         <div class="card">
-                                            <img src="{{ URL::asset('build/images/small/img-1.jpg') }}" class="card-img-top" alt="card img">
+                                            <img src="{{ URL::asset('build/images/small/img-1.jpg') }}" class="card-img-top"
+                                                alt="card img">
 
                                             <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">Some quick example text to build on the card title and
+                                                    make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-5 col-sm-6">
                                         <div class="card" aria-hidden="true">
-                                            <img src="{{ URL::asset('build/images/small/img-2.jpg') }}" class="card-img-top" alt="card dummy img">
+                                            <img src="{{ URL::asset('build/images/small/img-2.jpg') }}" class="card-img-top"
+                                                alt="card dummy img">
                                             <div class="card-body">
-                                              <h5 class="card-title placeholder-glow">
-                                                <span class="placeholder col-6"></span>
-                                              </h5>
-                                              <p class="card-text placeholder-glow">
-                                                <span class="placeholder col-7"></span>
-                                                <span class="placeholder col-4"></span>
-                                                <span class="placeholder col-4"></span>
-                                                <span class="placeholder col-6"></span>
-                                              </p>
-                                              <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                                                <h5 class="card-title placeholder-glow">
+                                                    <span class="placeholder col-6"></span>
+                                                </h5>
+                                                <p class="card-text placeholder-glow">
+                                                    <span class="placeholder col-7"></span>
+                                                    <span class="placeholder col-4"></span>
+                                                    <span class="placeholder col-4"></span>
+                                                    <span class="placeholder col-6"></span>
+                                                </p>
+                                                <a href="#" tabindex="-1"
+                                                    class="btn btn-primary disabled placeholder col-6"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +71,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px">
+                        <pre class="language-markup" style="height: 275px">
 <code>&lt;!-- Base Examples --&gt;
 &lt;div class=&quot;card&quot;&gt;
 &lt;img src=&quot;build/images/small/img-1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;card img&quot;&gt;
@@ -108,7 +119,8 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use  <code>w-25,w-50,w-75</code> or <code>w-100</code> class to placeholder class to set different widths to the placeholder.</p>
+                    <p class="text-muted">Use <code>w-25,w-50,w-75</code> or <code>w-100</code> class to placeholder class
+                        to set different widths to the placeholder.</p>
                     <div class="live-preview">
                         <span class="placeholder w-50"></span>
                         <span class="placeholder w-75"></span>
@@ -116,7 +128,7 @@
                         <span class="placeholder w-100"></span>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;!-- Width Sizing--&gt;
 &lt;div class=&quot;live-preview&quot;&gt;
 &lt;span class=&quot;placeholder col-6&quot;&gt;&lt;/span&gt;
@@ -140,7 +152,8 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>placeholder-lg</code>, <code>placeholder-sm</code>, or <code>placeholder-xs</code> class to placeholder class to set different size placeholder.</p>
+                    <p class="text-muted">Use <code>placeholder-lg</code>, <code>placeholder-sm</code>, or
+                        <code>placeholder-xs</code> class to placeholder class to set different size placeholder.</p>
                     <div class="live-preview">
                         <div class="row gap-0">
                             <div class="col-12">
@@ -158,7 +171,7 @@
                         </div>
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;!-- Sizing --&gt;
 &lt;span class=&quot;placeholder col-12 placeholder-lg&quot;&gt;&lt;/span&gt;</code>
 
@@ -186,7 +199,8 @@
                     </div>
                 </div><!-- end card header -->
                 <div class="card-body">
-                    <p class="text-muted">Use <code>bg-</code> class with the below-mentioned color variation to set a custom color.</p>
+                    <p class="text-muted">Use <code>bg-</code> class with the below-mentioned color variation to set a
+                        custom color.</p>
                     <div class="live-preview">
                         <div class="row g-2">
                             <div class="col-12">
@@ -219,7 +233,7 @@
                         </div><!--end row-->
                     </div>
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px">
+                        <pre class="language-markup" style="height: 275px">
 <code>&lt;!-- Color --&gt;
 &lt;span class=&quot;placeholder col-12 mb-3&quot;&gt;&lt;/span&gt;</code>
 

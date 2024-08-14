@@ -7,7 +7,6 @@
     <body>
     @endsection
     @section('content')
-
         <div class="auth-page-wrapper pt-5">
             <!-- auth page bg -->
             <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
@@ -38,7 +37,8 @@
                                 <div class="row justify-content-center mb-5">
                                     <div class="col-xl-4 col-lg-8">
                                         <div>
-                                            <img src="{{ URL::asset('build/images/maintenance.png') }}" alt="" class="img-fluid">
+                                            <img src="{{ URL::asset('build/images/maintenance.png') }}" alt=""
+                                                class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -60,8 +60,8 @@
                             <div class="text-center">
                                 <script>
                                     document.write(new Date().getFullYear())
-                                </script> Velzon. Crafted with <i
-                                        class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                </script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                                Themesbrand</p>
                             </div>
                         </div>
                     </div>

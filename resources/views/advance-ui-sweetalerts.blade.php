@@ -1,13 +1,18 @@
 @extends('layouts.master')
-@section('title') @lang('translation.sweet-alerts') @endsection
+@section('title')
+    @lang('translation.sweet-alerts')
+@endsection
 @section('css')
-    <link href="{{ URL::asset('build/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
-
+    <link href="{{ URL::asset('build/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Advance UI @endslot
-        @slot('title') ScrollSpy @endslot
+        @slot('li_1')
+            Advance UI
+        @endslot
+        @slot('title')
+            ScrollSpy
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -17,7 +22,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Here are the various types of beautiful, responsive, customizable, and accessible sweet alerts.</p>
+                    <p class="text-muted">Here are the various types of beautiful, responsive, customizable, and accessible
+                        sweet alerts.</p>
 
                     <div class="table-responsive">
                         <table class="table table-nowrap align-middle justify-content-center mb-0">
@@ -38,7 +44,8 @@
                                         A Basic Message
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-basic">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-basic">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -47,7 +54,8 @@
                                         A Title with a Text Under
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-title">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-title">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -56,7 +64,8 @@
                                         A success message!
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-success">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-success">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -65,7 +74,8 @@
                                         A modal with a title, an error icon, a text, and a footer
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-error">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-error">Click
+                                            me</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -73,7 +83,8 @@
                                         A modal window with a long content inside
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-longcontent">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-longcontent">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -82,7 +93,8 @@
                                         A warning message, with a function attached to the "Confirm"-button...
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-warning">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-warning">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -91,7 +103,8 @@
                                         By passing a parameter, you can execute something else for "Cancel".
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-params">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-params">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -100,7 +113,8 @@
                                         A message with custom Image Header
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-image">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-image">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -109,7 +123,8 @@
                                         A message with auto close timer
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-close">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-close">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -118,7 +133,8 @@
                                         Custom HTML description and buttons
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="custom-html-alert">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="custom-html-alert">Click
+                                            me</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -126,7 +142,8 @@
                                         A dialog with three buttons
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-dialog-three-btn">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-dialog-three-btn">Click
+                                            me</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -134,7 +151,8 @@
                                         A custom positioned dialog
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="sa-position">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="sa-position">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -143,7 +161,8 @@
                                         A message with custom width, padding and background
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="custom-padding-width-alert">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm"
+                                            id="custom-padding-width-alert">Click me</button>
                                     </td>
                                 </tr>
 
@@ -152,7 +171,8 @@
                                         Ajax request example
                                     </td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" id="ajax-alert">Click me</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="ajax-alert">Click
+                                            me</button>
                                     </td>
                                 </tr>
 
@@ -189,7 +209,8 @@
                             <div class="row justify-content-center mt-2">
                                 <div class="col-lg-10">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/sweetalert2/success-message.png') }}" alt="Mac Image" class="img-fluid">
+                                        <img src="{{ URL::asset('build/images/sweetalert2/success-message.png') }}"
+                                            alt="Mac Image" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +233,8 @@
                             <div class="row justify-content-center mt-2">
                                 <div class="col-lg-10">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/sweetalert2/error-message.png') }}" alt="Mac Image" class="img-fluid">
+                                        <img src="{{ URL::asset('build/images/sweetalert2/error-message.png') }}"
+                                            alt="Mac Image" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +256,8 @@
                             <div class="row justify-content-center mt-2">
                                 <div class="col-lg-10">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/sweetalert2/warning-message.png') }}" alt="Mac Image" class="img-fluid">
+                                        <img src="{{ URL::asset('build/images/sweetalert2/warning-message.png') }}"
+                                            alt="Mac Image" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +272,8 @@
                     <div class="card text-center border">
                         <div class="card-body p-4 pb-0">
                             <h5 class="mb-4">Join Our Community</h5>
-                            <p class="text-muted">Here is an example of a sweet alert with a community registration field.</p>
+                            <p class="text-muted">Here is an example of a sweet alert with a community registration field.
+                            </p>
 
                             <div>
                                 <button type="button" class="btn btn-primary" id="custom-sa-community">Click me</button>
@@ -258,7 +282,8 @@
                             <div class="row justify-content-center mt-2">
                                 <div class="col-lg-10">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/sweetalert2/join-community.png') }}" alt="Mac Image" class="img-fluid">
+                                        <img src="{{ URL::asset('build/images/sweetalert2/join-community.png') }}"
+                                            alt="Mac Image" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -275,13 +300,15 @@
                             <h5 class="mb-4">Email Verification</h5>
                             <p class="text-muted">Here is an example of a sweet alert with a email verification field.</p>
                             <div>
-                                <button type="button" class="btn btn-primary" id="custom-sa-email-verify">Click me</button>
+                                <button type="button" class="btn btn-primary" id="custom-sa-email-verify">Click
+                                    me</button>
                             </div>
 
                             <div class="row justify-content-center mt-2">
                                 <div class="col-lg-10">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/sweetalert2/email-verify.png') }}" alt="Mac Image" class="img-fluid">
+                                        <img src="{{ URL::asset('build/images/sweetalert2/email-verify.png') }}"
+                                            alt="Mac Image" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -296,16 +323,19 @@
                     <div class="card text-center border">
                         <div class="card-body p-4 pb-0">
                             <h5 class="mb-4">Notification Message</h5>
-                            <p class="text-muted">Here is an example of a sweet alert with a custom notification message.</p>
+                            <p class="text-muted">Here is an example of a sweet alert with a custom notification message.
+                            </p>
 
                             <div>
-                                <button type="button" class="btn btn-primary" id="custom-sa-notification">Click me</button>
+                                <button type="button" class="btn btn-primary" id="custom-sa-notification">Click
+                                    me</button>
                             </div>
 
                             <div class="row justify-content-center mt-2">
                                 <div class="col-lg-10">
                                     <div>
-                                        <img src="{{ URL::asset('build/images/sweetalert2/notification-message.png') }}" alt="Mac Image" class="img-fluid">
+                                        <img src="{{ URL::asset('build/images/sweetalert2/notification-message.png') }}"
+                                            alt="Mac Image" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -327,5 +357,4 @@
     <script src="{{ URL::asset('build/js/pages/sweetalerts.init.js') }}"></script>
 
     <script src="{{ URL::asset('build/js/app.js') }}"></script>
-
 @endsection

@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.google') @endsection
+@section('title')
+    @lang('translation.google')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Maps @endslot
-        @slot('title') Google Maps @endslot
+        @slot('li_1')
+            Maps
+        @endslot
+        @slot('title')
+            Google Maps
+        @endslot
     @endcomponent
 
     <div class="row">

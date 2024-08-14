@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.ratings') @endsection
+@section('title')
+    @lang('translation.ratings')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Advance UI @endslot
-        @slot('title') Ratings @endslot
+        @slot('li_1')
+            Advance UI
+        @endslot
+        @slot('title')
+            Ratings
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-lg-12">
@@ -13,7 +19,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Rater-js is a star rating widget for the browser. here are the various examples of rating shown below with variation.</p>
+                    <p class="text-muted">Rater-js is a star rating widget for the browser. here are the various examples of
+                        rating shown below with variation.</p>
                     <div class="live-preview">
                         <div class="table-responsive">
                             <table class="table align-middle mb-0">
@@ -30,28 +37,37 @@
                                         <td>
                                             <div id="basic-rater" dir="ltr"></div>
                                         </td>
-                                        <td><pre><code class="language-markup">&lt;div id="basic-rater" dir="ltr">&lt;/div></code></pre></td>
+                                        <td>
+                                            <pre><code class="language-markup">&lt;div id="basic-rater" dir="ltr">&lt;/div></code></pre>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Rater with Step</th>
                                         <td>
                                             <div id="rater-step" dir="ltr"></div>
                                         </td>
-                                        <td><pre><code class="language-markup">&lt;div id="rater-step" dir="ltr">&lt;/div></code></pre></td>
+                                        <td>
+                                            <pre><code class="language-markup">&lt;div id="rater-step" dir="ltr">&lt;/div></code></pre>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Custom Messages</th>
                                         <td>
                                             <div id="rater-message" dir="ltr"></div>
                                         </td>
-                                        <td><pre><code class="language-markup">&lt;div id="rater-message" dir="ltr">&lt;/div></code></pre></td>
+                                        <td>
+                                            <pre><code class="language-markup">&lt;div id="rater-message" dir="ltr">&lt;/div></code></pre>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Example with unlimited number of stars. readOnly option is set to true.</th>
+                                        <th scope="row">Example with unlimited number of stars. readOnly option is set to
+                                            true.</th>
                                         <td>
                                             <div id="rater-unlimitedstar" dir="ltr"></div>
                                         </td>
-                                        <td><pre><code class="language-markup">&lt;div id="rater-unlimitedstar" dir="ltr">&lt;/div></code></pre></td>
+                                        <td>
+                                            <pre><code class="language-markup">&lt;div id="rater-unlimitedstar" dir="ltr">&lt;/div></code></pre>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">On Hover Event</th>
@@ -61,10 +77,12 @@
                                                 <span class="ratingnum badge bg-info align-middle ms-2"></span>
                                             </div>
                                         </td>
-                                        <td><pre><code class="language-markup">&lt;div dir=&quot;ltr&quot;&gt;
+                                        <td>
+                                            <pre><code class="language-markup">&lt;div dir=&quot;ltr&quot;&gt;
 &lt;div id=&quot;rater-onhover&quot; class=&quot;align-middle&quot;&gt;&lt;/div&gt;
 &lt;span class=&quot;ratingnum badge bg-info align-middle ms-2&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre></td>
+&lt;/div&gt;</code></pre>
+                                        </td>
                                     </tr>
 
                                     <tr>
@@ -73,14 +91,17 @@
                                             <div dir="ltr">
                                                 <div id="raterreset" class="align-middle"></div>
                                                 <span class="clear-rating"></span>
-                                                <button id="raterreset-button" class="btn btn-light btn-sm ms-2">Reset</button>
+                                                <button id="raterreset-button"
+                                                    class="btn btn-light btn-sm ms-2">Reset</button>
                                             </div>
                                         </td>
-                                        <td><pre><code class="language-markup">&lt;div dir=&quot;ltr&quot;&gt;
+                                        <td>
+                                            <pre><code class="language-markup">&lt;div dir=&quot;ltr&quot;&gt;
 &lt;div id=&quot;raterreset&quot; class=&quot;align-middle&quot;&gt;&lt;/div&gt;
 &lt;span class=&quot;clear-rating&quot;&gt;&lt;/span&gt;
 &lt;button id=&quot;raterreset-button&quot; class=&quot;btn btn-light btn-sm ms-2&quot;&gt;Reset&lt;/button&gt;
-&lt;/div&gt;</code></pre></td>
+&lt;/div&gt;</code></pre>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -107,5 +128,4 @@
     <script src="{{ URL::asset('build/libs/rater-js/index.js') }}"></script>
     <script src="{{ URL::asset('build/js/pages/rating.init.js') }}"></script>
     <script src="{{ URL::asset('build/js/app.js') }}"></script>
-
 @endsection

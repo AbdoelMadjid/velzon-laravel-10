@@ -1,10 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.Apex_Treemap_Chart') @endsection
+@section('title')
+    @lang('translation.Apex_Treemap_Chart')
+@endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Apexcharts @endslot
-        @slot('title') Apex Treemap Charts @endslot
+        @slot('li_1')
+            Apexcharts
+        @endslot
+        @slot('title')
+            Apex Treemap Charts
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xl-6">
@@ -27,7 +32,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="multi_treemap" data-colors='["--vz-primary","--vz-success"]' class="apex-charts" dir="ltr"></div>
+                    <div id="multi_treemap" data-colors='["--vz-primary","--vz-success"]' class="apex-charts"
+                        dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>
@@ -39,11 +45,13 @@
         <div class="col-xl-6">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title mb-0">Distributed Treemap Chart (Different Color for  each Cell)</h4>
+                    <h4 class="card-title mb-0">Distributed Treemap Chart (Different Color for each Cell)</h4>
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="distributed_treemap"  data-colors='["--vz-primary", "--vz-secondary", "--vz-success", "--vz-info","--vz-warning", "--vz-danger"]' class="apex-charts" dir="ltr"></div>
+                    <div id="distributed_treemap"
+                        data-colors='["--vz-primary", "--vz-secondary", "--vz-success", "--vz-info","--vz-warning", "--vz-danger"]'
+                        class="apex-charts" dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>
@@ -56,7 +64,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="color_range_treemap" data-colors='["--vz-info","--vz-danger"]' class="apex-charts" dir="ltr"></div>
+                    <div id="color_range_treemap" data-colors='["--vz-info","--vz-danger"]' class="apex-charts"
+                        dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>

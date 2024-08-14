@@ -3,8 +3,6 @@
     @lang('translation.signin')
 @endsection
 @section('content')
-
-
     <div class="auth-page-wrapper pt-5">
         <!-- auth page bg -->
         <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
@@ -26,7 +24,8 @@
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
                                 <a href="index" class="d-inline-block auth-logo">
-                                    <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="" height="20">
+                                    <img src="{{ URL::asset('build/images/logo-light.png') }}" alt=""
+                                        height="20">
                                 </a>
                             </div>
                             <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
@@ -62,8 +61,8 @@
                                             <div class="position-relative auth-pass-inputgroup mb-3">
                                                 <input type="password" class="form-control pe-5 password-input"
                                                     placeholder="Enter password" id="password-input">
-                                                <button 
-                                                    class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" 
+                                                <button
+                                                    class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon"
                                                     type="button" id="password-addon"><i
                                                         class="ri-eye-fill align-middle"></i></button>
                                             </div>
@@ -126,8 +125,8 @@
                         <div class="text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> Velzon. Crafted with <i
-                                    class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                            </script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                            Themesbrand</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +135,6 @@
         <!-- end Footer -->
     </div>
     <!-- end auth-page-wrapper -->
-
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/libs/particles.js/particles.js') }}"></script>

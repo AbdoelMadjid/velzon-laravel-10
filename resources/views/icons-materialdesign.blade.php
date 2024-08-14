@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.material-design') @endsection
+@section('title')
+    @lang('translation.material-design')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Forms @endslot
-        @slot('title') MD Icons @endslot
+        @slot('li_1')
+            Forms
+        @endslot
+        @slot('title')
+            MD Icons
+        @endslot
     @endcomponent
     <div class="row icon-demo-content">
         <div class="col-12">
@@ -11,7 +17,8 @@
 
                 <div class="card-body">
                     <h4 class="card-title">New Icons</h4>
-                    <p class="card-title-desc mb-2">Use <code>&lt;i class="mdi mdi-*-*"&gt;&lt;/i&gt;</code> class.<span class="badge bg-success">v 6.5.95</span>.</p>
+                    <p class="card-title-desc mb-2">Use <code>&lt;i class="mdi mdi-*-*"&gt;&lt;/i&gt;</code> class.<span
+                            class="badge bg-success">v 6.5.95</span>.</p>
 
                     <div class="row icon-demo-content" id="newIcons"></div>
                 </div> <!-- end card-body -->

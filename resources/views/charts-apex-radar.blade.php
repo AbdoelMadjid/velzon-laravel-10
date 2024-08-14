@@ -1,10 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.Apex_Radar_Chart') @endsection
+@section('title')
+    @lang('translation.Apex_Radar_Chart')
+@endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Apexcharts @endslot
-        @slot('title') Apex Radar Charts @endslot
+        @slot('li_1')
+            Apexcharts
+        @endslot
+        @slot('title')
+            Apex Radar Charts
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xl-6">
@@ -27,7 +32,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <div id="multi_radar" data-colors='["--vz-danger", "--vz-success", "--vz-primary"]' class="apex-charts" dir="ltr"></div>
+                    <div id="multi_radar" data-colors='["--vz-danger", "--vz-success", "--vz-primary"]' class="apex-charts"
+                        dir="ltr"></div>
                 </div><!-- end card-body -->
             </div><!-- end card -->
         </div>

@@ -1,10 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.chartjs') @endsection
+@section('title')
+    @lang('translation.chartjs')
+@endsection
 @section('content')
-
     @component('components.breadcrumb')
-        @slot('li_1') Charts @endslot
-        @slot('title') Chartjs @endslot
+        @slot('li_1')
+            Charts
+        @endslot
+        @slot('title')
+            Chartjs
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xl-6">
@@ -13,7 +18,8 @@
                     <h4 class="card-title mb-0">Line Chart</h4>
                 </div>
                 <div class="card-body">
-                    <canvas id="lineChart" class="chartjs-chart" data-colors='["--vz-primary-rgb, 0.2", "--vz-primary", "--vz-success-rgb, 0.2", "--vz-success"]'></canvas>
+                    <canvas id="lineChart" class="chartjs-chart"
+                        data-colors='["--vz-primary-rgb, 0.2", "--vz-primary", "--vz-success-rgb, 0.2", "--vz-success"]'></canvas>
                 </div>
             </div>
         </div> <!-- end col -->
@@ -24,7 +30,8 @@
                     <h4 class="card-title mb-0">Bar Chart</h4>
                 </div>
                 <div class="card-body">
-                    <canvas id="bar" class="chartjs-chart" data-colors='["--vz-primary-rgb, 0.8", "--vz-primary-rgb, 0.9"]'></canvas>
+                    <canvas id="bar" class="chartjs-chart"
+                        data-colors='["--vz-primary-rgb, 0.8", "--vz-primary-rgb, 0.9"]'></canvas>
 
                 </div>
             </div>
@@ -62,7 +69,8 @@
                     <h4 class="card-title mb-0">Polar Chart</h4>
                 </div>
                 <div class="card-body">
-                    <canvas id="polarArea" class="chartjs-chart" data-colors='["--vz-danger", "--vz-success", "--vz-warning", "--vz-primary"]'> </canvas>
+                    <canvas id="polarArea" class="chartjs-chart"
+                        data-colors='["--vz-danger", "--vz-success", "--vz-warning", "--vz-primary"]'> </canvas>
                 </div>
             </div>
         </div> <!-- end col -->
@@ -73,7 +81,8 @@
                     <h4 class="card-title mb-0">Radar Chart</h4>
                 </div>
                 <div class="card-body">
-                    <canvas id="radar" class="chartjs-chart" data-colors='["--vz-success-rgb, 0.2", "--vz-success", "--vz-primary-rgb, 0.2", "--vz-primary"]'></canvas>
+                    <canvas id="radar" class="chartjs-chart"
+                        data-colors='["--vz-success-rgb, 0.2", "--vz-success", "--vz-primary-rgb, 0.2", "--vz-primary"]'></canvas>
                 </div>
             </div>
         </div> <!-- end col -->

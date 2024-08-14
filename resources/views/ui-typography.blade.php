@@ -1,9 +1,15 @@
 @extends('layouts.master')
-@section('title') @lang('translation.typography') @endsection
+@section('title')
+    @lang('translation.typography')
+@endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') BAse UI @endslot
-        @slot('title') Typography @endslot
+        @slot('li_1')
+            BAse UI
+        @endslot
+        @slot('title')
+            Typography
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-xxl-6">
@@ -59,19 +65,26 @@
 
                 <div class="card-body">
 
-                    <p class="text-muted">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
+                    <p class="text-muted">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are
+                        available.</p>
 
                     <div class="live-preview">
-                        <h1 class="mb-3">h1. Bootstrap heading <small class="text-muted">Semibold 2.03125rem (32.5px)</small></h1>
-                        <h2 class="mb-3">h2. Bootstrap heading <small class="text-muted">Semibold 1.625rem (26px)</small></h2>
-                        <h3 class="mb-3">h3. Bootstrap heading <small class="text-muted">Semibold 1.42188rem (22.8px)</small></h3>
-                        <h4 class="mb-3">h4. Bootstrap heading <small class="text-muted">Semibold 1.21875rem (19.5px)</small></h4>
-                        <h5 class="mb-3">h5. Bootstrap heading <small class="text-muted">Semibold 1.01563rem (16.25px)</small></h5>
-                        <h6 class="mb-1">h6. Bootstrap heading <small class="text-muted">Semibold 0.8125rem (13px)</small></h6>
+                        <h1 class="mb-3">h1. Bootstrap heading <small class="text-muted">Semibold 2.03125rem
+                                (32.5px)</small></h1>
+                        <h2 class="mb-3">h2. Bootstrap heading <small class="text-muted">Semibold 1.625rem (26px)</small>
+                        </h2>
+                        <h3 class="mb-3">h3. Bootstrap heading <small class="text-muted">Semibold 1.42188rem
+                                (22.8px)</small></h3>
+                        <h4 class="mb-3">h4. Bootstrap heading <small class="text-muted">Semibold 1.21875rem
+                                (19.5px)</small></h4>
+                        <h5 class="mb-3">h5. Bootstrap heading <small class="text-muted">Semibold 1.01563rem
+                                (16.25px)</small></h5>
+                        <h6 class="mb-1">h6. Bootstrap heading <small class="text-muted">Semibold 0.8125rem (13px)</small>
+                        </h6>
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;">
+                        <pre class="language-markup" style="height: 275px;">
 <code>&lt;!-- Headings --&gt;
 &lt;h1 class=&quot;mb-3&quot;&gt;h1. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;Semibold 2.03125rem (32.5px)&lt;/small&gt;&lt;/h1&gt;</code>
 
@@ -104,7 +117,8 @@
 
                 <div class="card-body">
 
-                    <p class="text-muted">Traditional heading elements are designed to work best in the meat of your page content.</p>
+                    <p class="text-muted">Traditional heading elements are designed to work best in the meat of your page
+                        content.</p>
 
                     <div class="live-preview">
                         <h1 class="display-1 mb-4">Display 1</h1>
@@ -116,7 +130,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;!-- Display Headings --&gt;
 &lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;</code>
 
@@ -152,7 +166,7 @@
 
                 <div class="card-body">
                     <p class="text-muted">Use <code>&lt;blockquote
-                        class="blockquote"&gt;</code> class for quoting blocks of content from
+                            class="blockquote"&gt;</code> class for quoting blocks of content from
                         another source within your document .</p>
 
                     <div class="live-preview">
@@ -160,16 +174,20 @@
                             <div class="col-xxl-6">
                                 <div>
                                     <blockquote class="blockquote fs-14 mb-0">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                        <footer class="blockquote-footer mt-0">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                                            ante.</p>
+                                        <footer class="blockquote-footer mt-0">Someone famous in <cite
+                                                title="Source Title">Source Title</cite></footer>
                                     </blockquote>
                                 </div>
                             </div><!-- end col -->
                             <div class="col-xxl-6">
                                 <div class="mt-4 mt-lg-0">
                                     <blockquote class="blockquote blockquote-reverse fs-14 mb-0">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                        <footer class="blockquote-footer mt-0">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                                            ante.</p>
+                                        <footer class="blockquote-footer mt-0">Someone famous in <cite
+                                                title="Source Title">Source Title</cite></footer>
                                     </blockquote>
                                 </div>
                             </div><!-- end col -->
@@ -177,7 +195,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;!-- Blockquotes --&gt;
+                        <pre class="language-markup"><code>&lt;!-- Blockquotes --&gt;
 &lt;blockquote class=&quot;blockquote fs-14&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
 &lt;footer class=&quot;blockquote-footer mt-0&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
@@ -203,68 +221,77 @@
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="blockquotes-bgcolor-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="blockquotes-bgcolor-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="blockquotes-bgcolor-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted text-muted">Use <code>blockquote-</code> class with the below-mentioned color variation to set the blockquote background color.</p>
+                    <p class="text-muted text-muted">Use <code>blockquote-</code> class with the below-mentioned color
+                        variation to set the blockquote background color.</p>
                     <div class="live-preview">
                         <div class="row gy-4">
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-primary rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Primary Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-secondary rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Secondary Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-success rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Success Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-info rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Info Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-danger rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Danger Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-warning rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Warning Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
                                 <blockquote class="blockquote custom-blockquote blockquote-dark rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Dark Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
                         </div><!-- end row -->
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px"><code>&lt;!-- Blockquote Background Color --&gt;
+                        <pre class="language-markup" style="height: 275px"><code>&lt;!-- Blockquote Background Color --&gt;
 &lt;blockquote class=&quot;blockquote custom-blockquote blockquote-primary rounded mb-0&quot;&gt;
 &lt;p class=&quot;text-body mb-2&quot;&gt;Custom Blockquote Primary Example&lt;/p&gt;
 &lt;footer class=&quot;blockquote-footer mt-0&quot;&gt;Angie Burt &lt;cite title=&quot;Source Title&quot;&gt;Designer&lt;/cite&gt;&lt;/footer&gt;
@@ -316,69 +343,85 @@
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="blockquotes-bordercolor-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="blockquotes-bordercolor-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="blockquotes-bordercolor-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted text-muted">Use <code>blockquote-outline</code> class to set blockquote border color.</p>
+                    <p class="text-muted text-muted">Use <code>blockquote-outline</code> class to set blockquote border
+                        color.</p>
                     <div class="live-preview">
                         <div class="row gy-4">
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-primary rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-primary rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Primary Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-secondary rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-secondary rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Secondary Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-success rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-success rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Success Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-info rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-info rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Info Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-danger rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-danger rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Danger Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-warning rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-warning rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Warning Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
 
                             <div class="col-xl-4 col-md-6">
-                                <blockquote class="blockquote custom-blockquote blockquote-outline blockquote-dark rounded mb-0">
+                                <blockquote
+                                    class="blockquote custom-blockquote blockquote-outline blockquote-dark rounded mb-0">
                                     <p class="text-body mb-2">Custom Blockquote Outline Dark Example</p>
-                                    <footer class="blockquote-footer mt-0">Angie Burt <cite title="Source Title">Designer</cite></footer>
+                                    <footer class="blockquote-footer mt-0">Angie Burt <cite
+                                            title="Source Title">Designer</cite></footer>
                                 </blockquote>
                             </div>
                         </div><!-- end row -->
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;!-- Blockquote Border Color --&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;!-- Blockquote Border Color --&gt;
 &lt;blockquote class=&quot;blockquote custom-blockquote blockquote-outline blockquote-primary rounded mb-0&quot;&gt;
 &lt;p class=&quot;text-body mb-2&quot;&gt;Custom Blockquote Outline Primary Example&lt;/p&gt;
 &lt;footer class=&quot;blockquote-footer mt-0&quot;&gt;Angie Burt &lt;cite title=&quot;Source Title&quot;&gt;Designer&lt;/cite&gt;&lt;/footer&gt;
@@ -429,7 +472,8 @@
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="inlinetext-elements-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="inlinetext-elements-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="inlinetext-elements-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -451,7 +495,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;p class=&quot;lead&quot;&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;/p&gt;</code>
 
 <code>&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;</code>
@@ -488,7 +532,8 @@
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>list-unstyled</code> class Remove the default list-style and left margin on list
+                    <p class="text-muted">Use <code>list-unstyled</code> class Remove the default list-style and left
+                        margin on list
                         items (immediate children only). <strong>This only applies to immediate
                             children list items</strong>, meaning you will need to add the class
                         for any nested lists.</p>
@@ -508,7 +553,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 200px;">
+                        <pre class="language-markup" style="height: 200px;">
 <code>&lt;ul class=&quot;list-unstyled&quot;&gt;
 &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
 &lt;li&gt;Nulla volutpat aliquam velit
@@ -530,7 +575,8 @@
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="inlinelist-elements-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="inlinelist-elements-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="inlinelist-elements-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -550,7 +596,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;ul class=&quot;list-inline&quot;&gt;
 &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum&lt;/li&gt;
 &lt;li class=&quot;list-inline-item&quot;&gt;Phasellus iaculis&lt;/li&gt;
@@ -572,7 +618,8 @@
                     <div class="flex-shrink-0">
                         <div class="form-check form-switch form-switch-right form-switch-md">
                             <label for="desclist-alignment-showcode" class="form-label text-muted">Show Code</label>
-                            <input class="form-check-input code-switcher" type="checkbox" id="desclist-alignment-showcode">
+                            <input class="form-check-input code-switcher" type="checkbox"
+                                id="desclist-alignment-showcode">
                         </div>
                     </div>
                 </div><!-- end card header -->
@@ -589,27 +636,30 @@
                             <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 
                             <dt class="col-sm-3">Euismod</dt>
-                            <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                            <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec
+                                elit.</dd>
                             <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
 
                             <dt class="col-sm-3">Malesuada porta</dt>
                             <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
                             <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                                ut fermentum massa justo sit amet risus.</dd>
 
                             <dt class="col-sm-3">Nesting</dt>
                             <dd class="col-sm-9 mb-0">
                                 <dl class="row mb-0">
                                     <dt class="col-sm-4">Nested definition list</dt>
-                                    <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                    <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit
+                                        nunc.</dd>
                                 </dl>
                             </dd>
                         </dl>
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup" style="height: 275px;"><code>&lt;dl class=&quot;row mb-0&quot;&gt;
+                        <pre class="language-markup" style="height: 275px;"><code>&lt;dl class=&quot;row mb-0&quot;&gt;
 &lt;dt class=&quot;col-sm-3&quot;&gt;Description lists&lt;/dt&gt;
 &lt;dd class=&quot;col-sm-9&quot;&gt;A description list is perfect for defining terms.&lt;/dd&gt;
 
@@ -669,7 +719,7 @@
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;!-- Text Wrap --&gt;
+                        <pre class="language-markup"><code>&lt;!-- Text Wrap --&gt;
 &lt;div class=&quot;badge bg-primary text-wrap&quot; style=&quot;width: 6rem;&quot;&gt;
 This text should wrap.
 &lt;/div&gt;</code>
@@ -696,13 +746,16 @@ This text should overflow the parent.
                 <div class="card-body">
                     <div class="live-preview">
                         <div>
-                            <p class="text-muted">Use <code>text-break</code> class to prevent long strings of text from breaking your components' layout.</p>
-                            <p class="text-break mb-0">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+                            <p class="text-muted">Use <code>text-break</code> class to prevent long strings of text from
+                                breaking your components' layout.</p>
+                            <p class="text-break mb-0">
+                                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+                            </p>
                         </div>
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;p class=&quot;text-break mb-0&quot;&gt;mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm&lt;/p&gt;;</code></pre>
                     </div>
                 </div><!-- end card-body -->
@@ -723,7 +776,8 @@ This text should overflow the parent.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>fs-1</code>, <code>fs-2</code>, <code>fs-3</code>, <code>fs-4</code>, <code>fs-5</code>, or <code>fs-6</code>, class to change the font-size respectively.</p>
+                    <p class="text-muted">Use <code>fs-1</code>, <code>fs-2</code>, <code>fs-3</code>, <code>fs-4</code>,
+                        <code>fs-5</code>, or <code>fs-6</code>, class to change the font-size respectively.</p>
                     <div class="live-preview">
                         <p class="fs-1">.fs-1 text</p>
                         <p class="fs-2">.fs-2 text</p>
@@ -734,7 +788,7 @@ This text should overflow the parent.
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;p class=&quot;fs-1&quot;&gt;.fs-1 text&lt;/p&gt;</code>
+                        <pre class="language-markup"><code>&lt;p class=&quot;fs-1&quot;&gt;.fs-1 text&lt;/p&gt;</code>
 
 <code>&lt;p class=&quot;fs-2&quot;&gt;.fs-2 text&lt;/p&gt;</code>
 
@@ -767,7 +821,8 @@ This text should overflow the parent.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>fst-</code>with modifier class to change font-style and Use <code>fw-</code>with modifier class to change font-weight.</p>
+                    <p class="text-muted">Use <code>fst-</code>with modifier class to change font-style and Use
+                        <code>fw-</code>with modifier class to change font-weight.</p>
 
                     <div class="live-preview">
                         <p class="fw-bold">Bold text.</p>
@@ -782,7 +837,7 @@ This text should overflow the parent.
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup">
+                        <pre class="language-markup">
 <code>&lt;p class=&quot;fw-bold&quot;&gt;Bold text.&lt;/p&gt;</code>
 
 <code>&lt;p class=&quot;fw-bolder&quot;&gt;Bolder weight text (relative to the parent element).&lt;/p&gt;</code>
@@ -815,17 +870,26 @@ This text should overflow the parent.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>lh-</code> with modifier class to change the line height of an element.</p>
+                    <p class="text-muted">Use <code>lh-</code> with modifier class to change the line height of an element.
+                    </p>
 
                     <div class="live-preview">
-                        <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
-                        <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
-                        <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element.</p>
-                        <p class="lh-lg mb-0">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element.</p>
+                        <p class="lh-1">This is a long paragraph written to show how the line-height of an element is
+                            affected by our utilities. Classes are applied to the element itself or sometimes the parent
+                            element. These classes can be customized as needed with our utility API.</p>
+                        <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is
+                            affected by our utilities. Classes are applied to the element itself or sometimes the parent
+                            element. These classes can be customized as needed with our utility API.</p>
+                        <p class="lh-base">This is a long paragraph written to show how the line-height of an element is
+                            affected by our utilities. Classes are applied to the element itself or sometimes the parent
+                            element.</p>
+                        <p class="lh-lg mb-0">This is a long paragraph written to show how the line-height of an element is
+                            affected by our utilities. Classes are applied to the element itself or sometimes the parent
+                            element.</p>
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;p class=&quot;lh-1&quot;&gt;This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;</code>
+                        <pre class="language-markup"><code>&lt;p class=&quot;lh-1&quot;&gt;This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;</code>
 
 <code>&lt;p class=&quot;lh-sm&quot;&gt;This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;</code>
 
@@ -854,7 +918,8 @@ This text should overflow the parent.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>text-lowercase</code>, <code>text-uppercase</code>, or <code>text-capitalize</code> to transform the text.</p>
+                    <p class="text-muted">Use <code>text-lowercase</code>, <code>text-uppercase</code>, or
+                        <code>text-capitalize</code> to transform the text.</p>
                     <div class="live-preview">
                         <p class="text-lowercase">Lowercased text.</p>
                         <p class="text-uppercase">Uppercased text.</p>
@@ -862,7 +927,7 @@ This text should overflow the parent.
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;</code>
+                        <pre class="language-markup"><code>&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;</code>
 
 <code>&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;</code>
 
@@ -886,7 +951,9 @@ This text should overflow the parent.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>text-decoration-underline</code>, <code>text-decoration-line-through</code>, or <code>text-decoration-none</code> class to decorate text in components respectively.</p>
+                    <p class="text-muted">Use <code>text-decoration-underline</code>,
+                        <code>text-decoration-line-through</code>, or <code>text-decoration-none</code> class to decorate
+                        text in components respectively.</p>
 
                     <div class="live-preview">
                         <p class="text-decoration-underline">This text has a line underneath it.</p>
@@ -895,7 +962,7 @@ This text should overflow the parent.
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;p class=&quot;text-decoration-underline&quot;&gt;This text has a line underneath it.&lt;/p&gt;</code>
+                        <pre class="language-markup"><code>&lt;p class=&quot;text-decoration-underline&quot;&gt;This text has a line underneath it.&lt;/p&gt;</code>
 
 <code>&lt;p class=&quot;text-decoration-line-through&quot;&gt;This text has a line going through it.&lt;/p&gt;</code>
 
@@ -922,7 +989,8 @@ This text should overflow the parent.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>text-truncate</code> class to truncate the text with an ellipsis. Requires <code>display: inline-block</code> or <code>display: block</code>.</p>
+                    <p class="text-muted">Use <code>text-truncate</code> class to truncate the text with an ellipsis.
+                        Requires <code>display: inline-block</code> or <code>display: block</code>.</p>
 
                     <div class="live-preview">
                         <!-- Block level -->
@@ -939,7 +1007,7 @@ This text should overflow the parent.
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;!-- Block level --&gt;
+                        <pre class="language-markup"><code>&lt;!-- Block level --&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-2 text-truncate&quot;&gt;
 This text is quite long, and will be truncated once displayed.
@@ -969,7 +1037,8 @@ This text is quite long, and will be truncated once displayed.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>visible</code> or <code>invisible</code> class to show or to hide elements respectively.</p>
+                    <p class="text-muted">Use <code>visible</code> or <code>invisible</code> class to show or to hide
+                        elements respectively.</p>
 
                     <div class="live-preview">
                         <div class="visible">text visible Lorem ipsum dolor sit amet</div>
@@ -977,7 +1046,7 @@ This text is quite long, and will be truncated once displayed.
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;div class=&quot;visible&quot;&gt;text visible Lorem ipsum dolor sit amet&lt;/div&gt;</code>
+                        <pre class="language-markup"><code>&lt;div class=&quot;visible&quot;&gt;text visible Lorem ipsum dolor sit amet&lt;/div&gt;</code>
 
 <code>&lt;div class=&quot;invisible&quot;&gt;text invisible Lorem ipsum dolor sit amet&lt;/div&gt;</code></pre>
                     </div>
@@ -1002,16 +1071,18 @@ This text is quite long, and will be truncated once displayed.
                 </div><!-- end card header -->
 
                 <div class="card-body">
-                    <p class="text-muted">Use <code>clearfix</code> class to clear/set floated content within a container.</p>
+                    <p class="text-muted">Use <code>clearfix</code> class to clear/set floated content within a container.
+                    </p>
                     <div class="live-preview">
                         <div class="bg-light clearfix p-3">
-                            <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+                            <button type="button" class="btn btn-secondary float-start">Example Button floated
+                                left</button>
                             <button type="button" class="btn btn-success float-end">Example Button floated right</button>
                         </div>
                     </div>
 
                     <div class="d-none code-view">
-<pre class="language-markup"><code>&lt;div class=&quot;bg-light clearfix&quot;&gt;
+                        <pre class="language-markup"><code>&lt;div class=&quot;bg-light clearfix&quot;&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary float-start&quot;&gt;Example Button floated left&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary float-end&quot;&gt;Example Button floated right&lt;/button&gt;
 &lt;/div&gt;</code></pre>
@@ -1021,7 +1092,6 @@ This text is quite long, and will be truncated once displayed.
         </div>
         <!-- end col -->
     </div>
-
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/libs/prismjs/prism.js') }}"></script>
