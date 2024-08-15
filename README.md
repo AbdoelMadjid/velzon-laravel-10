@@ -68,11 +68,13 @@ php artisan db:seed
 
 ## Roadmap Project
 
-### 13.08.2024 -> Add Language Indonesian
+<ul>
+    <li>13.08.2024 -> Add Language Indonesian</li>
+    <li>14.08.2024 -> Add Homepage</li>
+    <li>14.08.2024 -> Add Date Time (with Hijriah)</li>
+    <li>15.08.2024 -> Add features include, add confirmation logout with smartart</li>
+</ul>
 
-### 14.08.2024 -> Add Homepage
-
-### 14.08.2024 -> Add Date Time (with Hijriah)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
