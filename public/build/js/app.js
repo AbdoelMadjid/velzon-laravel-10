@@ -2044,3 +2044,39 @@ if (mybutton) {
 	}
 }
 
+if (document.getElementById("logout-link")) {
+    document.getElementById("logout-link").addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default action
+
+        Swal.fire({
+            title: "Are you sure you want to log out?",
+            //title: "Are you Sure?",
+            //text: 'Are you sure you want to log out?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonClass: 'btn btn-primary w-xs me-2 mb-1',
+            confirmButtonText: 'Yes, log me out!',
+            cancelButtonClass: 'btn btn-danger w-xs mb-1',
+            cancelButtonText: 'No, stay logged in',
+            buttonsStyling: true,
+            showCloseButton: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Submit the form
+                document.getElementById('logout-form').submit();
+
+                // Show success notification after form submission
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Logged Out!',
+                    text: 'You have successfully logged out.',
+                    timer: 2000,
+                    showConfirmButton: false
+                }).then(() => {
+                    // Redirect to the login page or another page if needed
+                    window.location.href = "{{ route('login') }}"; // Adjust the route as needed
+                });
+            }
+        });
+    });
+}

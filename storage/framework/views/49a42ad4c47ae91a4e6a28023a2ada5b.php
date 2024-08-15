@@ -10,4 +10,5 @@
 <!-- custom Css-->
 <link href="<?php echo e(URL::asset('build/css/custom.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 
+<link href="<?php echo e(URL::asset('build/libs/sweetalert2/sweetalert2.min.css')); ?>" rel="stylesheet" type="text/css" />
 <?php /**PATH D:\laragon\www3\velzon-default-10\resources\views/layouts/head-css.blade.php ENDPATH**/ ?>
